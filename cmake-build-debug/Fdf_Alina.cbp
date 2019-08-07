@@ -4,113 +4,115 @@
 	<Project>
 		<Option title="Fdf_Alina"/>
 		<Option makefile_is_custom="1"/>
-		<Option compiler="gcc"/>
+		<Option compiler="msvc8"/>
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Users/mapryl/Desktop/Fdf_Alina/cmake-build-debug"/>
+				<Option working_dir="C:/Users/asi30/Desktop/grafics_part1/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/mapryl/Desktop/Fdf_Alina/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/mapryl/Desktop/Fdf_Alina/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/mapryl/Desktop/Fdf_Alina/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/mapryl/Desktop/Fdf_Alina/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="rebuild_cache">
-				<Option working_dir="/Users/mapryl/Desktop/Fdf_Alina/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/mapryl/Desktop/Fdf_Alina/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/mapryl/Desktop/Fdf_Alina/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/mapryl/Desktop/Fdf_Alina/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/mapryl/Desktop/Fdf_Alina/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="edit_cache">
-				<Option working_dir="/Users/mapryl/Desktop/Fdf_Alina/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/mapryl/Desktop/Fdf_Alina/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/mapryl/Desktop/Fdf_Alina/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/mapryl/Desktop/Fdf_Alina/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/mapryl/Desktop/Fdf_Alina/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f C:\Users\asi30\Desktop\grafics_part1\cmake-build-debug\Makefile VERBOSE=1 all"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\asi30\Desktop\grafics_part1\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\asi30\Desktop\grafics_part1\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\asi30\Desktop\grafics_part1\cmake-build-debug\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Fdf_Alina">
-				<Option output="/Users/mapryl/Desktop/Fdf_Alina/cmake-build-debug/Fdf_Alina" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/mapryl/Desktop/Fdf_Alina/cmake-build-debug"/>
+				<Option output="C:/Users/asi30/Desktop/grafics_part1/cmake-build-debug/Fdf_Alina.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/asi30/Desktop/grafics_part1/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
-				<Option compiler="gcc"/>
+				<Option compiler="msvc8"/>
 				<Compiler>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
-					<Add directory="/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/mapryl/Desktop/Fdf_Alina/cmake-build-debug/Makefile&quot;  VERBOSE=1 Fdf_Alina"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/mapryl/Desktop/Fdf_Alina/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/mapryl/Desktop/Fdf_Alina/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/mapryl/Desktop/Fdf_Alina/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f C:\Users\asi30\Desktop\grafics_part1\cmake-build-debug\Makefile VERBOSE=1 Fdf_Alina"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\asi30\Desktop\grafics_part1\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\asi30\Desktop\grafics_part1\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\asi30\Desktop\grafics_part1\cmake-build-debug\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Fdf_Alina/fast">
-				<Option output="/Users/mapryl/Desktop/Fdf_Alina/cmake-build-debug/Fdf_Alina" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/mapryl/Desktop/Fdf_Alina/cmake-build-debug"/>
+				<Option output="C:/Users/asi30/Desktop/grafics_part1/cmake-build-debug/Fdf_Alina.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/asi30/Desktop/grafics_part1/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
-				<Option compiler="gcc"/>
+				<Option compiler="msvc8"/>
 				<Compiler>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
-					<Add directory="/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/mapryl/Desktop/Fdf_Alina/cmake-build-debug/Makefile&quot;  VERBOSE=1 Fdf_Alina/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/mapryl/Desktop/Fdf_Alina/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/mapryl/Desktop/Fdf_Alina/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/mapryl/Desktop/Fdf_Alina/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f C:\Users\asi30\Desktop\grafics_part1\cmake-build-debug\Makefile VERBOSE=1 Fdf_Alina/fast"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\asi30\Desktop\grafics_part1\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\asi30\Desktop\grafics_part1\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\asi30\Desktop\grafics_part1\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/Users/asi30/Desktop/grafics_part1/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\asi30\Desktop\grafics_part1\cmake-build-debug\Makefile VERBOSE=1 edit_cache"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\asi30\Desktop\grafics_part1\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\asi30\Desktop\grafics_part1\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\asi30\Desktop\grafics_part1\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/Users/asi30/Desktop/grafics_part1/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\asi30\Desktop\grafics_part1\cmake-build-debug\Makefile VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\asi30\Desktop\grafics_part1\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\asi30\Desktop\grafics_part1\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\asi30\Desktop\grafics_part1\cmake-build-debug\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/mapryl/Desktop/Fdf_Alina/close_window.c">
+		<Unit filename="C:/Users/asi30/Desktop/grafics_part1/close_window.c">
 			<Option target="Fdf_Alina"/>
 		</Unit>
-		<Unit filename="/Users/mapryl/Desktop/Fdf_Alina/draw.c">
+		<Unit filename="C:/Users/asi30/Desktop/grafics_part1/draw.c">
 			<Option target="Fdf_Alina"/>
 		</Unit>
-		<Unit filename="/Users/mapryl/Desktop/Fdf_Alina/error.c">
+		<Unit filename="C:/Users/asi30/Desktop/grafics_part1/error.c">
 			<Option target="Fdf_Alina"/>
 		</Unit>
-		<Unit filename="/Users/mapryl/Desktop/Fdf_Alina/fdf.h">
+		<Unit filename="C:/Users/asi30/Desktop/grafics_part1/fdf.h">
 			<Option target="Fdf_Alina"/>
 		</Unit>
-		<Unit filename="/Users/mapryl/Desktop/Fdf_Alina/get_next_line.c">
+		<Unit filename="C:/Users/asi30/Desktop/grafics_part1/get_next_line.c">
 			<Option target="Fdf_Alina"/>
 		</Unit>
-		<Unit filename="/Users/mapryl/Desktop/Fdf_Alina/get_next_line.h">
+		<Unit filename="C:/Users/asi30/Desktop/grafics_part1/get_next_line.h">
 			<Option target="Fdf_Alina"/>
 		</Unit>
-		<Unit filename="/Users/mapryl/Desktop/Fdf_Alina/keys.h">
+		<Unit filename="C:/Users/asi30/Desktop/grafics_part1/keys.h">
 			<Option target="Fdf_Alina"/>
 		</Unit>
-		<Unit filename="/Users/mapryl/Desktop/Fdf_Alina/main.c">
+		<Unit filename="C:/Users/asi30/Desktop/grafics_part1/main.c">
 			<Option target="Fdf_Alina"/>
 		</Unit>
-		<Unit filename="/Users/mapryl/Desktop/Fdf_Alina/map.h">
+		<Unit filename="C:/Users/asi30/Desktop/grafics_part1/map.h">
 			<Option target="Fdf_Alina"/>
 		</Unit>
-		<Unit filename="/Users/mapryl/Desktop/Fdf_Alina/map_create.c">
+		<Unit filename="C:/Users/asi30/Desktop/grafics_part1/map_create.c">
 			<Option target="Fdf_Alina"/>
 		</Unit>
-		<Unit filename="/Users/mapryl/Desktop/Fdf_Alina/CMakeLists.txt">
+		<Unit filename="C:/Users/asi30/Desktop/grafics_part1/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

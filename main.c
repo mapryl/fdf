@@ -45,7 +45,7 @@ s_line  *crt_line(void *mlx_ptr, void *mlx_win)
     return (line);
 }
 
-void init_window(t_map map)
+void init_window(t_map *map)
 {
     void *mlx_ptr = mlx_init();
     void *mlx_win = mlx_new_window(mlx_ptr, WIN_WIDTH, WIN_HEIGHT, "TEST WNDW"); //Создаем новое окно
@@ -71,19 +71,34 @@ void init_window(t_map map)
 
     s_line *test_line = crt_line(mlx_ptr, mlx_win);
 
-    for (size_t i = 0; i < map.hight; ++i)
+    for (size_t i = 0; i < map->hight; ++i)
     {
-        for (size_t j = 0; j < map.width; ++j)
-        {
-            if (map.data[i][j] > 0)
-            {
-                Draw_Wu(i + 100, j + 100, i + 200, j + 200, &mlx_ptr, &mlx_win, 255);
-            }
-            else
-                Draw_Wu(i + 100, j + 100, i + 200, j + 200, &mlx_ptr, &mlx_win, 200);
-        }
-    }
+        if (i < map->hight - 1)
+		{
+        	for (size_t j = 0; j < map->width - 1; ++j)
+        	{
+				Draw_Wu(WIN_HEIGHT / 4 + 10 * i, WIN_WIDTH / 4 + 10 * j, WIN_HEIGHT / 4 + 10 * i,
+						WIN_WIDTH / 4 + 10 * (j + 1), &mlx_ptr, &mlx_win, 255);
+				Draw_Wu(WIN_HEIGHT / 4 + 10 * i, WIN_WIDTH / 4 + 10 * j, WIN_HEIGHT / 4 + 10 * (i + 1),
+						WIN_WIDTH / 4 + 10 * j, &mlx_ptr, &mlx_win, 255);
+				Draw_Wu(WIN_HEIGHT / 4 + 10 * i, WIN_WIDTH / 4 + 10 * j, WIN_HEIGHT / 4 + 10 * (i + 1),
+						WIN_WIDTH / 4 + 10 * (j + 1), &mlx_ptr, &mlx_win, 255);
+				//else
+				//     Draw_Wu(i + 100, j + 100, i + 200, j + 200, &mlx_ptr, &mlx_win, 200);
+			}
+			Draw_Wu(WIN_HEIGHT/4 + 10*i, WIN_WIDTH/4 + 10*(map->width - 1), WIN_HEIGHT/4 + 10*(i + 1),
+					WIN_WIDTH/4 + 10*(map->width - 1), &mlx_ptr, &mlx_win, 255);
+		}
+        else
+		{
+			for (size_t j = 0; j < map->width - 1; ++j)
+			{
+				Draw_Wu(WIN_HEIGHT / 4 + 10 * i, WIN_WIDTH / 4 + 10 * j, WIN_HEIGHT / 4 + 10 * i,
+						WIN_WIDTH / 4 + 10 * (j + 1), &mlx_ptr, &mlx_win, 255);
+			}
+		}
 
+	}
     mlx_key_hook(mlx_win, close_key, NULL);
     mlx_mouse_hook(mlx_win, close_mouse, (void *)close_button);
     mlx_mouse_hook(mlx_win, draw_line, (void *)test_line);
@@ -102,7 +117,7 @@ int main (int argc, const char* argv[])
             throw_error();
         map_create(&map);
         read_map(fd, &map);
-        init_window(map);
+        init_window(&map);
     }
     return 0;
 }

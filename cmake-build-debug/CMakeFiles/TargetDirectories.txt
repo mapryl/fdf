@@ -1,3 +1,3 @@
-/Users/mapryl/Desktop/Fdf_Alina/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/mapryl/Desktop/Fdf_Alina/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/mapryl/Desktop/Fdf_Alina/cmake-build-debug/CMakeFiles/Fdf_Alina.dir
+C:/Users/asi30/Desktop/grafics_part1/cmake-build-debug/CMakeFiles/Fdf_Alina.dir
+C:/Users/asi30/Desktop/grafics_part1/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/asi30/Desktop/grafics_part1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
