@@ -2,16 +2,26 @@
 #define MAP_H
 #include <stdlib.h>
 
+# define X_UNIT 50
+# define Y_UNIT 50
+
+typedef struct point
+{
+    int x;
+    int y;
+    int z;
+} t_point;
+
 typedef struct line
 {
-    int* data;
+    t_point* data;
     size_t width;
     size_t width_capacity;
 } t_line;
 
 typedef struct map
 {
-    int** data;
+    t_point** data;
     size_t hight;
     size_t width;
     size_t hight_capacity;

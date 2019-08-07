@@ -32,7 +32,7 @@ static size_t		ft_letter(char const **str, char c)
 {
 	size_t len;
 
-	if (*str == '\0')
+	if (**str == '\0')
 		return (0);
 	len = 0;
 	while (**str != '\0' && **str == c)
@@ -45,12 +45,12 @@ static size_t		ft_letter(char const **str, char c)
 	return (len);
 }
 
-static void			ft_fresh_str(char ***str)
+static void			ft_fresh_str(char ***str, int count)
 {
-	while (**str != '\0')
+	while (count >= 0)
 	{
-		free(**str);
-		str++;
+		free((*str)[count]);
+		count--;
 	}
 	free(*str);
 	*str = NULL;
@@ -76,7 +76,7 @@ char				**ft_strsplit(char const *str, char c)
 			return (0);
 		if (!(array_str[i] = ft_strndup(str - len_word, len_word)))
 		{
-			ft_fresh_str(&array_str);
+			ft_fresh_str(&array_str, i - 1);
 			return (0);
 		}
 		i++;

@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /Users/mapryl/Desktop/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = "/home/alina/Рабочий стол/clion-2019.2/bin/cmake/linux/bin/cmake"
 
 # The command to remove a file.
-RM = /Users/mapryl/Desktop/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
+RM = "/home/alina/Рабочий стол/clion-2019.2/bin/cmake/linux/bin/cmake" -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/mapryl/Desktop/grafics_part1
+CMAKE_SOURCE_DIR = /home/alina/CLionProjects/grafics_part1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/mapryl/Desktop/grafics_part1/cmake-build-debug
+CMAKE_BINARY_DIR = /home/alina/CLionProjects/grafics_part1/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Fdf_Alina.dir/depend.make
@@ -59,81 +59,81 @@ include CMakeFiles/Fdf_Alina.dir/flags.make
 
 CMakeFiles/Fdf_Alina.dir/main.c.o: CMakeFiles/Fdf_Alina.dir/flags.make
 CMakeFiles/Fdf_Alina.dir/main.c.o: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mapryl/Desktop/grafics_part1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Fdf_Alina.dir/main.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fdf_Alina.dir/main.c.o   -c /Users/mapryl/Desktop/grafics_part1/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alina/CLionProjects/grafics_part1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Fdf_Alina.dir/main.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fdf_Alina.dir/main.c.o   -c /home/alina/CLionProjects/grafics_part1/main.c
 
 CMakeFiles/Fdf_Alina.dir/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Fdf_Alina.dir/main.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/mapryl/Desktop/grafics_part1/main.c > CMakeFiles/Fdf_Alina.dir/main.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alina/CLionProjects/grafics_part1/main.c > CMakeFiles/Fdf_Alina.dir/main.c.i
 
 CMakeFiles/Fdf_Alina.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Fdf_Alina.dir/main.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mapryl/Desktop/grafics_part1/main.c -o CMakeFiles/Fdf_Alina.dir/main.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alina/CLionProjects/grafics_part1/main.c -o CMakeFiles/Fdf_Alina.dir/main.c.s
 
 CMakeFiles/Fdf_Alina.dir/map_create.c.o: CMakeFiles/Fdf_Alina.dir/flags.make
 CMakeFiles/Fdf_Alina.dir/map_create.c.o: ../map_create.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mapryl/Desktop/grafics_part1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Fdf_Alina.dir/map_create.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fdf_Alina.dir/map_create.c.o   -c /Users/mapryl/Desktop/grafics_part1/map_create.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alina/CLionProjects/grafics_part1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Fdf_Alina.dir/map_create.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fdf_Alina.dir/map_create.c.o   -c /home/alina/CLionProjects/grafics_part1/map_create.c
 
 CMakeFiles/Fdf_Alina.dir/map_create.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Fdf_Alina.dir/map_create.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/mapryl/Desktop/grafics_part1/map_create.c > CMakeFiles/Fdf_Alina.dir/map_create.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alina/CLionProjects/grafics_part1/map_create.c > CMakeFiles/Fdf_Alina.dir/map_create.c.i
 
 CMakeFiles/Fdf_Alina.dir/map_create.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Fdf_Alina.dir/map_create.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mapryl/Desktop/grafics_part1/map_create.c -o CMakeFiles/Fdf_Alina.dir/map_create.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alina/CLionProjects/grafics_part1/map_create.c -o CMakeFiles/Fdf_Alina.dir/map_create.c.s
 
 CMakeFiles/Fdf_Alina.dir/error.c.o: CMakeFiles/Fdf_Alina.dir/flags.make
 CMakeFiles/Fdf_Alina.dir/error.c.o: ../error.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mapryl/Desktop/grafics_part1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/Fdf_Alina.dir/error.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fdf_Alina.dir/error.c.o   -c /Users/mapryl/Desktop/grafics_part1/error.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alina/CLionProjects/grafics_part1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/Fdf_Alina.dir/error.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fdf_Alina.dir/error.c.o   -c /home/alina/CLionProjects/grafics_part1/error.c
 
 CMakeFiles/Fdf_Alina.dir/error.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Fdf_Alina.dir/error.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/mapryl/Desktop/grafics_part1/error.c > CMakeFiles/Fdf_Alina.dir/error.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alina/CLionProjects/grafics_part1/error.c > CMakeFiles/Fdf_Alina.dir/error.c.i
 
 CMakeFiles/Fdf_Alina.dir/error.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Fdf_Alina.dir/error.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mapryl/Desktop/grafics_part1/error.c -o CMakeFiles/Fdf_Alina.dir/error.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alina/CLionProjects/grafics_part1/error.c -o CMakeFiles/Fdf_Alina.dir/error.c.s
 
 CMakeFiles/Fdf_Alina.dir/get_next_line.c.o: CMakeFiles/Fdf_Alina.dir/flags.make
 CMakeFiles/Fdf_Alina.dir/get_next_line.c.o: ../get_next_line.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mapryl/Desktop/grafics_part1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/Fdf_Alina.dir/get_next_line.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fdf_Alina.dir/get_next_line.c.o   -c /Users/mapryl/Desktop/grafics_part1/get_next_line.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alina/CLionProjects/grafics_part1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/Fdf_Alina.dir/get_next_line.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fdf_Alina.dir/get_next_line.c.o   -c /home/alina/CLionProjects/grafics_part1/get_next_line.c
 
 CMakeFiles/Fdf_Alina.dir/get_next_line.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Fdf_Alina.dir/get_next_line.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/mapryl/Desktop/grafics_part1/get_next_line.c > CMakeFiles/Fdf_Alina.dir/get_next_line.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alina/CLionProjects/grafics_part1/get_next_line.c > CMakeFiles/Fdf_Alina.dir/get_next_line.c.i
 
 CMakeFiles/Fdf_Alina.dir/get_next_line.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Fdf_Alina.dir/get_next_line.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mapryl/Desktop/grafics_part1/get_next_line.c -o CMakeFiles/Fdf_Alina.dir/get_next_line.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alina/CLionProjects/grafics_part1/get_next_line.c -o CMakeFiles/Fdf_Alina.dir/get_next_line.c.s
 
 CMakeFiles/Fdf_Alina.dir/draw.c.o: CMakeFiles/Fdf_Alina.dir/flags.make
 CMakeFiles/Fdf_Alina.dir/draw.c.o: ../draw.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mapryl/Desktop/grafics_part1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/Fdf_Alina.dir/draw.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fdf_Alina.dir/draw.c.o   -c /Users/mapryl/Desktop/grafics_part1/draw.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alina/CLionProjects/grafics_part1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/Fdf_Alina.dir/draw.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fdf_Alina.dir/draw.c.o   -c /home/alina/CLionProjects/grafics_part1/draw.c
 
 CMakeFiles/Fdf_Alina.dir/draw.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Fdf_Alina.dir/draw.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/mapryl/Desktop/grafics_part1/draw.c > CMakeFiles/Fdf_Alina.dir/draw.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alina/CLionProjects/grafics_part1/draw.c > CMakeFiles/Fdf_Alina.dir/draw.c.i
 
 CMakeFiles/Fdf_Alina.dir/draw.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Fdf_Alina.dir/draw.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mapryl/Desktop/grafics_part1/draw.c -o CMakeFiles/Fdf_Alina.dir/draw.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alina/CLionProjects/grafics_part1/draw.c -o CMakeFiles/Fdf_Alina.dir/draw.c.s
 
 CMakeFiles/Fdf_Alina.dir/close_window.c.o: CMakeFiles/Fdf_Alina.dir/flags.make
 CMakeFiles/Fdf_Alina.dir/close_window.c.o: ../close_window.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mapryl/Desktop/grafics_part1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/Fdf_Alina.dir/close_window.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fdf_Alina.dir/close_window.c.o   -c /Users/mapryl/Desktop/grafics_part1/close_window.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alina/CLionProjects/grafics_part1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/Fdf_Alina.dir/close_window.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fdf_Alina.dir/close_window.c.o   -c /home/alina/CLionProjects/grafics_part1/close_window.c
 
 CMakeFiles/Fdf_Alina.dir/close_window.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Fdf_Alina.dir/close_window.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/mapryl/Desktop/grafics_part1/close_window.c > CMakeFiles/Fdf_Alina.dir/close_window.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alina/CLionProjects/grafics_part1/close_window.c > CMakeFiles/Fdf_Alina.dir/close_window.c.i
 
 CMakeFiles/Fdf_Alina.dir/close_window.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Fdf_Alina.dir/close_window.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mapryl/Desktop/grafics_part1/close_window.c -o CMakeFiles/Fdf_Alina.dir/close_window.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alina/CLionProjects/grafics_part1/close_window.c -o CMakeFiles/Fdf_Alina.dir/close_window.c.s
 
 # Object files for target Fdf_Alina
 Fdf_Alina_OBJECTS = \
@@ -154,9 +154,10 @@ Fdf_Alina: CMakeFiles/Fdf_Alina.dir/get_next_line.c.o
 Fdf_Alina: CMakeFiles/Fdf_Alina.dir/draw.c.o
 Fdf_Alina: CMakeFiles/Fdf_Alina.dir/close_window.c.o
 Fdf_Alina: CMakeFiles/Fdf_Alina.dir/build.make
-Fdf_Alina: /Users/mapryl/Desktop/Fdf_Alina/libft/libft.a
+Fdf_Alina: ../libft/libft.a
+Fdf_Alina: /home/alina/CLionProjects/minilibx/libmlx.a
 Fdf_Alina: CMakeFiles/Fdf_Alina.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/mapryl/Desktop/grafics_part1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking C executable Fdf_Alina"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/alina/CLionProjects/grafics_part1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking C executable Fdf_Alina"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Fdf_Alina.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -169,6 +170,6 @@ CMakeFiles/Fdf_Alina.dir/clean:
 .PHONY : CMakeFiles/Fdf_Alina.dir/clean
 
 CMakeFiles/Fdf_Alina.dir/depend:
-	cd /Users/mapryl/Desktop/grafics_part1/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/mapryl/Desktop/grafics_part1 /Users/mapryl/Desktop/grafics_part1 /Users/mapryl/Desktop/grafics_part1/cmake-build-debug /Users/mapryl/Desktop/grafics_part1/cmake-build-debug /Users/mapryl/Desktop/grafics_part1/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/alina/CLionProjects/grafics_part1/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/alina/CLionProjects/grafics_part1 /home/alina/CLionProjects/grafics_part1 /home/alina/CLionProjects/grafics_part1/cmake-build-debug /home/alina/CLionProjects/grafics_part1/cmake-build-debug /home/alina/CLionProjects/grafics_part1/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/Fdf_Alina.dir/depend
 

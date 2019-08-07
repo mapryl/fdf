@@ -7,12 +7,14 @@ CMakeFiles/Fdf_Alina.dir/close_window.c.o: ../get_next_line.h
 CMakeFiles/Fdf_Alina.dir/close_window.c.o: ../keys.h
 CMakeFiles/Fdf_Alina.dir/close_window.c.o: ../libft/includes/libft.h
 CMakeFiles/Fdf_Alina.dir/close_window.c.o: ../map.h
+CMakeFiles/Fdf_Alina.dir/close_window.c.o: /home/alina/CLionProjects/minilibx/mlx.h
 
 CMakeFiles/Fdf_Alina.dir/draw.c.o: ../draw.c
 CMakeFiles/Fdf_Alina.dir/draw.c.o: ../fdf.h
 CMakeFiles/Fdf_Alina.dir/draw.c.o: ../get_next_line.h
 CMakeFiles/Fdf_Alina.dir/draw.c.o: ../libft/includes/libft.h
 CMakeFiles/Fdf_Alina.dir/draw.c.o: ../map.h
+CMakeFiles/Fdf_Alina.dir/draw.c.o: /home/alina/CLionProjects/minilibx/mlx.h
 
 CMakeFiles/Fdf_Alina.dir/error.c.o: ../error.c
 
@@ -25,6 +27,7 @@ CMakeFiles/Fdf_Alina.dir/main.c.o: ../get_next_line.h
 CMakeFiles/Fdf_Alina.dir/main.c.o: ../libft/includes/libft.h
 CMakeFiles/Fdf_Alina.dir/main.c.o: ../main.c
 CMakeFiles/Fdf_Alina.dir/main.c.o: ../map.h
+CMakeFiles/Fdf_Alina.dir/main.c.o: /home/alina/CLionProjects/minilibx/mlx.h
 
 CMakeFiles/Fdf_Alina.dir/map_create.c.o: ../get_next_line.h
 CMakeFiles/Fdf_Alina.dir/map_create.c.o: ../libft/includes/libft.h

@@ -45,6 +45,27 @@ s_line  *crt_line(void *mlx_ptr, void *mlx_win)
     return (line);
 }
 
+static void	iso(int *x, int *y, int z)
+{
+    int previous_x;
+    int previous_y;
+
+    previous_x = *x;
+    previous_y = *y;
+    *x = (previous_x - previous_y) * cos(0.523599);
+    *y = -z + (previous_x + previous_y) * sin(0.523599);
+}
+
+void project_iso(t_map *map)
+{
+    for (size_t i = 0; i < map->hight; ++i)
+        for (size_t j = 0; j < map->width; ++j)
+            iso(&map->data[i][j].x,&map->data[i][j].y, map->data[i][j].z);
+}
+
+#define X_ORIGIN 500
+#define Y_ORIGIN 200
+
 void init_window(t_map *map)
 {
     void *mlx_ptr = mlx_init();
@@ -53,8 +74,8 @@ void init_window(t_map *map)
     int menu_width = WIN_WIDTH;
     int menu_height = WIN_HEIGHT;
 
-    void *mlx_file_img_ptr = mlx_xpm_file_to_image(mlx_ptr, "../xpm_test", &menu_width, &menu_height); //создаем плашку для меню
-    mlx_put_image_to_window(mlx_ptr, mlx_win, mlx_file_img_ptr, 0, 0); //Пихаем плашку в окно
+    //void *mlx_file_img_ptr = mlx_xpm_file_to_image(mlx_ptr, "../xpm_test", &menu_width, &menu_height); //создаем плашку для меню
+    //mlx_put_image_to_window(mlx_ptr, mlx_win, mlx_file_img_ptr, 0, 0); //Пихаем плашку в окно
 
     s_box *close_button = crt_box(23, 25, "CLOSE   : ESC", mlx_ptr, mlx_win); //создаем бокс для кнопки закрытия
     mlx_string_put(mlx_ptr, mlx_win,
@@ -77,28 +98,30 @@ void init_window(t_map *map)
     color.r = 0;
     color.b = 255;
 
+    project_iso(map);
+
     for (size_t i = 0; i < map->hight; ++i)
     {
         if (i < map->hight - 1)
 		{
         	for (size_t j = 0; j < map->width - 1; ++j)
         	{
-				Draw_Wu(WIN_HEIGHT / 4 + 10 * i, WIN_WIDTH / 4 + 10 * j, WIN_HEIGHT / 4 + 10 * i,
-						WIN_WIDTH / 4 + 10 * (j + 1), mlx_ptr, mlx_win, color);
-				Draw_Wu(WIN_HEIGHT / 4 + 10 * i, WIN_WIDTH / 4 + 10 * j, WIN_HEIGHT / 4 + 10 * (i + 1),
-						WIN_WIDTH / 4 + 10 * j, mlx_ptr, mlx_win, color);
-				Draw_Wu(WIN_HEIGHT / 4 + 10 * i, WIN_WIDTH / 4 + 10 * j, WIN_HEIGHT / 4 + 10 * (i + 1),
-						WIN_WIDTH / 4 + 10 * (j + 1), mlx_ptr, mlx_win, color);
+				Draw_Wu(map->data[i][j].x + X_ORIGIN, map->data[i][j].y + Y_ORIGIN, map->data[i][j + 1].x + X_ORIGIN,
+                        map->data[i][j + 1].y + Y_ORIGIN, mlx_ptr, mlx_win, color);
+				Draw_Wu(map->data[i][j].x + X_ORIGIN, map->data[i][j].y + Y_ORIGIN, map->data[i + 1][j + 1].x + X_ORIGIN,
+                        map->data[i + 1][j + 1].y + Y_ORIGIN, mlx_ptr, mlx_win, color);
+                Draw_Wu(map->data[i][j].x + X_ORIGIN, map->data[i][j].y + Y_ORIGIN, map->data[i + 1][j].x + X_ORIGIN,
+                        map->data[i + 1][j].y + Y_ORIGIN, mlx_ptr, mlx_win, color);
 			}
-			Draw_Wu(WIN_HEIGHT/4 + 10*i, WIN_WIDTH/4 + 10*(map->width - 1), WIN_HEIGHT/4 + 10*(i + 1),
-					WIN_WIDTH/4 + 10*(map->width - 1), mlx_ptr, mlx_win, color);
+            Draw_Wu(map->data[i][map->width - 1].x + X_ORIGIN, map->data[i][map->width - 1].y + Y_ORIGIN, map->data[i + 1][map->width - 1].x + X_ORIGIN,
+                    map->data[i + 1][map->width - 1].y + Y_ORIGIN, mlx_ptr, mlx_win, color);
 		}
         else
 		{
 			for (size_t j = 0; j < map->width - 1; ++j)
 			{
-				Draw_Wu(WIN_HEIGHT / 4 + 10 * i, WIN_WIDTH / 4 + 10 * j, WIN_HEIGHT / 4 + 10 * i,
-						WIN_WIDTH / 4 + 10 * (j + 1), mlx_ptr, mlx_win, color);
+                Draw_Wu(map->data[i][j].x + X_ORIGIN, map->data[i][j].y + Y_ORIGIN, map->data[i][j + 1].x + X_ORIGIN,
+                        map->data[i][j + 1].y + Y_ORIGIN, mlx_ptr, mlx_win, color);
 			}
 		}
 	}

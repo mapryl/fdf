@@ -1,14 +1,14 @@
 #ifndef FDF_H
 #define FDF_H
-#define WIN_WIDTH 1920
-#define WIN_HEIGHT 1080
+#define WIN_WIDTH 1500
+#define WIN_HEIGHT 800
 
 #define TEXT_COLOR 0xffffff
 #define LINE_COLOR 0xed3000
 #define BACKGROUND_COLOR 0x666666
 
 #include <stdio.h>
-#include <mlx.h>
+#include "../minilibx/mlx.h"
 #include <unistd.h>
 #include <stdlib.h>
 #include "get_next_line.h"

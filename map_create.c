@@ -39,11 +39,11 @@ void* reallocate(void *data, size_t* capacity, size_t elem_size)
     return new_data;
 }
 
-int line_add(t_line* line, int i)
+int line_add(t_line* line, int x, int y, int z)
 {
     if ( line->width >= line->width_capacity )
     {
-        int *new_data = (int*) reallocate(line->data, &line->width_capacity, sizeof(int));
+        t_point *new_data = (t_point*) reallocate(line->data, &line->width_capacity, sizeof(t_point));
         if ( !new_data )
         {
             return -1;
@@ -51,11 +51,12 @@ int line_add(t_line* line, int i)
         line->data = new_data;
     }
 
-    line->data[line->width++] = i;
+    t_point point = {x, y, z};
+    line->data[line->width++] = point;
     return 0;
 }
 
-int map_add(t_map* map, int* data, size_t width)
+int map_add(t_map* map, t_point* data, size_t width)
 {
     if(!map->width)
     {
@@ -68,7 +69,7 @@ int map_add(t_map* map, int* data, size_t width)
 
     if (map->hight >= map->hight_capacity)
     {
-        int **new_data = (int**)reallocate(map->data, &map->hight_capacity, sizeof(int*));
+        t_point **new_data = (t_point**)reallocate(map->data, &map->hight_capacity, sizeof(t_point*));
         if (!new_data)
         {
             return -1;
@@ -83,12 +84,15 @@ int map_add(t_map* map, int* data, size_t width)
 static void parse_line(char **split_line, t_map *map)
 {
     t_line line;
+    int i;
 
     line_create(&line);
+    i = 0;
     while (*split_line)
     {
-        line_add(&line, ft_atoi(*split_line));
+        line_add(&line, i * X_UNIT, map->hight * Y_UNIT,  ft_atoi(*split_line)*10);
         *split_line++;
+        i++;
     }
     map_add(map, line.data, line.width);
 }
