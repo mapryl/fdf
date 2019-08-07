@@ -71,6 +71,12 @@ void init_window(t_map *map)
 
     s_line *test_line = crt_line(mlx_ptr, mlx_win);
 
+    t_color color;
+    color.a = 0;
+    color.g = 0;
+    color.r = 0;
+    color.b = 255;
+
     for (size_t i = 0; i < map->hight; ++i)
     {
         if (i < map->hight - 1)
@@ -78,27 +84,26 @@ void init_window(t_map *map)
         	for (size_t j = 0; j < map->width - 1; ++j)
         	{
 				Draw_Wu(WIN_HEIGHT / 4 + 10 * i, WIN_WIDTH / 4 + 10 * j, WIN_HEIGHT / 4 + 10 * i,
-						WIN_WIDTH / 4 + 10 * (j + 1), &mlx_ptr, &mlx_win, 255);
+						WIN_WIDTH / 4 + 10 * (j + 1), mlx_ptr, mlx_win, color);
 				Draw_Wu(WIN_HEIGHT / 4 + 10 * i, WIN_WIDTH / 4 + 10 * j, WIN_HEIGHT / 4 + 10 * (i + 1),
-						WIN_WIDTH / 4 + 10 * j, &mlx_ptr, &mlx_win, 255);
+						WIN_WIDTH / 4 + 10 * j, mlx_ptr, mlx_win, color);
 				Draw_Wu(WIN_HEIGHT / 4 + 10 * i, WIN_WIDTH / 4 + 10 * j, WIN_HEIGHT / 4 + 10 * (i + 1),
-						WIN_WIDTH / 4 + 10 * (j + 1), &mlx_ptr, &mlx_win, 255);
-				//else
-				//     Draw_Wu(i + 100, j + 100, i + 200, j + 200, &mlx_ptr, &mlx_win, 200);
+						WIN_WIDTH / 4 + 10 * (j + 1), mlx_ptr, mlx_win, color);
 			}
 			Draw_Wu(WIN_HEIGHT/4 + 10*i, WIN_WIDTH/4 + 10*(map->width - 1), WIN_HEIGHT/4 + 10*(i + 1),
-					WIN_WIDTH/4 + 10*(map->width - 1), &mlx_ptr, &mlx_win, 255);
+					WIN_WIDTH/4 + 10*(map->width - 1), mlx_ptr, mlx_win, color);
 		}
         else
 		{
 			for (size_t j = 0; j < map->width - 1; ++j)
 			{
 				Draw_Wu(WIN_HEIGHT / 4 + 10 * i, WIN_WIDTH / 4 + 10 * j, WIN_HEIGHT / 4 + 10 * i,
-						WIN_WIDTH / 4 + 10 * (j + 1), &mlx_ptr, &mlx_win, 255);
+						WIN_WIDTH / 4 + 10 * (j + 1), mlx_ptr, mlx_win, color);
 			}
 		}
-
 	}
+
+    //Draw_Wu(WIN_HEIGHT / 4 , WIN_WIDTH / 4, WIN_HEIGHT / 4 + 10, WIN_WIDTH / 4 + 10, mlx_ptr, mlx_win, 255);
     mlx_key_hook(mlx_win, close_key, NULL);
     mlx_mouse_hook(mlx_win, close_mouse, (void *)close_button);
     mlx_mouse_hook(mlx_win, draw_line, (void *)test_line);

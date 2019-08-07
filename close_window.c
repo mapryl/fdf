@@ -31,6 +31,11 @@ int close_mouse(int mousebutton, int x, int y, void *close_param)
 int draw_line(int mousebutton, int x, int y, void *draw_param)
 {
     s_line *tmp = (s_line *) draw_param;
+    t_color color;
+    color.b = 255;
+    color.r = 0;
+    color.a = 0;
+    color.g = 0;
     if (mousebutton == MOUSE_LEFT_BUTTON &&
         x < WIN_WIDTH && x > 200 &&
         y < WIN_HEIGHT && y > 0) {
@@ -46,7 +51,7 @@ int draw_line(int mousebutton, int x, int y, void *draw_param)
                     (tmp->pos_1->pos_x),
                     (tmp->pos_1->pos_y),
                     (tmp->pointers->mlx_ptr),
-                    (tmp->pointers->mlx_win), 255);
+                    (tmp->pointers->mlx_win), color);
             tmp->already_pressed = 0;
 
         }

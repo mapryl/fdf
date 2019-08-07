@@ -13,6 +13,7 @@
 #include <stdlib.h>
 #include "get_next_line.h"
 #include "libft/includes/libft.h"
+#include "map.h"
 
 typedef struct t_pos
 {
@@ -54,6 +55,6 @@ typedef struct t_line
 int close_key(int key, void *close_param); //Уничтожение окна и выход из программы по нажатию клавиши
 int close_mouse(int mousebutton, int x, int y, void *close_param); //Уничтожение окна и выход из программы по нажатию мышью на кнопку
 int draw_line(int mousebutton, int x, int y, void *draw_param);
-void Draw_Wu(int x0, int y0, int x1, int y1, void *mlx_ptr, void *win_ptr, int colour);
+void Draw_Wu(int x0, int y0, int x1, int y1, void *mlx_ptr, void *win_ptr, t_color colour);
 
 #endif
