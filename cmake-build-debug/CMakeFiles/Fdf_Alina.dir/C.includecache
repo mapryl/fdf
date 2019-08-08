@@ -6,6 +6,14 @@
 
 #IncludeRegexTransform: 
 
+/home/alina/CLionProjects/grafics_part1/draw.c
+fdf.h
+/home/alina/CLionProjects/grafics_part1/fdf.h
+math.h
+-
+map.h
+/home/alina/CLionProjects/grafics_part1/map.h
+
 /home/alina/CLionProjects/grafics_part1/fdf.h
 stdio.h
 -
@@ -39,18 +47,6 @@ stdlib.h
 -
 unistd.h
 -
-
-/home/alina/CLionProjects/grafics_part1/main.c
-map.h
-/home/alina/CLionProjects/grafics_part1/map.h
-stdlib.h
--
-unistd.h
--
-fcntl.h
--
-fdf.h
-/home/alina/CLionProjects/grafics_part1/fdf.h
 
 /home/alina/CLionProjects/grafics_part1/map.h
 stdlib.h

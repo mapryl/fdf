@@ -9,10 +9,10 @@
 # define MOUSE_SCROLL_LEFT	6
 # define MOUSE_SCROLL_RIGHT	7
 
-# define ARROW_UP			126
-# define ARROW_DOWN			125
-# define ARROW_LEFT			123
-# define ARROW_RIGHT		124
+# define ARROW_UP			65362
+# define ARROW_DOWN			65364
+# define ARROW_LEFT			65361
+# define ARROW_RIGHT		65363
 
 # define NUM_PAD_0			82
 # define NUM_PAD_1			83
@@ -44,5 +44,10 @@
 # define MAIN_PAD_MINUS		27
 # define MAIN_PAD_LESS		43
 # define MAIN_PAD_MORE		47
+
+# define KEYBOARD_W         119
+# define KEYBOARD_A         97
+# define KEYBOARD_S         115
+# define KEYBOARD_D         100
 
 #endif

@@ -24,6 +24,7 @@ CMakeFiles/Fdf_Alina.dir/get_next_line.c.o: ../libft/includes/libft.h
 
 CMakeFiles/Fdf_Alina.dir/main.c.o: ../fdf.h
 CMakeFiles/Fdf_Alina.dir/main.c.o: ../get_next_line.h
+CMakeFiles/Fdf_Alina.dir/main.c.o: ../keys.h
 CMakeFiles/Fdf_Alina.dir/main.c.o: ../libft/includes/libft.h
 CMakeFiles/Fdf_Alina.dir/main.c.o: ../main.c
 CMakeFiles/Fdf_Alina.dir/main.c.o: ../map.h

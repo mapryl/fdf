@@ -3,6 +3,8 @@
 #include <unistd.h>
 #include <fcntl.h>
 #include "fdf.h"
+#include "keys.h"
+#include <math.h>
 
 void throw_error();
 
@@ -58,13 +60,50 @@ static void	iso(int *x, int *y, int z)
 
 void project_iso(t_map *map)
 {
-    for (size_t i = 0; i < map->hight; ++i)
+    for (size_t i = 0; i < map->height; ++i)
         for (size_t j = 0; j < map->width; ++j)
             iso(&map->data[i][j].x,&map->data[i][j].y, map->data[i][j].z);
 }
 
-#define X_ORIGIN 500
-#define Y_ORIGIN 200
+void rotate(int key, t_fdf *fdf)
+{
+    if (key == KEYBOARD_W)
+        fdf->camera.alpha -= 0.05;
+    if (key == KEYBOARD_S)
+        fdf->camera.alpha += 0.05;
+    if (key == KEYBOARD_D)
+        fdf->camera.beta += 0.05;
+    if (key == KEYBOARD_A)
+        fdf->camera.beta -= 0.05;
+    print_map(fdf->map, fdf);
+}
+
+void	move(int key, t_fdf *fdf)
+{
+    if (key == ARROW_LEFT)
+        fdf->camera.x_move -= 10;
+    else if (key == ARROW_RIGHT)
+        fdf->camera.x_move += 10;
+    else if (key == ARROW_UP)
+        fdf->camera.y_move -= 10;
+    else
+        fdf->camera.y_move += 10;
+    print_map(fdf->map, fdf);
+}
+
+
+int key_press(int key, void* param)
+{
+    t_fdf *fdf;
+
+    fdf = (t_fdf*)param;
+    if (key == MAIN_PAD_ESC)
+        exit(0);
+    if (key == KEYBOARD_A || key == KEYBOARD_S || key == KEYBOARD_D || key == KEYBOARD_W)
+        rotate(key, fdf);
+    else if (key == ARROW_LEFT || key == ARROW_RIGHT || key == ARROW_DOWN || key == ARROW_UP)
+        move(key, fdf);
+}
 
 void init_window(t_map *map)
 {
@@ -98,38 +137,24 @@ void init_window(t_map *map)
     color.r = 0;
     color.b = 255;
 
+    t_fdf fdf;
+    fdf.map = map;
+    fdf.camera.alpha = 0;
+    fdf.camera.beta = 0;
+    fdf.camera.gamma = 0;
+    fdf.camera.x_move = 0;
+    fdf.camera.y_move = 0;
+    fdf.mlx_ptr = mlx_ptr;
+    fdf.mlx_win = mlx_win;
+    fdf.color = color;
+
     project_iso(map);
+    print_map(map, &fdf);
+    mlx_key_hook(mlx_win, key_press, &fdf);
 
-    for (size_t i = 0; i < map->hight; ++i)
-    {
-        if (i < map->hight - 1)
-		{
-        	for (size_t j = 0; j < map->width - 1; ++j)
-        	{
-				Draw_Wu(map->data[i][j].x + X_ORIGIN, map->data[i][j].y + Y_ORIGIN, map->data[i][j + 1].x + X_ORIGIN,
-                        map->data[i][j + 1].y + Y_ORIGIN, mlx_ptr, mlx_win, color);
-				Draw_Wu(map->data[i][j].x + X_ORIGIN, map->data[i][j].y + Y_ORIGIN, map->data[i + 1][j + 1].x + X_ORIGIN,
-                        map->data[i + 1][j + 1].y + Y_ORIGIN, mlx_ptr, mlx_win, color);
-                Draw_Wu(map->data[i][j].x + X_ORIGIN, map->data[i][j].y + Y_ORIGIN, map->data[i + 1][j].x + X_ORIGIN,
-                        map->data[i + 1][j].y + Y_ORIGIN, mlx_ptr, mlx_win, color);
-			}
-            Draw_Wu(map->data[i][map->width - 1].x + X_ORIGIN, map->data[i][map->width - 1].y + Y_ORIGIN, map->data[i + 1][map->width - 1].x + X_ORIGIN,
-                    map->data[i + 1][map->width - 1].y + Y_ORIGIN, mlx_ptr, mlx_win, color);
-		}
-        else
-		{
-			for (size_t j = 0; j < map->width - 1; ++j)
-			{
-                Draw_Wu(map->data[i][j].x + X_ORIGIN, map->data[i][j].y + Y_ORIGIN, map->data[i][j + 1].x + X_ORIGIN,
-                        map->data[i][j + 1].y + Y_ORIGIN, mlx_ptr, mlx_win, color);
-			}
-		}
-	}
-
-    //Draw_Wu(WIN_HEIGHT / 4 , WIN_WIDTH / 4, WIN_HEIGHT / 4 + 10, WIN_WIDTH / 4 + 10, mlx_ptr, mlx_win, 255);
-    mlx_key_hook(mlx_win, close_key, NULL);
-    mlx_mouse_hook(mlx_win, close_mouse, (void *)close_button);
-    mlx_mouse_hook(mlx_win, draw_line, (void *)test_line);
+   // mlx_key_hook(mlx_win, close_key, NULL);
+    //mlx_mouse_hook(mlx_win, close_mouse, (void *)close_button);
+    //mlx_mouse_hook(mlx_win, draw_line, (void *)test_line);
 
     mlx_loop(mlx_ptr);
 }

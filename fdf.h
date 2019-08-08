@@ -6,6 +6,8 @@
 #define TEXT_COLOR 0xffffff
 #define LINE_COLOR 0xed3000
 #define BACKGROUND_COLOR 0x666666
+#define X_ORIGIN 500
+#define Y_ORIGIN 90
 
 #include <stdio.h>
 #include "../minilibx/mlx.h"
@@ -25,7 +27,7 @@ typedef struct t_pos
 
 typedef struct t_ptr
 {
-    struct t_pointers *ponters_ptr;
+    struct t_pointers *pointers_ptr;
 
     void *mlx_ptr;
     void *mlx_win;
@@ -54,7 +56,9 @@ typedef struct t_line
 
 int close_key(int key, void *close_param); //Уничтожение окна и выход из программы по нажатию клавиши
 int close_mouse(int mousebutton, int x, int y, void *close_param); //Уничтожение окна и выход из программы по нажатию мышью на кнопку
-int draw_line(int mousebutton, int x, int y, void *draw_param);
+//int draw_line(int mousebutton, int x, int y, void *draw_param);
 void Draw_Wu(int x0, int y0, int x1, int y1, void *mlx_ptr, void *win_ptr, t_color colour);
+void print_map(t_map *map, t_fdf *fdf);
+void project_iso(t_map *map);
 
 #endif

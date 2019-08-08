@@ -6,9 +6,11 @@ void throw_error();
 void map_create(t_map* map)
 {
     map->data = NULL;
-    map->hight_capacity = 0;
-    map->hight = 0;
+    map->height_capacity = 0;
+    map->height = 0;
     map->width = 0;
+    map->max_z = 0;
+    map->min_z = 0;
 }
 
 void line_create(t_line* vec)
@@ -67,9 +69,9 @@ int map_add(t_map* map, t_point* data, size_t width)
         return -1;
     }
 
-    if (map->hight >= map->hight_capacity)
+    if (map->height >= map->height_capacity)
     {
-        t_point **new_data = (t_point**)reallocate(map->data, &map->hight_capacity, sizeof(t_point*));
+        t_point **new_data = (t_point**)reallocate(map->data, &map->height_capacity, sizeof(t_point*));
         if (!new_data)
         {
             return -1;
@@ -77,7 +79,7 @@ int map_add(t_map* map, t_point* data, size_t width)
         map->data = new_data;
     }
 
-    map->data[map->hight++] = data;
+    map->data[map->height++] = data;
     return 0;
 }
 
@@ -85,12 +87,18 @@ static void parse_line(char **split_line, t_map *map)
 {
     t_line line;
     int i;
+    int map_num;
 
     line_create(&line);
     i = 0;
     while (*split_line)
     {
-        line_add(&line, i * X_UNIT, map->hight * Y_UNIT,  ft_atoi(*split_line)*10);
+        map_num = ft_atoi(*split_line);
+        line_add(&line, i * X_UNIT, map->height * Y_UNIT, map_num * 10);
+        if (map_num > map->max_z)
+            map->max_z = map_num;
+        if (map_num < map->min_z)
+            map->min_z = map_num;
         *split_line++;
         i++;
     }

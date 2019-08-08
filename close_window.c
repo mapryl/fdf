@@ -28,6 +28,7 @@ int close_mouse(int mousebutton, int x, int y, void *close_param)
     return (0);
 }
 
+/*
 int draw_line(int mousebutton, int x, int y, void *draw_param)
 {
     s_line *tmp = (s_line *) draw_param;
@@ -58,3 +59,4 @@ int draw_line(int mousebutton, int x, int y, void *draw_param)
     }
     return (0);
 }
+*/
