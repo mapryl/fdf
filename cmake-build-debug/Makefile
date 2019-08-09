@@ -231,6 +231,33 @@ get_next_line.c.s:
 	$(MAKE) -f CMakeFiles/Fdf_Alina.dir/build.make CMakeFiles/Fdf_Alina.dir/get_next_line.c.s
 .PHONY : get_next_line.c.s
 
+gradient.o: gradient.c.o
+
+.PHONY : gradient.o
+
+# target to build an object file
+gradient.c.o:
+	$(MAKE) -f CMakeFiles/Fdf_Alina.dir/build.make CMakeFiles/Fdf_Alina.dir/gradient.c.o
+.PHONY : gradient.c.o
+
+gradient.i: gradient.c.i
+
+.PHONY : gradient.i
+
+# target to preprocess a source file
+gradient.c.i:
+	$(MAKE) -f CMakeFiles/Fdf_Alina.dir/build.make CMakeFiles/Fdf_Alina.dir/gradient.c.i
+.PHONY : gradient.c.i
+
+gradient.s: gradient.c.s
+
+.PHONY : gradient.s
+
+# target to generate assembly for a file
+gradient.c.s:
+	$(MAKE) -f CMakeFiles/Fdf_Alina.dir/build.make CMakeFiles/Fdf_Alina.dir/gradient.c.s
+.PHONY : gradient.c.s
+
 main.o: main.c.o
 
 .PHONY : main.o
@@ -306,6 +333,9 @@ help:
 	@echo "... get_next_line.o"
 	@echo "... get_next_line.i"
 	@echo "... get_next_line.s"
+	@echo "... gradient.o"
+	@echo "... gradient.i"
+	@echo "... gradient.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

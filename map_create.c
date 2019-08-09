@@ -96,9 +96,9 @@ static void parse_line(char **split_line, t_map *map)
         map_num = ft_atoi(*split_line);
         line_add(&line, i * X_UNIT, map->height * Y_UNIT, map_num * 10);
         if (map_num > map->max_z)
-            map->max_z = map_num;
+            map->max_z = map_num * 10;
         if (map_num < map->min_z)
-            map->min_z = map_num;
+            map->min_z = map_num * 10;
         *split_line++;
         i++;
     }
@@ -110,11 +110,22 @@ int read_map(const int fd, t_map *map)
     char *line;
     char **split_lines;
 
-    while (get_next_line(fd, &line))
-    {
+    while (get_next_line(fd, &line)) {
         if (!(split_lines = ft_strsplit(line, ' ')))
             throw_error();
         parse_line(split_lines, map);
+    }
+
+    int x_offset = (int)(-map->width/2)*X_UNIT;
+    int y_offset = (int)(-map->height/2)*Y_UNIT;
+    for (int i = 0; i < map->height; i++)
+    {
+        for (int j = 0; j < map->width; j++)
+        {
+            map->data[i][j].color = get_default_color(map->data[i][j].z, map);
+            map->data[i][j].x += x_offset;
+            map->data[i][j].y += y_offset;
+        }
     }
     return 0;
 }

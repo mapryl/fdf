@@ -22,6 +22,9 @@ CMakeFiles/Fdf_Alina.dir/get_next_line.c.o: ../get_next_line.c
 CMakeFiles/Fdf_Alina.dir/get_next_line.c.o: ../get_next_line.h
 CMakeFiles/Fdf_Alina.dir/get_next_line.c.o: ../libft/includes/libft.h
 
+CMakeFiles/Fdf_Alina.dir/gradient.c.o: ../gradient.c
+CMakeFiles/Fdf_Alina.dir/gradient.c.o: ../map.h
+
 CMakeFiles/Fdf_Alina.dir/main.c.o: ../fdf.h
 CMakeFiles/Fdf_Alina.dir/main.c.o: ../get_next_line.h
 CMakeFiles/Fdf_Alina.dir/main.c.o: ../keys.h

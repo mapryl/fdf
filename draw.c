@@ -44,31 +44,42 @@ void draw_pixel(int steep, int x, int y, float alpha, void *mlx_ptr, void *win_p
     }
 }
 
-void Draw_Wu(int x0, int y0, int x1, int y1, void *mlx_ptr, void *win_ptr, t_color color)
+void Draw_Wu(t_point dot1, t_point dot2, void *mlx_ptr, void *win_ptr)
 {
-    int steep = abs(y1 - y0) > abs(x1 - x0);
-
+    t_point delta;
+    t_point tmp;
+    delta.x = abs(dot1.x - dot2.x);
+    delta.y = abs(dot1.y - dot2.y);
+    int steep = delta.y > delta.x;
     if (steep)
     {
-        ft_swap(&x0, &y0);
-        ft_swap(&x1, &y1);
+        ft_swap(&dot1.x, &dot1.y);
+        ft_swap(&dot2.x, &dot2.y);
+        ft_swap(&delta.x, &delta.y);
     }
-    if (x0 > x1)
+    if (dot1.x > dot2.x)
     {
-        ft_swap(&x0, &x1);
-        ft_swap(&y0, &y1);
+        //ft_swap(&dot1.x, &dot2.x);
+        //ft_swap(&dot1.y, &dot2.y);
+        //ft_swap(&dot1.z, &dot2.z);
+        tmp = dot1;
+        dot1 = dot2;
+        dot2 = tmp;
     }
-    draw_pixel(steep, x0, y0, 0, mlx_ptr, win_ptr, color);
-    draw_pixel(steep, x1, y1, 0, mlx_ptr, win_ptr, color);
-    float dx = x1 - x0;
-    float dy = y1 - y0;
+    t_point curr = dot1;
+    draw_pixel(steep, dot1.x, dot1.y, 0, mlx_ptr, win_ptr, get_color(curr, dot1, dot2, delta));
+    draw_pixel(steep, dot2.x, dot2.y, 0, mlx_ptr, win_ptr, get_color(curr, dot1, dot2, delta));
+    float dx = dot2.x - dot1.x;
+    float dy = dot2.y - dot1.y;
     float gradient = dy / dx;
-    float y = y0 + gradient;
-    for (int x = x0 + 1; x <= x1 - 1; x++)
+    float y = (float)dot1.y + gradient;
+    curr.x++;
+    while (curr.x <= dot2.x - 1)
     {
-        draw_pixel(steep, x, (int)y, 1 - (y - (int)y), mlx_ptr, win_ptr, color);
-        draw_pixel(steep, x, (int)y + 1, y - (int)y, mlx_ptr, win_ptr, color);
+        draw_pixel(steep, curr.x, (int)y, 1 - (y - (int)y), mlx_ptr, win_ptr,  get_color(curr, dot1, dot2, delta));
+        draw_pixel(steep, curr.x, (int)y + 1, y - (int)y, mlx_ptr, win_ptr,  get_color(curr, dot1, dot2, delta));
         y += gradient;
+        curr.x++;
     }
 }
 
@@ -130,8 +141,7 @@ t_point transform(const t_point* p, const t_fdf* fdf)
 
 void draw_line(t_point p1, t_point p2, t_fdf* fdf)
 {
-    Draw_Wu(p1.x, p1.y, p2.x, p2.y,
-            fdf->mlx_ptr, fdf->mlx_win, fdf->color);
+    Draw_Wu(p1, p2, fdf->mlx_ptr, fdf->mlx_win);
 }
 
 void print_map(t_map *map, t_fdf *fdf)
@@ -144,7 +154,7 @@ void print_map(t_map *map, t_fdf *fdf)
         {
             for (size_t j = 0; j < map->width - 1; ++j)
             {
-                if (map->data[i][j].z < map->max_z)
+               /* if (map->data[i][j].z < map->max_z)
                 {
                     fdf->color.r = 31;
                     fdf->color.b = 254;
@@ -155,7 +165,7 @@ void print_map(t_map *map, t_fdf *fdf)
                     fdf->color.r = 0;
                     fdf->color.b = 255;
                     fdf->color.g = 191;
-                }
+                } */
 
                 draw_line(transform(&map->data[i][j], fdf), transform(&map->data[i][j+1], fdf), fdf);
                 draw_line(transform(&map->data[i][j], fdf), transform(&map->data[i+1][j+1], fdf), fdf);

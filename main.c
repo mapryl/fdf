@@ -131,24 +131,26 @@ void init_window(t_map *map)
 
     s_line *test_line = crt_line(mlx_ptr, mlx_win);
 
-    t_color color;
-    color.a = 0;
-    color.g = 0;
-    color.r = 0;
-    color.b = 255;
+   // t_color color;
+   // color.a = 0;
+   // color.g = 0;
+   // color.r = 0;
+   // color.b = 255;
 
     t_fdf fdf;
     fdf.map = map;
     fdf.camera.alpha = 0;
     fdf.camera.beta = 0;
     fdf.camera.gamma = 0;
-    fdf.camera.x_move = 0;
-    fdf.camera.y_move = 0;
+    fdf.camera.x_move = WIN_WIDTH/2;
+    //map->width/2*X_UNIT;
+    fdf.camera.y_move = WIN_HEIGHT/2;
+    //map->height/2*Y_UNIT;
     fdf.mlx_ptr = mlx_ptr;
     fdf.mlx_win = mlx_win;
-    fdf.color = color;
+    //fdf.color = color;
 
-    project_iso(map);
+    //project_iso(map);
     print_map(map, &fdf);
     mlx_key_hook(mlx_win, key_press, &fdf);
 

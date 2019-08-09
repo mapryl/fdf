@@ -57,7 +57,7 @@ typedef struct t_line
 int close_key(int key, void *close_param); //Уничтожение окна и выход из программы по нажатию клавиши
 int close_mouse(int mousebutton, int x, int y, void *close_param); //Уничтожение окна и выход из программы по нажатию мышью на кнопку
 //int draw_line(int mousebutton, int x, int y, void *draw_param);
-void Draw_Wu(int x0, int y0, int x1, int y1, void *mlx_ptr, void *win_ptr, t_color colour);
+void Draw_Wu(t_point dot1, t_point dot2, void *mlx_ptr, void *win_ptr);
 void print_map(t_map *map, t_fdf *fdf);
 void project_iso(t_map *map);
 

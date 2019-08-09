@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/home/alina/CLionProjects/grafics_part1/draw.c" "/home/alina/CLionProjects/grafics_part1/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/draw.c.o"
   "/home/alina/CLionProjects/grafics_part1/error.c" "/home/alina/CLionProjects/grafics_part1/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/error.c.o"
   "/home/alina/CLionProjects/grafics_part1/get_next_line.c" "/home/alina/CLionProjects/grafics_part1/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/get_next_line.c.o"
+  "/home/alina/CLionProjects/grafics_part1/gradient.c" "/home/alina/CLionProjects/grafics_part1/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/gradient.c.o"
   "/home/alina/CLionProjects/grafics_part1/main.c" "/home/alina/CLionProjects/grafics_part1/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/main.c.o"
   "/home/alina/CLionProjects/grafics_part1/map_create.c" "/home/alina/CLionProjects/grafics_part1/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/map_create.c.o"
   )
