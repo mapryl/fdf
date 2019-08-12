@@ -68,7 +68,7 @@ void Draw_Wu(t_point dot1, t_point dot2, void *mlx_ptr, void *win_ptr)
     }
     t_point curr = dot1;
     draw_pixel(steep, dot1.x, dot1.y, 0, mlx_ptr, win_ptr, get_color(curr, dot1, dot2, delta));
-    draw_pixel(steep, dot2.x, dot2.y, 0, mlx_ptr, win_ptr, get_color(curr, dot1, dot2, delta));
+    draw_pixel(steep, dot2.x, dot2.y, 0, mlx_ptr, win_ptr, get_color(dot2, dot1, dot2, delta));
     float dx = dot2.x - dot1.x;
     float dy = dot2.y - dot1.y;
     float gradient = dy / dx;
@@ -130,6 +130,11 @@ static void	rotate_z(int *x, int *y, double gamma)
 t_point transform(const t_point* p, const t_fdf* fdf)
 {
     t_point tmp = *p;
+
+    tmp.x *= fdf->camera.zoom;
+    tmp.y *= fdf->camera.zoom;
+    tmp.z *= fdf->camera.zoom;
+
     rotate_x(&tmp.y, &tmp.z, fdf->camera.alpha);
     rotate_y(&tmp.x, &tmp.z, fdf->camera.beta);
 

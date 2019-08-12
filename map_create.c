@@ -1,5 +1,6 @@
 #include "map.h"
 #include "get_next_line.h"
+#include <limits.h>
 
 void throw_error();
 
@@ -9,8 +10,8 @@ void map_create(t_map* map)
     map->height_capacity = 0;
     map->height = 0;
     map->width = 0;
-    map->max_z = 0;
-    map->min_z = 0;
+    map->max_z = INT_MIN;
+    map->min_z = INT_MAX;
 }
 
 void line_create(t_line* vec)
@@ -83,6 +84,17 @@ int map_add(t_map* map, t_point* data, size_t width)
     return 0;
 }
 
+int ft_isnumber(const char *str)
+{
+    while (*str)
+    {
+        if (!ft_isdigit(*str))
+            return -1;
+        *str++;
+    }
+    return 0;
+}
+
 static void parse_line(char **split_line, t_map *map)
 {
     t_line line;
@@ -93,12 +105,14 @@ static void parse_line(char **split_line, t_map *map)
     i = 0;
     while (*split_line)
     {
-        map_num = ft_atoi(*split_line);
-        line_add(&line, i * X_UNIT, map->height * Y_UNIT, map_num * 10);
+        if (!ft_isnumber(*split_line))
+            throw_error();
+        map_num = ft_atoi(*split_line) * Z_UNIT;
+        line_add(&line, i * X_UNIT, map->height * Y_UNIT, map_num);
         if (map_num > map->max_z)
-            map->max_z = map_num * 10;
+            map->max_z = map_num;
         if (map_num < map->min_z)
-            map->min_z = map_num * 10;
+            map->min_z = map_num;
         *split_line++;
         i++;
     }
@@ -118,6 +132,7 @@ int read_map(const int fd, t_map *map)
 
     int x_offset = (int)(-map->width/2)*X_UNIT;
     int y_offset = (int)(-map->height/2)*Y_UNIT;
+    int z_offset = (int)(-(map->max_z - map->min_z)/2);
     for (int i = 0; i < map->height; i++)
     {
         for (int j = 0; j < map->width; j++)
@@ -125,6 +140,7 @@ int read_map(const int fd, t_map *map)
             map->data[i][j].color = get_default_color(map->data[i][j].z, map);
             map->data[i][j].x += x_offset;
             map->data[i][j].y += y_offset;
+            map->data[i][j].z += z_offset;
         }
     }
     return 0;

@@ -6,30 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/alina/CLionProjects/grafics_part1/draw.c
-fdf.h
-/home/alina/CLionProjects/grafics_part1/fdf.h
-math.h
--
-map.h
-/home/alina/CLionProjects/grafics_part1/map.h
-
-/home/alina/CLionProjects/grafics_part1/fdf.h
-stdio.h
--
-../minilibx/mlx.h
-/home/alina/CLionProjects/minilibx/mlx.h
-unistd.h
--
-stdlib.h
--
-get_next_line.h
-/home/alina/CLionProjects/grafics_part1/get_next_line.h
-libft/includes/libft.h
-/home/alina/CLionProjects/grafics_part1/libft/includes/libft.h
-map.h
-/home/alina/CLionProjects/grafics_part1/map.h
-
 /home/alina/CLionProjects/grafics_part1/get_next_line.h
 unistd.h
 -
@@ -39,6 +15,8 @@ fcntl.h
 -
 stdlib.h
 -
+
+/home/alina/CLionProjects/grafics_part1/graphics.h
 
 /home/alina/CLionProjects/grafics_part1/libft/includes/libft.h
 string.h
@@ -51,6 +29,14 @@ unistd.h
 /home/alina/CLionProjects/grafics_part1/map.h
 stdlib.h
 -
+graphics.h
+/home/alina/CLionProjects/grafics_part1/graphics.h
 
-/home/alina/CLionProjects/minilibx/mlx.h
+/home/alina/CLionProjects/grafics_part1/map_create.c
+map.h
+/home/alina/CLionProjects/grafics_part1/map.h
+get_next_line.h
+/home/alina/CLionProjects/grafics_part1/get_next_line.h
+limits.h
+-
 

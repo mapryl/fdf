@@ -78,6 +78,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/alina/CLionProjects/grafics_part1/camera.c">
+			<Option target="Fdf_Alina"/>
+		</Unit>
+		<Unit filename="/home/alina/CLionProjects/grafics_part1/camera.h">
+			<Option target="Fdf_Alina"/>
+		</Unit>
 		<Unit filename="/home/alina/CLionProjects/grafics_part1/close_window.c">
 			<Option target="Fdf_Alina"/>
 		</Unit>
@@ -97,6 +103,9 @@
 			<Option target="Fdf_Alina"/>
 		</Unit>
 		<Unit filename="/home/alina/CLionProjects/grafics_part1/gradient.c">
+			<Option target="Fdf_Alina"/>
+		</Unit>
+		<Unit filename="/home/alina/CLionProjects/grafics_part1/graphics.h">
 			<Option target="Fdf_Alina"/>
 		</Unit>
 		<Unit filename="/home/alina/CLionProjects/grafics_part1/keys.h">

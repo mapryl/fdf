@@ -91,6 +91,17 @@ void	move(int key, t_fdf *fdf)
     print_map(fdf->map, fdf);
 }
 
+void zoom_in(t_fdf *fdf)
+{
+    camera_zoom_in(&fdf->camera);
+    print_map(fdf->map, fdf);
+}
+
+void zoom_out(t_fdf *fdf)
+{
+    camera_zoom_out(&fdf->camera);
+    print_map(fdf->map, fdf);
+}
 
 int key_press(int key, void* param)
 {
@@ -103,6 +114,10 @@ int key_press(int key, void* param)
         rotate(key, fdf);
     else if (key == ARROW_LEFT || key == ARROW_RIGHT || key == ARROW_DOWN || key == ARROW_UP)
         move(key, fdf);
+    else if(key == MAIN_PAD_PLUS)
+        zoom_in(fdf);
+    else if(key == MAIN_PAD_MINUS)
+        zoom_out(fdf);
 }
 
 void init_window(t_map *map)
@@ -131,24 +146,11 @@ void init_window(t_map *map)
 
     s_line *test_line = crt_line(mlx_ptr, mlx_win);
 
-   // t_color color;
-   // color.a = 0;
-   // color.g = 0;
-   // color.r = 0;
-   // color.b = 255;
-
     t_fdf fdf;
     fdf.map = map;
-    fdf.camera.alpha = 0;
-    fdf.camera.beta = 0;
-    fdf.camera.gamma = 0;
-    fdf.camera.x_move = WIN_WIDTH/2;
-    //map->width/2*X_UNIT;
-    fdf.camera.y_move = WIN_HEIGHT/2;
-    //map->height/2*Y_UNIT;
+    camera_create(&fdf.camera);
     fdf.mlx_ptr = mlx_ptr;
     fdf.mlx_win = mlx_win;
-    //fdf.color = color;
 
     //project_iso(map);
     print_map(map, &fdf);

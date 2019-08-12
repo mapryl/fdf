@@ -123,6 +123,33 @@ Fdf_Alina/fast:
 	$(MAKE) -f CMakeFiles/Fdf_Alina.dir/build.make CMakeFiles/Fdf_Alina.dir/build
 .PHONY : Fdf_Alina/fast
 
+camera.o: camera.c.o
+
+.PHONY : camera.o
+
+# target to build an object file
+camera.c.o:
+	$(MAKE) -f CMakeFiles/Fdf_Alina.dir/build.make CMakeFiles/Fdf_Alina.dir/camera.c.o
+.PHONY : camera.c.o
+
+camera.i: camera.c.i
+
+.PHONY : camera.i
+
+# target to preprocess a source file
+camera.c.i:
+	$(MAKE) -f CMakeFiles/Fdf_Alina.dir/build.make CMakeFiles/Fdf_Alina.dir/camera.c.i
+.PHONY : camera.c.i
+
+camera.s: camera.c.s
+
+.PHONY : camera.s
+
+# target to generate assembly for a file
+camera.c.s:
+	$(MAKE) -f CMakeFiles/Fdf_Alina.dir/build.make CMakeFiles/Fdf_Alina.dir/camera.c.s
+.PHONY : camera.c.s
+
 close_window.o: close_window.c.o
 
 .PHONY : close_window.o
@@ -321,6 +348,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... Fdf_Alina"
 	@echo "... edit_cache"
+	@echo "... camera.o"
+	@echo "... camera.i"
+	@echo "... camera.s"
 	@echo "... close_window.o"
 	@echo "... close_window.i"
 	@echo "... close_window.s"

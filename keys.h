@@ -40,8 +40,8 @@
 # define MAIN_PAD_7			26
 # define MAIN_PAD_8			28
 # define MAIN_PAD_9			25
-# define MAIN_PAD_PLUS		24
-# define MAIN_PAD_MINUS		27
+# define MAIN_PAD_PLUS		61
+# define MAIN_PAD_MINUS		45
 # define MAIN_PAD_LESS		43
 # define MAIN_PAD_MORE		47
 

@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
+  "/home/alina/CLionProjects/grafics_part1/camera.c" "/home/alina/CLionProjects/grafics_part1/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/camera.c.o"
   "/home/alina/CLionProjects/grafics_part1/close_window.c" "/home/alina/CLionProjects/grafics_part1/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/close_window.c.o"
   "/home/alina/CLionProjects/grafics_part1/draw.c" "/home/alina/CLionProjects/grafics_part1/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/draw.c.o"
   "/home/alina/CLionProjects/grafics_part1/error.c" "/home/alina/CLionProjects/grafics_part1/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/error.c.o"

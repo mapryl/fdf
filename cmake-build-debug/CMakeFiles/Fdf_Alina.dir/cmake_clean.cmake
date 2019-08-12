@@ -6,6 +6,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Fdf_Alina.dir/draw.c.o"
   "CMakeFiles/Fdf_Alina.dir/close_window.c.o"
   "CMakeFiles/Fdf_Alina.dir/gradient.c.o"
+  "CMakeFiles/Fdf_Alina.dir/camera.c.o"
   "Fdf_Alina.pdb"
   "Fdf_Alina"
 )
