@@ -50,4 +50,6 @@
 # define KEYBOARD_S         115
 # define KEYBOARD_D         100
 
+# define KEYBOARD_I         105
+
 #endif

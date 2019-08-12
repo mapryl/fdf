@@ -86,11 +86,14 @@ int map_add(t_map* map, t_point* data, size_t width)
 
 int ft_isnumber(const char *str)
 {
+    if (*str && *str == '-')
+        str++;
+
     while (*str)
     {
         if (!ft_isdigit(*str))
             return -1;
-        *str++;
+        str++;
     }
     return 0;
 }
@@ -105,7 +108,7 @@ static void parse_line(char **split_line, t_map *map)
     i = 0;
     while (*split_line)
     {
-        if (!ft_isnumber(*split_line))
+        if (ft_isnumber(*split_line) == -1)
             throw_error();
         map_num = ft_atoi(*split_line) * Z_UNIT;
         line_add(&line, i * X_UNIT, map->height * Y_UNIT, map_num);

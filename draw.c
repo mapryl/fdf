@@ -101,20 +101,17 @@ static void	rotate_y(int *x, int *z, double beta)
     *z = -previous_x * sin(beta) + *z * cos(beta);
 }
 
-
-void project_rot_x(t_map *map, t_camera camera)
+static void    iso(int *x, int *y, int z)
 {
-    for (size_t i = 0; i < map->height; ++i)
-        for (size_t j = 0; j < map->width; ++j)
-            rotate_x(&map->data[i][j].y,&map->data[i][j].z, camera.alpha);
+    int previous_x;
+    int previous_y;
+
+    previous_x = *x;
+    previous_y = *y;
+    *x = (previous_x - previous_y) * cos(0.523599);
+    *y = -z + (previous_x + previous_y) * sin(0.523599);
 }
 
-
-void project_rot_y(t_map *map, t_camera camera) {
-    for (size_t i = 0; i < map->height; ++i)
-        for (size_t j = 0; j < map->width; ++j)
-            rotate_y(&map->data[i][j].x, &map->data[i][j].z, camera.beta);
-}
 /*
 static void	rotate_z(int *x, int *y, double gamma)
 {
@@ -137,6 +134,9 @@ t_point transform(const t_point* p, const t_fdf* fdf)
 
     rotate_x(&tmp.y, &tmp.z, fdf->camera.alpha);
     rotate_y(&tmp.x, &tmp.z, fdf->camera.beta);
+
+    if(fdf->camera.is_iso)
+        iso(&tmp.x, &tmp.y, tmp.z);
 
     tmp.x += fdf->camera.x_move;
     tmp.y += fdf->camera.y_move;

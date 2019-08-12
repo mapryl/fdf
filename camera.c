@@ -13,6 +13,7 @@ void camera_create(t_camera* camera)
     camera->x_move = WIN_WIDTH/2;
     camera->y_move = WIN_HEIGHT/2;
     camera->zoom = 1;
+    camera->is_iso = 0;
 }
 
 void camera_zoom_in(t_camera* camera)

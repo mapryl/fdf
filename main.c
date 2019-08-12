@@ -47,24 +47,6 @@ s_line  *crt_line(void *mlx_ptr, void *mlx_win)
     return (line);
 }
 
-static void	iso(int *x, int *y, int z)
-{
-    int previous_x;
-    int previous_y;
-
-    previous_x = *x;
-    previous_y = *y;
-    *x = (previous_x - previous_y) * cos(0.523599);
-    *y = -z + (previous_x + previous_y) * sin(0.523599);
-}
-
-void project_iso(t_map *map)
-{
-    for (size_t i = 0; i < map->height; ++i)
-        for (size_t j = 0; j < map->width; ++j)
-            iso(&map->data[i][j].x,&map->data[i][j].y, map->data[i][j].z);
-}
-
 void rotate(int key, t_fdf *fdf)
 {
     if (key == KEYBOARD_W)
@@ -103,6 +85,12 @@ void zoom_out(t_fdf *fdf)
     print_map(fdf->map, fdf);
 }
 
+void set_iso(t_fdf *fdf)
+{
+    fdf->camera.is_iso = !fdf->camera.is_iso;
+    print_map(fdf->map, fdf);
+}
+
 int key_press(int key, void* param)
 {
     t_fdf *fdf;
@@ -118,6 +106,8 @@ int key_press(int key, void* param)
         zoom_in(fdf);
     else if(key == MAIN_PAD_MINUS)
         zoom_out(fdf);
+    else if(key == KEYBOARD_I)
+        set_iso(fdf);
 }
 
 void init_window(t_map *map)
@@ -170,7 +160,7 @@ int main (int argc, const char* argv[])
 
     if (argc == 2)
     {
-        if ((fd = open(argv[1], O_RDONLY)) >= 0)
+        if ((fd = open(argv[1], O_RDONLY)) < 0)
             throw_error();
         map_create(&map);
         read_map(fd, &map);

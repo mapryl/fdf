@@ -13,6 +13,7 @@ typedef struct camera
     int x_move;
     int y_move;
     double zoom;
+    int is_iso;
 } t_camera;
 
 void camera_create(t_camera* camera);

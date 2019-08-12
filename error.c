@@ -1,4 +1,7 @@
+#include <stdlib.h>
+
 void throw_error()
 {
-    return ;
+    //exit(1);
+    int i = 0;
 }
