@@ -1,9 +1,5 @@
-//
-// Created by alina on 12.08.2019.
-//
-
-#ifndef FDF_ALINA_GRAPHICS_H
-#define FDF_ALINA_GRAPHICS_H
+#ifndef GRAPHICS_H
+#define GRAPHICS_H
 
 #define WIN_WIDTH 1500
 #define WIN_HEIGHT 800
@@ -26,4 +22,4 @@ typedef struct point
     t_color color;
 } t_point;
 
-#endif //FDF_ALINA_GRAPHICS_H
+#endif

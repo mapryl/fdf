@@ -1,28 +1,7 @@
 #include "fdf.h"
-#include <math.h>
 #include "map.h"
-
-
-void	ft_swap(int *a, int *b)
-{
-    int tmp_a;
-
-    tmp_a = *a;
-    *a = *b;
-    *b = tmp_a;
-}
-
-int pack_argb(const t_color col)
-{
-    int argb = 0;
-
-    argb |= (col.a << 24);
-    argb |= (col.r << 16);
-    argb |= (col.g << 8);
-    argb |= (col.b);
-
-    return argb;
-}
+#include "rotate.h"
+#include "supporting_functions.h"
 
 void draw_pixel(int steep, int x, int y, float alpha, void *mlx_ptr, void *win_ptr, t_color color)
 {
@@ -48,9 +27,13 @@ void Draw_Wu(t_point dot1, t_point dot2, void *mlx_ptr, void *win_ptr)
 {
     t_point delta;
     t_point tmp;
+    float gradient;
+    float y;
+    int steep;
+
     delta.x = abs(dot1.x - dot2.x);
     delta.y = abs(dot1.y - dot2.y);
-    int steep = delta.y > delta.x;
+    steep = delta.y > delta.x;
     if (steep)
     {
         ft_swap(&dot1.x, &dot1.y);
@@ -59,9 +42,6 @@ void Draw_Wu(t_point dot1, t_point dot2, void *mlx_ptr, void *win_ptr)
     }
     if (dot1.x > dot2.x)
     {
-        //ft_swap(&dot1.x, &dot2.x);
-        //ft_swap(&dot1.y, &dot2.y);
-        //ft_swap(&dot1.z, &dot2.z);
         tmp = dot1;
         dot1 = dot2;
         dot2 = tmp;
@@ -69,10 +49,8 @@ void Draw_Wu(t_point dot1, t_point dot2, void *mlx_ptr, void *win_ptr)
     t_point curr = dot1;
     draw_pixel(steep, dot1.x, dot1.y, 0, mlx_ptr, win_ptr, get_color(curr, dot1, dot2, delta));
     draw_pixel(steep, dot2.x, dot2.y, 0, mlx_ptr, win_ptr, get_color(dot2, dot1, dot2, delta));
-    float dx = dot2.x - dot1.x;
-    float dy = dot2.y - dot1.y;
-    float gradient = dy / dx;
-    float y = (float)dot1.y + gradient;
+    gradient = (float)(dot2.y - dot1.y) / (float)(dot2.x - dot1.x);
+    y = (float)dot1.y + gradient;
     curr.x++;
     while (curr.x <= dot2.x - 1)
     {
@@ -81,67 +59,6 @@ void Draw_Wu(t_point dot1, t_point dot2, void *mlx_ptr, void *win_ptr)
         y += gradient;
         curr.x++;
     }
-}
-
-void	rotate_x(int *y, int *z, double alpha)
-{
-    int previous_y;
-
-    previous_y = *y;
-    *y = previous_y * cos(alpha) + *z * sin(alpha);
-    *z = -previous_y * sin(alpha) + *z * cos(alpha);
-}
-
-static void	rotate_y(int *x, int *z, double beta)
-{
-    int previous_x;
-
-    previous_x = *x;
-    *x = previous_x * cos(beta) + *z * sin(beta);
-    *z = -previous_x * sin(beta) + *z * cos(beta);
-}
-
-static void    iso(int *x, int *y, int z)
-{
-    int previous_x;
-    int previous_y;
-
-    previous_x = *x;
-    previous_y = *y;
-    *x = (previous_x - previous_y) * cos(0.523599);
-    *y = -z + (previous_x + previous_y) * sin(0.523599);
-}
-
-/*
-static void	rotate_z(int *x, int *y, double gamma)
-{
-    int previous_x;
-    int previous_y;
-
-    previous_x = *x;
-    previous_y = *y;
-    *x = previous_x * cos(gamma) - previous_y * sin(gamma);
-    *y = previous_x * sin(gamma) + previous_y * cos(gamma);
-}*/
-
-t_point transform(const t_point* p, const t_fdf* fdf)
-{
-    t_point tmp = *p;
-
-    tmp.x *= fdf->camera.zoom;
-    tmp.y *= fdf->camera.zoom;
-    tmp.z *= fdf->camera.zoom;
-
-    rotate_x(&tmp.y, &tmp.z, fdf->camera.alpha);
-    rotate_y(&tmp.x, &tmp.z, fdf->camera.beta);
-
-    if(fdf->camera.is_iso)
-        iso(&tmp.x, &tmp.y, tmp.z);
-
-    tmp.x += fdf->camera.x_move;
-    tmp.y += fdf->camera.y_move;
-
-    return tmp;
 }
 
 void draw_line(t_point p1, t_point p2, t_fdf* fdf)
@@ -159,19 +76,6 @@ void print_map(t_map *map, t_fdf *fdf)
         {
             for (size_t j = 0; j < map->width - 1; ++j)
             {
-               /* if (map->data[i][j].z < map->max_z)
-                {
-                    fdf->color.r = 31;
-                    fdf->color.b = 254;
-                    fdf->color.g = 117;
-                }
-                else
-                {
-                    fdf->color.r = 0;
-                    fdf->color.b = 255;
-                    fdf->color.g = 191;
-                } */
-
                 draw_line(transform(&map->data[i][j], fdf), transform(&map->data[i][j+1], fdf), fdf);
                 draw_line(transform(&map->data[i][j], fdf), transform(&map->data[i+1][j+1], fdf), fdf);
                 draw_line(transform(&map->data[i][j], fdf), transform(&map->data[i+1][j], fdf), fdf);
@@ -179,12 +83,8 @@ void print_map(t_map *map, t_fdf *fdf)
             draw_line(transform(&map->data[i][map->width - 1], fdf), transform(&map->data[i+1][map->width - 1], fdf), fdf);
         }
         else
-        {
             for (size_t j = 0; j < map->width - 1; ++j)
-            {
                 draw_line(transform(&map->data[i][j], fdf), transform(&map->data[i][j+1], fdf), fdf);
-            }
-        }
     }
 
 }

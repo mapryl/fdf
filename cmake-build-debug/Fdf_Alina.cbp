@@ -90,9 +90,6 @@
 		<Unit filename="/home/alina/CLionProjects/grafics_part1/draw.c">
 			<Option target="Fdf_Alina"/>
 		</Unit>
-		<Unit filename="/home/alina/CLionProjects/grafics_part1/error.c">
-			<Option target="Fdf_Alina"/>
-		</Unit>
 		<Unit filename="/home/alina/CLionProjects/grafics_part1/fdf.h">
 			<Option target="Fdf_Alina"/>
 		</Unit>
@@ -108,7 +105,19 @@
 		<Unit filename="/home/alina/CLionProjects/grafics_part1/graphics.h">
 			<Option target="Fdf_Alina"/>
 		</Unit>
+		<Unit filename="/home/alina/CLionProjects/grafics_part1/keyboard_controls.c">
+			<Option target="Fdf_Alina"/>
+		</Unit>
+		<Unit filename="/home/alina/CLionProjects/grafics_part1/keyboard_controls.h">
+			<Option target="Fdf_Alina"/>
+		</Unit>
 		<Unit filename="/home/alina/CLionProjects/grafics_part1/keys.h">
+			<Option target="Fdf_Alina"/>
+		</Unit>
+		<Unit filename="/home/alina/CLionProjects/grafics_part1/line.c">
+			<Option target="Fdf_Alina"/>
+		</Unit>
+		<Unit filename="/home/alina/CLionProjects/grafics_part1/line.h">
 			<Option target="Fdf_Alina"/>
 		</Unit>
 		<Unit filename="/home/alina/CLionProjects/grafics_part1/main.c">
@@ -118,6 +127,18 @@
 			<Option target="Fdf_Alina"/>
 		</Unit>
 		<Unit filename="/home/alina/CLionProjects/grafics_part1/map_create.c">
+			<Option target="Fdf_Alina"/>
+		</Unit>
+		<Unit filename="/home/alina/CLionProjects/grafics_part1/rotate.c">
+			<Option target="Fdf_Alina"/>
+		</Unit>
+		<Unit filename="/home/alina/CLionProjects/grafics_part1/rotate.h">
+			<Option target="Fdf_Alina"/>
+		</Unit>
+		<Unit filename="/home/alina/CLionProjects/grafics_part1/supporting_functions.c">
+			<Option target="Fdf_Alina"/>
+		</Unit>
+		<Unit filename="/home/alina/CLionProjects/grafics_part1/supporting_functions.h">
 			<Option target="Fdf_Alina"/>
 		</Unit>
 		<Unit filename="/home/alina/CLionProjects/grafics_part1/CMakeLists.txt">

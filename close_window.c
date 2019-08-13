@@ -27,36 +27,3 @@ int close_mouse(int mousebutton, int x, int y, void *close_param)
     }
     return (0);
 }
-
-/*
-int draw_line(int mousebutton, int x, int y, void *draw_param)
-{
-    s_line *tmp = (s_line *) draw_param;
-    t_color color;
-    color.b = 255;
-    color.r = 0;
-    color.a = 0;
-    color.g = 0;
-    if (mousebutton == MOUSE_LEFT_BUTTON &&
-        x < WIN_WIDTH && x > 200 &&
-        y < WIN_HEIGHT && y > 0) {
-        if (tmp->already_pressed == 0) {
-            tmp->pos_0->pos_x = x;
-            tmp->pos_0->pos_y = y;
-            tmp->already_pressed = 1;
-        } else if (tmp->already_pressed == 1) {
-            tmp->pos_1->pos_x = x;
-            tmp->pos_1->pos_y = y;
-            Draw_Wu((tmp->pos_0->pos_x),
-                    (tmp->pos_0->pos_y),
-                    (tmp->pos_1->pos_x),
-                    (tmp->pos_1->pos_y),
-                    (tmp->pointers->mlx_ptr),
-                    (tmp->pointers->mlx_win), color);
-            tmp->already_pressed = 0;
-
-        }
-    }
-    return (0);
-}
-*/

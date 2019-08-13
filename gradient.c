@@ -18,12 +18,10 @@ t_color	get_default_color(int z, t_map *map)
     percentage = percent(map->min_z, map->max_z, z);
     t_color color;
     color.a = 0;
+    color.b = 255;
+    color.r = 0;
     if (percentage < 0.2)
-    {
-        color.b = 255;
         color.g = 0;
-        color.r = 0;
-    }
     else if (percentage < 0.4)
     {
         color.b = 254;
@@ -32,22 +30,13 @@ t_color	get_default_color(int z, t_map *map)
     }
     else if (percentage < 0.6)
     {
-        color.b = 255;
         color.g = 144;
         color.r = 30;
     }
     else if (percentage < 0.8)
-    {
-        color.b = 255;
         color.g = 191;
-        color.r = 0;
-    }
     else
-    {
-        color.b = 255;
         color.g = 255;
-        color.r = 0;
-    }
     return color;
 }
 

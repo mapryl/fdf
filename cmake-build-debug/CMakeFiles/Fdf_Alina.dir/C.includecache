@@ -8,15 +8,17 @@
 
 /home/alina/CLionProjects/grafics_part1/camera.h
 
-/home/alina/CLionProjects/grafics_part1/close_window.c
+/home/alina/CLionProjects/grafics_part1/draw.c
 fdf.h
 /home/alina/CLionProjects/grafics_part1/fdf.h
-keys.h
-/home/alina/CLionProjects/grafics_part1/keys.h
+map.h
+/home/alina/CLionProjects/grafics_part1/map.h
+rotate.h
+/home/alina/CLionProjects/grafics_part1/rotate.h
+supporting_functions.h
+/home/alina/CLionProjects/grafics_part1/supporting_functions.h
 
 /home/alina/CLionProjects/grafics_part1/fdf.h
-stdio.h
--
 ../minilibx/mlx.h
 /home/alina/CLionProjects/minilibx/mlx.h
 unistd.h
@@ -46,8 +48,6 @@ stdlib.h
 
 /home/alina/CLionProjects/grafics_part1/graphics.h
 
-/home/alina/CLionProjects/grafics_part1/keys.h
-
 /home/alina/CLionProjects/grafics_part1/libft/includes/libft.h
 string.h
 -
@@ -56,25 +56,19 @@ stdlib.h
 unistd.h
 -
 
-/home/alina/CLionProjects/grafics_part1/main.c
-map.h
 /home/alina/CLionProjects/grafics_part1/map.h
 stdlib.h
 -
-unistd.h
--
-fcntl.h
--
+graphics.h
+/home/alina/CLionProjects/grafics_part1/graphics.h
+
+/home/alina/CLionProjects/grafics_part1/rotate.h
 fdf.h
 /home/alina/CLionProjects/grafics_part1/fdf.h
-keys.h
-/home/alina/CLionProjects/grafics_part1/keys.h
-math.h
--
+graphics.h
+/home/alina/CLionProjects/grafics_part1/graphics.h
 
-/home/alina/CLionProjects/grafics_part1/map.h
-stdlib.h
--
+/home/alina/CLionProjects/grafics_part1/supporting_functions.h
 graphics.h
 /home/alina/CLionProjects/grafics_part1/graphics.h
 

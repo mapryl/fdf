@@ -83,22 +83,9 @@ CMakeFiles/Fdf_Alina.dir/map_create.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Fdf_Alina.dir/map_create.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alina/CLionProjects/grafics_part1/map_create.c -o CMakeFiles/Fdf_Alina.dir/map_create.c.s
 
-CMakeFiles/Fdf_Alina.dir/error.c.o: CMakeFiles/Fdf_Alina.dir/flags.make
-CMakeFiles/Fdf_Alina.dir/error.c.o: ../error.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alina/CLionProjects/grafics_part1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/Fdf_Alina.dir/error.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fdf_Alina.dir/error.c.o   -c /home/alina/CLionProjects/grafics_part1/error.c
-
-CMakeFiles/Fdf_Alina.dir/error.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Fdf_Alina.dir/error.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alina/CLionProjects/grafics_part1/error.c > CMakeFiles/Fdf_Alina.dir/error.c.i
-
-CMakeFiles/Fdf_Alina.dir/error.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Fdf_Alina.dir/error.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alina/CLionProjects/grafics_part1/error.c -o CMakeFiles/Fdf_Alina.dir/error.c.s
-
 CMakeFiles/Fdf_Alina.dir/get_next_line.c.o: CMakeFiles/Fdf_Alina.dir/flags.make
 CMakeFiles/Fdf_Alina.dir/get_next_line.c.o: ../get_next_line.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alina/CLionProjects/grafics_part1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/Fdf_Alina.dir/get_next_line.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alina/CLionProjects/grafics_part1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/Fdf_Alina.dir/get_next_line.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fdf_Alina.dir/get_next_line.c.o   -c /home/alina/CLionProjects/grafics_part1/get_next_line.c
 
 CMakeFiles/Fdf_Alina.dir/get_next_line.c.i: cmake_force
@@ -111,7 +98,7 @@ CMakeFiles/Fdf_Alina.dir/get_next_line.c.s: cmake_force
 
 CMakeFiles/Fdf_Alina.dir/draw.c.o: CMakeFiles/Fdf_Alina.dir/flags.make
 CMakeFiles/Fdf_Alina.dir/draw.c.o: ../draw.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alina/CLionProjects/grafics_part1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/Fdf_Alina.dir/draw.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alina/CLionProjects/grafics_part1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/Fdf_Alina.dir/draw.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fdf_Alina.dir/draw.c.o   -c /home/alina/CLionProjects/grafics_part1/draw.c
 
 CMakeFiles/Fdf_Alina.dir/draw.c.i: cmake_force
@@ -124,7 +111,7 @@ CMakeFiles/Fdf_Alina.dir/draw.c.s: cmake_force
 
 CMakeFiles/Fdf_Alina.dir/close_window.c.o: CMakeFiles/Fdf_Alina.dir/flags.make
 CMakeFiles/Fdf_Alina.dir/close_window.c.o: ../close_window.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alina/CLionProjects/grafics_part1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/Fdf_Alina.dir/close_window.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alina/CLionProjects/grafics_part1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/Fdf_Alina.dir/close_window.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fdf_Alina.dir/close_window.c.o   -c /home/alina/CLionProjects/grafics_part1/close_window.c
 
 CMakeFiles/Fdf_Alina.dir/close_window.c.i: cmake_force
@@ -137,7 +124,7 @@ CMakeFiles/Fdf_Alina.dir/close_window.c.s: cmake_force
 
 CMakeFiles/Fdf_Alina.dir/gradient.c.o: CMakeFiles/Fdf_Alina.dir/flags.make
 CMakeFiles/Fdf_Alina.dir/gradient.c.o: ../gradient.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alina/CLionProjects/grafics_part1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/Fdf_Alina.dir/gradient.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alina/CLionProjects/grafics_part1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/Fdf_Alina.dir/gradient.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fdf_Alina.dir/gradient.c.o   -c /home/alina/CLionProjects/grafics_part1/gradient.c
 
 CMakeFiles/Fdf_Alina.dir/gradient.c.i: cmake_force
@@ -150,7 +137,7 @@ CMakeFiles/Fdf_Alina.dir/gradient.c.s: cmake_force
 
 CMakeFiles/Fdf_Alina.dir/camera.c.o: CMakeFiles/Fdf_Alina.dir/flags.make
 CMakeFiles/Fdf_Alina.dir/camera.c.o: ../camera.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alina/CLionProjects/grafics_part1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/Fdf_Alina.dir/camera.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alina/CLionProjects/grafics_part1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/Fdf_Alina.dir/camera.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fdf_Alina.dir/camera.c.o   -c /home/alina/CLionProjects/grafics_part1/camera.c
 
 CMakeFiles/Fdf_Alina.dir/camera.c.i: cmake_force
@@ -161,33 +148,91 @@ CMakeFiles/Fdf_Alina.dir/camera.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Fdf_Alina.dir/camera.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alina/CLionProjects/grafics_part1/camera.c -o CMakeFiles/Fdf_Alina.dir/camera.c.s
 
+CMakeFiles/Fdf_Alina.dir/keyboard_controls.c.o: CMakeFiles/Fdf_Alina.dir/flags.make
+CMakeFiles/Fdf_Alina.dir/keyboard_controls.c.o: ../keyboard_controls.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alina/CLionProjects/grafics_part1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/Fdf_Alina.dir/keyboard_controls.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fdf_Alina.dir/keyboard_controls.c.o   -c /home/alina/CLionProjects/grafics_part1/keyboard_controls.c
+
+CMakeFiles/Fdf_Alina.dir/keyboard_controls.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Fdf_Alina.dir/keyboard_controls.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alina/CLionProjects/grafics_part1/keyboard_controls.c > CMakeFiles/Fdf_Alina.dir/keyboard_controls.c.i
+
+CMakeFiles/Fdf_Alina.dir/keyboard_controls.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Fdf_Alina.dir/keyboard_controls.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alina/CLionProjects/grafics_part1/keyboard_controls.c -o CMakeFiles/Fdf_Alina.dir/keyboard_controls.c.s
+
+CMakeFiles/Fdf_Alina.dir/rotate.c.o: CMakeFiles/Fdf_Alina.dir/flags.make
+CMakeFiles/Fdf_Alina.dir/rotate.c.o: ../rotate.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alina/CLionProjects/grafics_part1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/Fdf_Alina.dir/rotate.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fdf_Alina.dir/rotate.c.o   -c /home/alina/CLionProjects/grafics_part1/rotate.c
+
+CMakeFiles/Fdf_Alina.dir/rotate.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Fdf_Alina.dir/rotate.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alina/CLionProjects/grafics_part1/rotate.c > CMakeFiles/Fdf_Alina.dir/rotate.c.i
+
+CMakeFiles/Fdf_Alina.dir/rotate.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Fdf_Alina.dir/rotate.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alina/CLionProjects/grafics_part1/rotate.c -o CMakeFiles/Fdf_Alina.dir/rotate.c.s
+
+CMakeFiles/Fdf_Alina.dir/supporting_functions.c.o: CMakeFiles/Fdf_Alina.dir/flags.make
+CMakeFiles/Fdf_Alina.dir/supporting_functions.c.o: ../supporting_functions.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alina/CLionProjects/grafics_part1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/Fdf_Alina.dir/supporting_functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fdf_Alina.dir/supporting_functions.c.o   -c /home/alina/CLionProjects/grafics_part1/supporting_functions.c
+
+CMakeFiles/Fdf_Alina.dir/supporting_functions.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Fdf_Alina.dir/supporting_functions.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alina/CLionProjects/grafics_part1/supporting_functions.c > CMakeFiles/Fdf_Alina.dir/supporting_functions.c.i
+
+CMakeFiles/Fdf_Alina.dir/supporting_functions.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Fdf_Alina.dir/supporting_functions.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alina/CLionProjects/grafics_part1/supporting_functions.c -o CMakeFiles/Fdf_Alina.dir/supporting_functions.c.s
+
+CMakeFiles/Fdf_Alina.dir/line.c.o: CMakeFiles/Fdf_Alina.dir/flags.make
+CMakeFiles/Fdf_Alina.dir/line.c.o: ../line.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alina/CLionProjects/grafics_part1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/Fdf_Alina.dir/line.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fdf_Alina.dir/line.c.o   -c /home/alina/CLionProjects/grafics_part1/line.c
+
+CMakeFiles/Fdf_Alina.dir/line.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Fdf_Alina.dir/line.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alina/CLionProjects/grafics_part1/line.c > CMakeFiles/Fdf_Alina.dir/line.c.i
+
+CMakeFiles/Fdf_Alina.dir/line.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Fdf_Alina.dir/line.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alina/CLionProjects/grafics_part1/line.c -o CMakeFiles/Fdf_Alina.dir/line.c.s
+
 # Object files for target Fdf_Alina
 Fdf_Alina_OBJECTS = \
 "CMakeFiles/Fdf_Alina.dir/main.c.o" \
 "CMakeFiles/Fdf_Alina.dir/map_create.c.o" \
-"CMakeFiles/Fdf_Alina.dir/error.c.o" \
 "CMakeFiles/Fdf_Alina.dir/get_next_line.c.o" \
 "CMakeFiles/Fdf_Alina.dir/draw.c.o" \
 "CMakeFiles/Fdf_Alina.dir/close_window.c.o" \
 "CMakeFiles/Fdf_Alina.dir/gradient.c.o" \
-"CMakeFiles/Fdf_Alina.dir/camera.c.o"
+"CMakeFiles/Fdf_Alina.dir/camera.c.o" \
+"CMakeFiles/Fdf_Alina.dir/keyboard_controls.c.o" \
+"CMakeFiles/Fdf_Alina.dir/rotate.c.o" \
+"CMakeFiles/Fdf_Alina.dir/supporting_functions.c.o" \
+"CMakeFiles/Fdf_Alina.dir/line.c.o"
 
 # External object files for target Fdf_Alina
 Fdf_Alina_EXTERNAL_OBJECTS =
 
 Fdf_Alina: CMakeFiles/Fdf_Alina.dir/main.c.o
 Fdf_Alina: CMakeFiles/Fdf_Alina.dir/map_create.c.o
-Fdf_Alina: CMakeFiles/Fdf_Alina.dir/error.c.o
 Fdf_Alina: CMakeFiles/Fdf_Alina.dir/get_next_line.c.o
 Fdf_Alina: CMakeFiles/Fdf_Alina.dir/draw.c.o
 Fdf_Alina: CMakeFiles/Fdf_Alina.dir/close_window.c.o
 Fdf_Alina: CMakeFiles/Fdf_Alina.dir/gradient.c.o
 Fdf_Alina: CMakeFiles/Fdf_Alina.dir/camera.c.o
+Fdf_Alina: CMakeFiles/Fdf_Alina.dir/keyboard_controls.c.o
+Fdf_Alina: CMakeFiles/Fdf_Alina.dir/rotate.c.o
+Fdf_Alina: CMakeFiles/Fdf_Alina.dir/supporting_functions.c.o
+Fdf_Alina: CMakeFiles/Fdf_Alina.dir/line.c.o
 Fdf_Alina: CMakeFiles/Fdf_Alina.dir/build.make
 Fdf_Alina: ../libft/libft.a
 Fdf_Alina: /home/alina/CLionProjects/minilibx/libmlx.a
 Fdf_Alina: CMakeFiles/Fdf_Alina.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/alina/CLionProjects/grafics_part1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking C executable Fdf_Alina"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/alina/CLionProjects/grafics_part1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking C executable Fdf_Alina"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Fdf_Alina.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

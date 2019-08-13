@@ -204,33 +204,6 @@ draw.c.s:
 	$(MAKE) -f CMakeFiles/Fdf_Alina.dir/build.make CMakeFiles/Fdf_Alina.dir/draw.c.s
 .PHONY : draw.c.s
 
-error.o: error.c.o
-
-.PHONY : error.o
-
-# target to build an object file
-error.c.o:
-	$(MAKE) -f CMakeFiles/Fdf_Alina.dir/build.make CMakeFiles/Fdf_Alina.dir/error.c.o
-.PHONY : error.c.o
-
-error.i: error.c.i
-
-.PHONY : error.i
-
-# target to preprocess a source file
-error.c.i:
-	$(MAKE) -f CMakeFiles/Fdf_Alina.dir/build.make CMakeFiles/Fdf_Alina.dir/error.c.i
-.PHONY : error.c.i
-
-error.s: error.c.s
-
-.PHONY : error.s
-
-# target to generate assembly for a file
-error.c.s:
-	$(MAKE) -f CMakeFiles/Fdf_Alina.dir/build.make CMakeFiles/Fdf_Alina.dir/error.c.s
-.PHONY : error.c.s
-
 get_next_line.o: get_next_line.c.o
 
 .PHONY : get_next_line.o
@@ -284,6 +257,60 @@ gradient.s: gradient.c.s
 gradient.c.s:
 	$(MAKE) -f CMakeFiles/Fdf_Alina.dir/build.make CMakeFiles/Fdf_Alina.dir/gradient.c.s
 .PHONY : gradient.c.s
+
+keyboard_controls.o: keyboard_controls.c.o
+
+.PHONY : keyboard_controls.o
+
+# target to build an object file
+keyboard_controls.c.o:
+	$(MAKE) -f CMakeFiles/Fdf_Alina.dir/build.make CMakeFiles/Fdf_Alina.dir/keyboard_controls.c.o
+.PHONY : keyboard_controls.c.o
+
+keyboard_controls.i: keyboard_controls.c.i
+
+.PHONY : keyboard_controls.i
+
+# target to preprocess a source file
+keyboard_controls.c.i:
+	$(MAKE) -f CMakeFiles/Fdf_Alina.dir/build.make CMakeFiles/Fdf_Alina.dir/keyboard_controls.c.i
+.PHONY : keyboard_controls.c.i
+
+keyboard_controls.s: keyboard_controls.c.s
+
+.PHONY : keyboard_controls.s
+
+# target to generate assembly for a file
+keyboard_controls.c.s:
+	$(MAKE) -f CMakeFiles/Fdf_Alina.dir/build.make CMakeFiles/Fdf_Alina.dir/keyboard_controls.c.s
+.PHONY : keyboard_controls.c.s
+
+line.o: line.c.o
+
+.PHONY : line.o
+
+# target to build an object file
+line.c.o:
+	$(MAKE) -f CMakeFiles/Fdf_Alina.dir/build.make CMakeFiles/Fdf_Alina.dir/line.c.o
+.PHONY : line.c.o
+
+line.i: line.c.i
+
+.PHONY : line.i
+
+# target to preprocess a source file
+line.c.i:
+	$(MAKE) -f CMakeFiles/Fdf_Alina.dir/build.make CMakeFiles/Fdf_Alina.dir/line.c.i
+.PHONY : line.c.i
+
+line.s: line.c.s
+
+.PHONY : line.s
+
+# target to generate assembly for a file
+line.c.s:
+	$(MAKE) -f CMakeFiles/Fdf_Alina.dir/build.make CMakeFiles/Fdf_Alina.dir/line.c.s
+.PHONY : line.c.s
 
 main.o: main.c.o
 
@@ -339,6 +366,60 @@ map_create.c.s:
 	$(MAKE) -f CMakeFiles/Fdf_Alina.dir/build.make CMakeFiles/Fdf_Alina.dir/map_create.c.s
 .PHONY : map_create.c.s
 
+rotate.o: rotate.c.o
+
+.PHONY : rotate.o
+
+# target to build an object file
+rotate.c.o:
+	$(MAKE) -f CMakeFiles/Fdf_Alina.dir/build.make CMakeFiles/Fdf_Alina.dir/rotate.c.o
+.PHONY : rotate.c.o
+
+rotate.i: rotate.c.i
+
+.PHONY : rotate.i
+
+# target to preprocess a source file
+rotate.c.i:
+	$(MAKE) -f CMakeFiles/Fdf_Alina.dir/build.make CMakeFiles/Fdf_Alina.dir/rotate.c.i
+.PHONY : rotate.c.i
+
+rotate.s: rotate.c.s
+
+.PHONY : rotate.s
+
+# target to generate assembly for a file
+rotate.c.s:
+	$(MAKE) -f CMakeFiles/Fdf_Alina.dir/build.make CMakeFiles/Fdf_Alina.dir/rotate.c.s
+.PHONY : rotate.c.s
+
+supporting_functions.o: supporting_functions.c.o
+
+.PHONY : supporting_functions.o
+
+# target to build an object file
+supporting_functions.c.o:
+	$(MAKE) -f CMakeFiles/Fdf_Alina.dir/build.make CMakeFiles/Fdf_Alina.dir/supporting_functions.c.o
+.PHONY : supporting_functions.c.o
+
+supporting_functions.i: supporting_functions.c.i
+
+.PHONY : supporting_functions.i
+
+# target to preprocess a source file
+supporting_functions.c.i:
+	$(MAKE) -f CMakeFiles/Fdf_Alina.dir/build.make CMakeFiles/Fdf_Alina.dir/supporting_functions.c.i
+.PHONY : supporting_functions.c.i
+
+supporting_functions.s: supporting_functions.c.s
+
+.PHONY : supporting_functions.s
+
+# target to generate assembly for a file
+supporting_functions.c.s:
+	$(MAKE) -f CMakeFiles/Fdf_Alina.dir/build.make CMakeFiles/Fdf_Alina.dir/supporting_functions.c.s
+.PHONY : supporting_functions.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -357,21 +438,30 @@ help:
 	@echo "... draw.o"
 	@echo "... draw.i"
 	@echo "... draw.s"
-	@echo "... error.o"
-	@echo "... error.i"
-	@echo "... error.s"
 	@echo "... get_next_line.o"
 	@echo "... get_next_line.i"
 	@echo "... get_next_line.s"
 	@echo "... gradient.o"
 	@echo "... gradient.i"
 	@echo "... gradient.s"
+	@echo "... keyboard_controls.o"
+	@echo "... keyboard_controls.i"
+	@echo "... keyboard_controls.s"
+	@echo "... line.o"
+	@echo "... line.i"
+	@echo "... line.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
 	@echo "... map_create.o"
 	@echo "... map_create.i"
 	@echo "... map_create.s"
+	@echo "... rotate.o"
+	@echo "... rotate.i"
+	@echo "... rotate.s"
+	@echo "... supporting_functions.o"
+	@echo "... supporting_functions.i"
+	@echo "... supporting_functions.s"
 .PHONY : help
 
 

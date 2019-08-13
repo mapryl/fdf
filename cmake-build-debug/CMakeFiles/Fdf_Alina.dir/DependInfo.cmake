@@ -7,11 +7,14 @@ set(CMAKE_DEPENDS_CHECK_C
   "/home/alina/CLionProjects/grafics_part1/camera.c" "/home/alina/CLionProjects/grafics_part1/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/camera.c.o"
   "/home/alina/CLionProjects/grafics_part1/close_window.c" "/home/alina/CLionProjects/grafics_part1/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/close_window.c.o"
   "/home/alina/CLionProjects/grafics_part1/draw.c" "/home/alina/CLionProjects/grafics_part1/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/draw.c.o"
-  "/home/alina/CLionProjects/grafics_part1/error.c" "/home/alina/CLionProjects/grafics_part1/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/error.c.o"
   "/home/alina/CLionProjects/grafics_part1/get_next_line.c" "/home/alina/CLionProjects/grafics_part1/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/get_next_line.c.o"
   "/home/alina/CLionProjects/grafics_part1/gradient.c" "/home/alina/CLionProjects/grafics_part1/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/gradient.c.o"
+  "/home/alina/CLionProjects/grafics_part1/keyboard_controls.c" "/home/alina/CLionProjects/grafics_part1/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/keyboard_controls.c.o"
+  "/home/alina/CLionProjects/grafics_part1/line.c" "/home/alina/CLionProjects/grafics_part1/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/line.c.o"
   "/home/alina/CLionProjects/grafics_part1/main.c" "/home/alina/CLionProjects/grafics_part1/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/main.c.o"
   "/home/alina/CLionProjects/grafics_part1/map_create.c" "/home/alina/CLionProjects/grafics_part1/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/map_create.c.o"
+  "/home/alina/CLionProjects/grafics_part1/rotate.c" "/home/alina/CLionProjects/grafics_part1/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/rotate.c.o"
+  "/home/alina/CLionProjects/grafics_part1/supporting_functions.c" "/home/alina/CLionProjects/grafics_part1/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/supporting_functions.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
