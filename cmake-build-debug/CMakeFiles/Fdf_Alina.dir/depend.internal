@@ -45,6 +45,7 @@ CMakeFiles/Fdf_Alina.dir/keyboard_controls.c.o
  /home/alina/CLionProjects/grafics_part1/map.h
  /home/alina/CLionProjects/minilibx/mlx.h
 CMakeFiles/Fdf_Alina.dir/line.c.o
+ /home/alina/CLionProjects/grafics_part1/errors.h
  /home/alina/CLionProjects/grafics_part1/graphics.h
  /home/alina/CLionProjects/grafics_part1/libft/includes/libft.h
  /home/alina/CLionProjects/grafics_part1/line.c
@@ -53,6 +54,7 @@ CMakeFiles/Fdf_Alina.dir/line.c.o
  /home/alina/CLionProjects/grafics_part1/supporting_functions.h
 CMakeFiles/Fdf_Alina.dir/main.c.o
  /home/alina/CLionProjects/grafics_part1/camera.h
+ /home/alina/CLionProjects/grafics_part1/errors.h
  /home/alina/CLionProjects/grafics_part1/fdf.h
  /home/alina/CLionProjects/grafics_part1/get_next_line.h
  /home/alina/CLionProjects/grafics_part1/graphics.h
@@ -61,8 +63,10 @@ CMakeFiles/Fdf_Alina.dir/main.c.o
  /home/alina/CLionProjects/grafics_part1/libft/includes/libft.h
  /home/alina/CLionProjects/grafics_part1/main.c
  /home/alina/CLionProjects/grafics_part1/map.h
+ /home/alina/CLionProjects/grafics_part1/supporting_functions.h
  /home/alina/CLionProjects/minilibx/mlx.h
 CMakeFiles/Fdf_Alina.dir/map_create.c.o
+ /home/alina/CLionProjects/grafics_part1/errors.h
  /home/alina/CLionProjects/grafics_part1/get_next_line.h
  /home/alina/CLionProjects/grafics_part1/graphics.h
  /home/alina/CLionProjects/grafics_part1/libft/includes/libft.h

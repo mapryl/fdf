@@ -1,6 +1,8 @@
+#include <wayland-egl.h>
 #include "line.h"
 #include "supporting_functions.h"
 #include "libft/includes/libft.h"
+#include "errors.h"
 
 void line_create(t_line* vec)
 {
@@ -18,7 +20,7 @@ int line_add(t_line* line, int x, int y, int z)
     {
         new_data = (t_point*)reallocate(line->data, &line->width_capacity, sizeof(t_point));
         if (!new_data)
-            return (-1);
+            throw_error(ERROR_NO_MEMORY);
         line->data = new_data;
     }
     point.x = x;
@@ -39,7 +41,7 @@ void parse_line(char **split_line, t_map *map)
     while (*split_line)
     {
         if (ft_isnumber(*split_line) == -1)
-            throw_error();
+            throw_error(INVALID_SYMB_IN_MAP);
         map_num = ft_atoi(*split_line) * Z_UNIT;
         line_add(&line, i * X_UNIT, map->height * Y_UNIT, map_num);
         if (map_num > map->max_z)

@@ -12,49 +12,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="82fd1639-6a0d-464d-a5c1-149997f98359" name="Default Changelist" comment="add iso">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/keyboard_controls.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/keyboard_controls.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/line.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/line.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rotate.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rotate.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/supporting_functions.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/supporting_functions.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/errors.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/10-2.fdf" beforeDir="false" afterPath="$PROJECT_DIR$/10-2.fdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/camera.c" beforeDir="false" afterPath="$PROJECT_DIR$/camera.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/camera.h" beforeDir="false" afterPath="$PROJECT_DIR$/camera.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/close_window.c" beforeDir="false" afterPath="$PROJECT_DIR$/close_window.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/C.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/camera.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/camera.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/close_window.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/close_window.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/cmake_clean.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/depend.internal" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/draw.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/draw.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/error.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/gradient.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/gradient.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/keyboard_controls.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/keyboard_controls.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/line.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/line.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/main.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/main.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/map_create.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/map_create.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/rotate.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/rotate.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/supporting_functions.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/supporting_functions.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Fdf_Alina" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Fdf_Alina" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Fdf_Alina.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Fdf_Alina.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/draw.c" beforeDir="false" afterPath="$PROJECT_DIR$/draw.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/error.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fdf.h" beforeDir="false" afterPath="$PROJECT_DIR$/fdf.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradient.c" beforeDir="false" afterPath="$PROJECT_DIR$/gradient.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graphics.h" beforeDir="false" afterPath="$PROJECT_DIR$/graphics.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keyboard_controls.c" beforeDir="false" afterPath="$PROJECT_DIR$/keyboard_controls.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keys.h" beforeDir="false" afterPath="$PROJECT_DIR$/keys.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/line.c" beforeDir="false" afterPath="$PROJECT_DIR$/line.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/map.h" beforeDir="false" afterPath="$PROJECT_DIR$/map.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/map_create.c" beforeDir="false" afterPath="$PROJECT_DIR$/map_create.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rotate.c" beforeDir="false" afterPath="$PROJECT_DIR$/rotate.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/supporting_functions.c" beforeDir="false" afterPath="$PROJECT_DIR$/supporting_functions.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/supporting_functions.h" beforeDir="false" afterPath="$PROJECT_DIR$/supporting_functions.h" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -125,7 +105,8 @@
       <workItem from="1565375352202" duration="4170000" />
       <workItem from="1565614281113" duration="13182000" />
       <workItem from="1565699048480" duration="3612000" />
-      <workItem from="1565721397202" duration="5695000" />
+      <workItem from="1565721397202" duration="6064000" />
+      <workItem from="1565787316900" duration="4515000" />
     </task>
     <servers />
   </component>
@@ -155,8 +136,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/main.c</url>
-          <line>119</line>
+          <line>126</line>
           <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/main.c</url>
+          <line>71</line>
+          <option name="timeStamp" value="43" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

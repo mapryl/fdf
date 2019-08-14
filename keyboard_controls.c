@@ -3,14 +3,18 @@
 
 void rotate(int key, t_fdf *fdf)
 {
-    if (key == KEYBOARD_W)
+    if (key == NUM_PAD_8)
         fdf->camera.alpha -= 0.05;
-    if (key == KEYBOARD_S)
+    else if (key == NUM_PAD_2)
         fdf->camera.alpha += 0.05;
-    if (key == KEYBOARD_D)
+    else if (key == NUM_PAD_6)
         fdf->camera.beta += 0.05;
-    if (key == KEYBOARD_A)
+    else if (key == NUM_PAD_4)
         fdf->camera.beta -= 0.05;
+    else if (key == NUM_PAD_3 || key == NUM_PAD_9)
+        fdf->camera.gamma += 0.05;
+    else if (key == NUM_PAD_1 || key == NUM_PAD_7)
+        fdf->camera.gamma -= 0.05;
     print_map(fdf->map, fdf);
 }
 

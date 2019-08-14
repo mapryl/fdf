@@ -51,6 +51,7 @@ t_point transform(const t_point* p, const t_fdf* fdf)
 
     rotate_x(&tmp.y, &tmp.z, fdf->camera.alpha);
     rotate_y(&tmp.x, &tmp.z, fdf->camera.beta);
+    rotate_z(&tmp.x, &tmp.y, fdf->camera.gamma);
 
     if(fdf->camera.is_iso)
         iso(&tmp.x, &tmp.y, tmp.z);

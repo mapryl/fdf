@@ -6,18 +6,18 @@
 #include "keys.h"
 #include <math.h>
 #include "keyboard_controls.h"
-
-void throw_error();
+#include "errors.h"
+#include "supporting_functions.h"
 
 s_box *crt_box(int x, int y, char *name, void *mlx_ptr, void *mlx_win) //создание бокса
 {
     s_box *button_pointer;
     if (!(button_pointer = (s_box *)malloc(sizeof(s_box))))
-        return (NULL);
+        throw_error(ERROR_NO_MEMORY);
     if (!(button_pointer->position = (s_pos *)malloc(sizeof(s_pos))))
-        return (NULL);
+        throw_error(ERROR_NO_MEMORY);
     if (!(button_pointer->pointers = (s_ptr *)malloc(sizeof(s_box))))
-        return (NULL);
+        throw_error(ERROR_NO_MEMORY);
     button_pointer->position->pos_x = x;
     button_pointer->position->pos_y = y;
     button_pointer->button_pressed = 0;
@@ -33,13 +33,13 @@ s_line  *crt_line(void *mlx_ptr, void *mlx_win)
     s_line *line;
 
     if (!(line = (s_line *)malloc(sizeof(s_line))))
-        return (NULL);
+        throw_error(ERROR_NO_MEMORY);
     if (!(line->pos_0 = (s_pos *)malloc(sizeof(s_pos))))
-        return (NULL);
+        throw_error(ERROR_NO_MEMORY);
     if (!(line->pos_1 = (s_pos *)malloc(sizeof(s_pos))))
-        return (NULL);
+        throw_error(ERROR_NO_MEMORY);
     if (!(line->pointers = (s_ptr *)malloc(sizeof(s_pos))))
-        return (NULL);
+        throw_error(ERROR_NO_MEMORY);
     line->pointers->mlx_win = mlx_win;
     line->pointers->mlx_ptr = mlx_ptr;
     line->color = 255;
@@ -55,7 +55,7 @@ int key_press(int key, void* param)
     fdf = (t_fdf*)param;
     if (key == MAIN_PAD_ESC)
         exit(0);
-    if (key == KEYBOARD_A || key == KEYBOARD_S || key == KEYBOARD_D || key == KEYBOARD_W)
+    if (key == NUM_PAD_1 || key == NUM_PAD_2 || key == NUM_PAD_3 || key == NUM_PAD_4 || key == NUM_PAD_5 || key == NUM_PAD_6 || key == NUM_PAD_7 || key == NUM_PAD_8 || key == NUM_PAD_9)
         rotate(key, fdf);
     else if (key == ARROW_LEFT || key == ARROW_RIGHT || key == ARROW_DOWN || key == ARROW_UP)
         move(key, fdf);
@@ -65,6 +65,12 @@ int key_press(int key, void* param)
         zoom_out(fdf);
     else if(key == KEYBOARD_I)
         set_iso(fdf);
+}
+
+int		close_red_button(void *param)
+{
+    (void)param;
+    exit(0);
 }
 
 void init_window(t_map *map)
@@ -101,6 +107,7 @@ void init_window(t_map *map)
 
     print_map(map, &fdf);
     mlx_key_hook(mlx_win, key_press, &fdf);
+    //mlx_hook(mlx_win, 17, 0, close_red_button, &fdf); //закрытие на красный крестик (не работает на linux)
 
    // mlx_key_hook(mlx_win, close_key, NULL);
     //mlx_mouse_hook(mlx_win, close_mouse, (void *)close_button);
@@ -117,7 +124,7 @@ int main (int argc, const char* argv[])
     if (argc == 2)
     {
         if ((fd = open(argv[1], O_RDONLY)) < 0)
-            throw_error();
+            throw_error(FILE_ERROR);
         map_create(&map);
         read_map(fd, &map);
         init_window(&map);

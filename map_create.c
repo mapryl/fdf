@@ -3,6 +3,7 @@
 #include "get_next_line.h"
 #include <limits.h>
 #include "supporting_functions.h"
+#include "errors.h"
 
 void map_create(t_map* map)
 {
@@ -23,7 +24,7 @@ void* reallocate(void *data, size_t* capacity, size_t elem_size)
     new_capacity += (new_capacity + 2) / 2;
     new_data = malloc(new_capacity * elem_size);
     if (!new_data)
-        return NULL;
+        throw_error(ERROR_NO_MEMORY);
     old_mem_size = *capacity * elem_size;
     memcpy(new_data, data, old_mem_size);
     free(data);
@@ -38,12 +39,12 @@ int map_add(t_map* map, t_point* data, size_t width)
     if(!map->width)
         map->width = width;
     else if(map->width != width)
-        return (-1);
+        throw_error(INVALID_MAP);
     if (map->height >= map->height_capacity)
     {
         new_data = (t_point**)reallocate(map->data, &map->height_capacity, sizeof(t_point*));
         if (!new_data)
-            return (-1);
+            throw_error(ERROR_NO_MEMORY);
         map->data = new_data;
     }
     map->data[map->height++] = data;
@@ -58,7 +59,7 @@ int read_map(const int fd, t_map *map)
     while (get_next_line(fd, &line))
     {
         if (!(split_lines = ft_strsplit(line, ' ')))
-            throw_error();
+            throw_error(INVALID_MAP);
         parse_line(split_lines, map);
     }
 

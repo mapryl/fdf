@@ -90,6 +90,9 @@
 		<Unit filename="/home/alina/CLionProjects/grafics_part1/draw.c">
 			<Option target="Fdf_Alina"/>
 		</Unit>
+		<Unit filename="/home/alina/CLionProjects/grafics_part1/errors.h">
+			<Option target="Fdf_Alina"/>
+		</Unit>
 		<Unit filename="/home/alina/CLionProjects/grafics_part1/fdf.h">
 			<Option target="Fdf_Alina"/>
 		</Unit>

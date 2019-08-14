@@ -1,5 +1,7 @@
 #include "supporting_functions.h"
 #include "libft/includes/libft.h"
+#include "stdio.h"
+#include "errno.h"
 
 void	ft_swap(int *a, int *b)
 {
@@ -35,8 +37,11 @@ int ft_isnumber(const char *str)
     return 0;
 }
 
-void throw_error()
+void throw_error(char *str)
 {
-    //exit(1);
-    int i = 0;
+    if (errno == 0)
+        ft_putendl_fd(str, 2);
+    else
+        perror(str);
+    exit(1);
 }

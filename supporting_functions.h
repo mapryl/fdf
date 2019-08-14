@@ -5,6 +5,6 @@
 void	ft_swap(int *a, int *b);
 int pack_argb(const t_color col);
 int ft_isnumber(const char *str);
-void throw_error();
+void throw_error(char *str);
 
 #endif
