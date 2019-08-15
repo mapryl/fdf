@@ -3,7 +3,7 @@
 
 void    camera_create(t_camera* camera)
 {
-	camera->alpha = 0;
+    camera->alpha = 0;
     camera->beta = 0;
     camera->gamma = 0;
     camera->x_move = WIN_WIDTH / 2;
@@ -27,4 +27,3 @@ void    camera_zoom_out(t_camera* camera)
     else if ((camera->zoom -= 0.1) < 0.1)
         camera->zoom = 0.1;
 }
-

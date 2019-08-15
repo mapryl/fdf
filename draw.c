@@ -3,32 +3,51 @@
 #include "rotate.h"
 #include "supporting_functions.h"
 
-void draw_pixel(int steep, int x, int y, float alpha, void *mlx_ptr, void *win_ptr, t_color color)
+void draw_pixel(int steep, int x, int y,  t_fdf* fdf, t_color color)
 {
     if (!steep)
     {
         int argb;
 
-        color.a = (1 - alpha) * 255;
+        color.a = (1 - color.a) * 255;
         argb = pack_argb(color);
-        mlx_pixel_put(mlx_ptr, win_ptr, x, y, argb);
+        mlx_pixel_put(fdf->mlx_ptr, fdf->mlx_win, x, y, argb);
     }
     else
     {
         int argb;
 
-        color.a = (1 - alpha) * 255;
+        color.a = (1 - color.a) * 255;
         argb = pack_argb(color);
-        mlx_pixel_put(mlx_ptr, win_ptr, y, x, argb);
+        mlx_pixel_put(fdf->mlx_ptr, fdf->mlx_win, y, x, argb);
     }
 }
 
-void Draw_Wu(t_point dot1, t_point dot2, void *mlx_ptr, void *win_ptr)
+void draw_between(int steep, const t_point* p1, const t_point* p2, const t_point* delta, t_fdf* fdf)
+{
+    float gradient;
+    float y;
+    t_point curr;
+
+    curr = *p1;
+
+    gradient = (float)(p2->y - p1->y) / (float)(p2->x - p1->x);
+    y = (float)p1->y + gradient;
+    curr.x++;
+    while (curr.x <= p2->x - 1)
+    {
+        draw_pixel(steep, curr.x, (int)y, fdf,  get_color(curr, *p1, *p2, *delta, 1 - (y - (int)y)));
+        draw_pixel(steep, curr.x, (int)y + 1, fdf,  get_color(curr, *p1, *p2, *delta, 1 - (y - (int)y)));
+        y += gradient;
+        curr.x++;
+    }
+}
+
+
+void Draw_Wu(t_point dot1, t_point dot2,  t_fdf* fdf)
 {
     t_point delta;
     t_point tmp;
-    float gradient;
-    float y;
     int steep;
 
     delta.x = abs(dot1.x - dot2.x);
@@ -46,45 +65,47 @@ void Draw_Wu(t_point dot1, t_point dot2, void *mlx_ptr, void *win_ptr)
         dot1 = dot2;
         dot2 = tmp;
     }
-    t_point curr = dot1;
-    draw_pixel(steep, dot1.x, dot1.y, 0, mlx_ptr, win_ptr, get_color(curr, dot1, dot2, delta));
-    draw_pixel(steep, dot2.x, dot2.y, 0, mlx_ptr, win_ptr, get_color(dot2, dot1, dot2, delta));
-    gradient = (float)(dot2.y - dot1.y) / (float)(dot2.x - dot1.x);
-    y = (float)dot1.y + gradient;
-    curr.x++;
-    while (curr.x <= dot2.x - 1)
-    {
-        draw_pixel(steep, curr.x, (int)y, 1 - (y - (int)y), mlx_ptr, win_ptr,  get_color(curr, dot1, dot2, delta));
-        draw_pixel(steep, curr.x, (int)y + 1, y - (int)y, mlx_ptr, win_ptr,  get_color(curr, dot1, dot2, delta));
-        y += gradient;
-        curr.x++;
-    }
+    draw_pixel(steep, dot1.x, dot1.y, fdf, get_color(dot1, dot1, dot2, delta, 0));
+    draw_pixel(steep, dot2.x, dot2.y, fdf, get_color(dot2, dot1, dot2, delta, 0));
+    draw_between(steep, &dot1, &dot2, &delta, fdf);
 }
 
-void draw_line(t_point p1, t_point p2, t_fdf* fdf)
+void draw_thing(int i, int j, t_fdf* fdf)
 {
-    Draw_Wu(p1, p2, fdf->mlx_ptr, fdf->mlx_win);
+    t_map *map;
+
+    map = fdf->map;
+
+    Draw_Wu(transform(&map->data[i][j], fdf), transform(&map->data[i][j+1], fdf), fdf);
+    Draw_Wu(transform(&map->data[i][j], fdf), transform(&map->data[i+1][j+1], fdf), fdf);
+    Draw_Wu(transform(&map->data[i][j], fdf), transform(&map->data[i+1][j], fdf), fdf);
 }
 
 void print_map(t_map *map, t_fdf *fdf)
 {
-    mlx_clear_window(fdf->mlx_ptr, fdf->mlx_win);
+    size_t i;
+    size_t j;
 
-    for (size_t i = 0; i < map->height; ++i)
+    mlx_clear_window(fdf->mlx_ptr, fdf->mlx_win);
+    i = 0;
+    while (i < map->height)
     {
+        j = 0;
         if (i < map->height - 1)
         {
-            for (size_t j = 0; j < map->width - 1; ++j)
+            while (j < map->width - 1)
             {
-                draw_line(transform(&map->data[i][j], fdf), transform(&map->data[i][j+1], fdf), fdf);
-                draw_line(transform(&map->data[i][j], fdf), transform(&map->data[i+1][j+1], fdf), fdf);
-                draw_line(transform(&map->data[i][j], fdf), transform(&map->data[i+1][j], fdf), fdf);
+                draw_thing(i, j, fdf);
+                j++;
             }
-            draw_line(transform(&map->data[i][map->width - 1], fdf), transform(&map->data[i+1][map->width - 1], fdf), fdf);
+            Draw_Wu(transform(&map->data[i][map->width - 1], fdf), transform(&map->data[i+1][map->width - 1], fdf), fdf);
         }
         else
-            for (size_t j = 0; j < map->width - 1; ++j)
-                draw_line(transform(&map->data[i][j], fdf), transform(&map->data[i][j+1], fdf), fdf);
+            while (j < map->width - 1)
+            {
+                Draw_Wu(transform(&map->data[i][j], fdf), transform(&map->data[i][j+1], fdf), fdf);
+                j++;
+            }
+        i++;
     }
-
 }

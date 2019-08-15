@@ -55,7 +55,7 @@ typedef struct fdf
     void *mlx_win;
 } t_fdf;
 
-void Draw_Wu(t_point dot1, t_point dot2, void *mlx_ptr, void *win_ptr);
+void Draw_Wu(t_point dot1, t_point dot2,  t_fdf* fdf);
 void print_map(t_map *map, t_fdf *fdf);
 
 #endif

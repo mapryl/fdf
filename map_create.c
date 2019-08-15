@@ -51,6 +51,31 @@ int map_add(t_map* map, t_point* data, size_t width)
     return 0;
 }
 
+void map_center(t_map* map)
+{
+    t_point offset;
+    int i;
+    int j;
+
+    offset.x = (int)(-map->width/2)*X_UNIT;
+    offset.y = (int)(-map->height/2)*Y_UNIT;
+    offset.z = (int)(-(map->max_z - map->min_z)/2);
+    i = 0;
+    while (i < map->height)
+    {
+        j = 0;
+        while (j < map->width)
+        {
+            map->data[i][j].color = get_default_color(map->data[i][j].z, map);
+            map->data[i][j].x += offset.x;
+            map->data[i][j].y += offset.y;
+            map->data[i][j].z += offset.z;
+            j++;
+        }
+        i++;
+    }
+}
+
 int read_map(const int fd, t_map *map)
 {
     char *line;
@@ -63,19 +88,7 @@ int read_map(const int fd, t_map *map)
         parse_line(split_lines, map);
     }
 
-    int x_offset = (int)(-map->width/2)*X_UNIT;
-    int y_offset = (int)(-map->height/2)*Y_UNIT;
-    int z_offset = (int)(-(map->max_z - map->min_z)/2);
-    for (int i = 0; i < map->height; i++)
-    {
-        for (int j = 0; j < map->width; j++)
-        {
-            map->data[i][j].color = get_default_color(map->data[i][j].z, map);
-            map->data[i][j].x += x_offset;
-            map->data[i][j].y += y_offset;
-            map->data[i][j].z += z_offset;
-        }
-    }
+    map_center(map);
+
     return 0;
 }
-

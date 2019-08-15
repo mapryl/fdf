@@ -6,27 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/alina/CLionProjects/grafics_part1/camera.h
-
 /home/alina/CLionProjects/grafics_part1/errors.h
-
-/home/alina/CLionProjects/grafics_part1/fdf.h
-../minilibx/mlx.h
-/home/alina/CLionProjects/minilibx/mlx.h
-unistd.h
--
-stdlib.h
--
-get_next_line.h
-/home/alina/CLionProjects/grafics_part1/get_next_line.h
-libft/includes/libft.h
-/home/alina/CLionProjects/grafics_part1/libft/includes/libft.h
-map.h
-/home/alina/CLionProjects/grafics_part1/map.h
-camera.h
-/home/alina/CLionProjects/grafics_part1/camera.h
-graphics.h
-/home/alina/CLionProjects/grafics_part1/graphics.h
 
 /home/alina/CLionProjects/grafics_part1/get_next_line.h
 unistd.h
@@ -39,12 +19,6 @@ stdlib.h
 -
 
 /home/alina/CLionProjects/grafics_part1/graphics.h
-
-/home/alina/CLionProjects/grafics_part1/keyboard_controls.h
-fdf.h
-/home/alina/CLionProjects/grafics_part1/fdf.h
-
-/home/alina/CLionProjects/grafics_part1/keys.h
 
 /home/alina/CLionProjects/grafics_part1/libft/includes/libft.h
 string.h
@@ -54,27 +28,9 @@ stdlib.h
 unistd.h
 -
 
-/home/alina/CLionProjects/grafics_part1/main.c
+/home/alina/CLionProjects/grafics_part1/line.h
 map.h
 /home/alina/CLionProjects/grafics_part1/map.h
-stdlib.h
--
-unistd.h
--
-fcntl.h
--
-fdf.h
-/home/alina/CLionProjects/grafics_part1/fdf.h
-keys.h
-/home/alina/CLionProjects/grafics_part1/keys.h
-math.h
--
-keyboard_controls.h
-/home/alina/CLionProjects/grafics_part1/keyboard_controls.h
-errors.h
-/home/alina/CLionProjects/grafics_part1/errors.h
-supporting_functions.h
-/home/alina/CLionProjects/grafics_part1/supporting_functions.h
 
 /home/alina/CLionProjects/grafics_part1/map.h
 stdlib.h
@@ -82,9 +38,21 @@ stdlib.h
 graphics.h
 /home/alina/CLionProjects/grafics_part1/graphics.h
 
+/home/alina/CLionProjects/grafics_part1/map_create.c
+line.h
+/home/alina/CLionProjects/grafics_part1/line.h
+map.h
+/home/alina/CLionProjects/grafics_part1/map.h
+get_next_line.h
+/home/alina/CLionProjects/grafics_part1/get_next_line.h
+limits.h
+-
+supporting_functions.h
+/home/alina/CLionProjects/grafics_part1/supporting_functions.h
+errors.h
+/home/alina/CLionProjects/grafics_part1/errors.h
+
 /home/alina/CLionProjects/grafics_part1/supporting_functions.h
 graphics.h
 /home/alina/CLionProjects/grafics_part1/graphics.h
-
-/home/alina/CLionProjects/minilibx/mlx.h
 
