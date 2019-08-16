@@ -2,6 +2,7 @@
 #include "map.h"
 #include "rotate.h"
 #include "supporting_functions.h"
+#include "mlx.h"
 
 void draw_pixel(int steep, int x, int y,  t_fdf* fdf, t_color color)
 {
@@ -9,7 +10,7 @@ void draw_pixel(int steep, int x, int y,  t_fdf* fdf, t_color color)
     {
         int argb;
 
-        color.a = (1 - color.a) * 255;
+        //color.a = (1 - color.a) * 255;
         argb = pack_argb(color);
         mlx_pixel_put(fdf->mlx_ptr, fdf->mlx_win, x, y, argb);
     }
@@ -17,7 +18,7 @@ void draw_pixel(int steep, int x, int y,  t_fdf* fdf, t_color color)
     {
         int argb;
 
-        color.a = (1 - color.a) * 255;
+       // color.a = (1 - color.a) * 255;
         argb = pack_argb(color);
         mlx_pixel_put(fdf->mlx_ptr, fdf->mlx_win, y, x, argb);
     }
