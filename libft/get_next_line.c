@@ -6,11 +6,11 @@
 /*   By: mapryl <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/24 15:02:18 by mapryl            #+#    #+#             */
-/*   Updated: 2019/08/16 16:58:19 by mflannel         ###   ########.fr       */
+/*   Updated: 2019/08/17 17:19:35 by mflannel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+#include "/Users/mflannel/Desktop/Fdf1608/libft/includes/get_next_line.h"
 
 static char	**add_file(char **stack)
 {

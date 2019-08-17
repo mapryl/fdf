@@ -1,10 +1,10 @@
 #ifndef FDF_H
-#define FDF_H
+# define FDF_H
 
 #include "../minilibx/mlx.h"
 #include <unistd.h>
 #include <stdlib.h>
-#include "get_next_line.h"
+#include "libft/includes/get_next_line.h"
 #include "libft/includes/libft.h"
 #include "map.h"
 #include "camera.h"

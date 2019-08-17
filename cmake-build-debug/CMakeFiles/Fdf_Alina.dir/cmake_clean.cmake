@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Fdf_Alina.dir/camera.c.o"
   "CMakeFiles/Fdf_Alina.dir/draw.c.o"
-  "CMakeFiles/Fdf_Alina.dir/get_next_line.c.o"
+  "CMakeFiles/Fdf_Alina.dir/libft/get_next_line.c.o"
   "CMakeFiles/Fdf_Alina.dir/gradient.c.o"
   "CMakeFiles/Fdf_Alina.dir/keyboard_controls.c.o"
   "CMakeFiles/Fdf_Alina.dir/line.c.o"

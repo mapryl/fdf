@@ -9,17 +9,13 @@ CMakeFiles/Fdf_Alina.dir/draw.c.o: ../camera.h
 CMakeFiles/Fdf_Alina.dir/draw.c.o: ../draw.c
 CMakeFiles/Fdf_Alina.dir/draw.c.o: ../errors.h
 CMakeFiles/Fdf_Alina.dir/draw.c.o: ../fdf.h
-CMakeFiles/Fdf_Alina.dir/draw.c.o: ../get_next_line.h
 CMakeFiles/Fdf_Alina.dir/draw.c.o: ../graphics.h
+CMakeFiles/Fdf_Alina.dir/draw.c.o: ../libft/includes/get_next_line.h
 CMakeFiles/Fdf_Alina.dir/draw.c.o: ../libft/includes/libft.h
 CMakeFiles/Fdf_Alina.dir/draw.c.o: ../map.h
 CMakeFiles/Fdf_Alina.dir/draw.c.o: ../rotate.h
 CMakeFiles/Fdf_Alina.dir/draw.c.o: ../supporting_functions.h
 CMakeFiles/Fdf_Alina.dir/draw.c.o: /Users/mflannel/Desktop/minilibx/mlx.h
-
-CMakeFiles/Fdf_Alina.dir/get_next_line.c.o: ../get_next_line.c
-CMakeFiles/Fdf_Alina.dir/get_next_line.c.o: ../get_next_line.h
-CMakeFiles/Fdf_Alina.dir/get_next_line.c.o: ../libft/includes/libft.h
 
 CMakeFiles/Fdf_Alina.dir/gradient.c.o: ../gradient.c
 CMakeFiles/Fdf_Alina.dir/gradient.c.o: ../graphics.h
@@ -27,13 +23,17 @@ CMakeFiles/Fdf_Alina.dir/gradient.c.o: ../map.h
 
 CMakeFiles/Fdf_Alina.dir/keyboard_controls.c.o: ../camera.h
 CMakeFiles/Fdf_Alina.dir/keyboard_controls.c.o: ../fdf.h
-CMakeFiles/Fdf_Alina.dir/keyboard_controls.c.o: ../get_next_line.h
 CMakeFiles/Fdf_Alina.dir/keyboard_controls.c.o: ../graphics.h
 CMakeFiles/Fdf_Alina.dir/keyboard_controls.c.o: ../keyboard_controls.c
 CMakeFiles/Fdf_Alina.dir/keyboard_controls.c.o: ../keys.h
+CMakeFiles/Fdf_Alina.dir/keyboard_controls.c.o: ../libft/includes/get_next_line.h
 CMakeFiles/Fdf_Alina.dir/keyboard_controls.c.o: ../libft/includes/libft.h
 CMakeFiles/Fdf_Alina.dir/keyboard_controls.c.o: ../map.h
 CMakeFiles/Fdf_Alina.dir/keyboard_controls.c.o: /Users/mflannel/Desktop/minilibx/mlx.h
+
+CMakeFiles/Fdf_Alina.dir/libft/get_next_line.c.o: ../libft/get_next_line.c
+CMakeFiles/Fdf_Alina.dir/libft/get_next_line.c.o: ../libft/includes/get_next_line.h
+CMakeFiles/Fdf_Alina.dir/libft/get_next_line.c.o: ../libft/includes/libft.h
 
 CMakeFiles/Fdf_Alina.dir/line.c.o: ../errors.h
 CMakeFiles/Fdf_Alina.dir/line.c.o: ../graphics.h
@@ -46,10 +46,10 @@ CMakeFiles/Fdf_Alina.dir/line.c.o: ../supporting_functions.h
 CMakeFiles/Fdf_Alina.dir/main.c.o: ../camera.h
 CMakeFiles/Fdf_Alina.dir/main.c.o: ../errors.h
 CMakeFiles/Fdf_Alina.dir/main.c.o: ../fdf.h
-CMakeFiles/Fdf_Alina.dir/main.c.o: ../get_next_line.h
 CMakeFiles/Fdf_Alina.dir/main.c.o: ../graphics.h
 CMakeFiles/Fdf_Alina.dir/main.c.o: ../keyboard_controls.h
 CMakeFiles/Fdf_Alina.dir/main.c.o: ../keys.h
+CMakeFiles/Fdf_Alina.dir/main.c.o: ../libft/includes/get_next_line.h
 CMakeFiles/Fdf_Alina.dir/main.c.o: ../libft/includes/libft.h
 CMakeFiles/Fdf_Alina.dir/main.c.o: ../main.c
 CMakeFiles/Fdf_Alina.dir/main.c.o: ../map.h
@@ -57,8 +57,8 @@ CMakeFiles/Fdf_Alina.dir/main.c.o: ../supporting_functions.h
 CMakeFiles/Fdf_Alina.dir/main.c.o: /Users/mflannel/Desktop/minilibx/mlx.h
 
 CMakeFiles/Fdf_Alina.dir/map_create.c.o: ../errors.h
-CMakeFiles/Fdf_Alina.dir/map_create.c.o: ../get_next_line.h
 CMakeFiles/Fdf_Alina.dir/map_create.c.o: ../graphics.h
+CMakeFiles/Fdf_Alina.dir/map_create.c.o: ../libft/includes/get_next_line.h
 CMakeFiles/Fdf_Alina.dir/map_create.c.o: ../libft/includes/libft.h
 CMakeFiles/Fdf_Alina.dir/map_create.c.o: ../line.h
 CMakeFiles/Fdf_Alina.dir/map_create.c.o: ../map.h
@@ -67,8 +67,8 @@ CMakeFiles/Fdf_Alina.dir/map_create.c.o: ../supporting_functions.h
 
 CMakeFiles/Fdf_Alina.dir/rotate.c.o: ../camera.h
 CMakeFiles/Fdf_Alina.dir/rotate.c.o: ../fdf.h
-CMakeFiles/Fdf_Alina.dir/rotate.c.o: ../get_next_line.h
 CMakeFiles/Fdf_Alina.dir/rotate.c.o: ../graphics.h
+CMakeFiles/Fdf_Alina.dir/rotate.c.o: ../libft/includes/get_next_line.h
 CMakeFiles/Fdf_Alina.dir/rotate.c.o: ../libft/includes/libft.h
 CMakeFiles/Fdf_Alina.dir/rotate.c.o: ../map.h
 CMakeFiles/Fdf_Alina.dir/rotate.c.o: ../rotate.c

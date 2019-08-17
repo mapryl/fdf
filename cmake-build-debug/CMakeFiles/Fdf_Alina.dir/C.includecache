@@ -6,51 +6,19 @@
 
 #IncludeRegexTransform: 
 
-/Users/mflannel/Desktop/Fdf1608/camera.h
-
-/Users/mflannel/Desktop/Fdf1608/draw.c
-fdf.h
-/Users/mflannel/Desktop/Fdf1608/fdf.h
-map.h
-/Users/mflannel/Desktop/Fdf1608/map.h
-rotate.h
-/Users/mflannel/Desktop/Fdf1608/rotate.h
-supporting_functions.h
-/Users/mflannel/Desktop/Fdf1608/supporting_functions.h
-errors.h
 /Users/mflannel/Desktop/Fdf1608/errors.h
 
-/Users/mflannel/Desktop/Fdf1608/errors.h
-
-/Users/mflannel/Desktop/Fdf1608/fdf.h
-../minilibx/mlx.h
-/Users/mflannel/Desktop/minilibx/mlx.h
-unistd.h
--
-stdlib.h
--
-get_next_line.h
-/Users/mflannel/Desktop/Fdf1608/get_next_line.h
-libft/includes/libft.h
-/Users/mflannel/Desktop/Fdf1608/libft/includes/libft.h
-map.h
-/Users/mflannel/Desktop/Fdf1608/map.h
-camera.h
-/Users/mflannel/Desktop/Fdf1608/camera.h
-graphics.h
 /Users/mflannel/Desktop/Fdf1608/graphics.h
 
-/Users/mflannel/Desktop/Fdf1608/get_next_line.h
+/Users/mflannel/Desktop/Fdf1608/libft/includes/get_next_line.h
 unistd.h
 -
-libft/includes/libft.h
+libft.h
 /Users/mflannel/Desktop/Fdf1608/libft/includes/libft.h
 fcntl.h
 -
 stdlib.h
 -
-
-/Users/mflannel/Desktop/Fdf1608/graphics.h
 
 /Users/mflannel/Desktop/Fdf1608/libft/includes/libft.h
 string.h
@@ -60,21 +28,31 @@ stdlib.h
 unistd.h
 -
 
+/Users/mflannel/Desktop/Fdf1608/line.h
+map.h
+/Users/mflannel/Desktop/Fdf1608/map.h
+
 /Users/mflannel/Desktop/Fdf1608/map.h
 stdlib.h
 -
 graphics.h
 /Users/mflannel/Desktop/Fdf1608/graphics.h
 
-/Users/mflannel/Desktop/Fdf1608/rotate.h
-fdf.h
-/Users/mflannel/Desktop/Fdf1608/fdf.h
-graphics.h
-/Users/mflannel/Desktop/Fdf1608/graphics.h
+/Users/mflannel/Desktop/Fdf1608/map_create.c
+line.h
+/Users/mflannel/Desktop/Fdf1608/line.h
+map.h
+/Users/mflannel/Desktop/Fdf1608/map.h
+/Users/mflannel/Desktop/Fdf1608/libft/includes/get_next_line.h
+-
+limits.h
+-
+supporting_functions.h
+/Users/mflannel/Desktop/Fdf1608/supporting_functions.h
+errors.h
+/Users/mflannel/Desktop/Fdf1608/errors.h
 
 /Users/mflannel/Desktop/Fdf1608/supporting_functions.h
 graphics.h
 /Users/mflannel/Desktop/Fdf1608/graphics.h
-
-/Users/mflannel/Desktop/minilibx/mlx.h
 

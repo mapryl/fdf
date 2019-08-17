@@ -83,18 +83,18 @@ CMakeFiles/Fdf_Alina.dir/draw.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Fdf_Alina.dir/draw.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mflannel/Desktop/Fdf1608/draw.c -o CMakeFiles/Fdf_Alina.dir/draw.c.s
 
-CMakeFiles/Fdf_Alina.dir/get_next_line.c.o: CMakeFiles/Fdf_Alina.dir/flags.make
-CMakeFiles/Fdf_Alina.dir/get_next_line.c.o: ../get_next_line.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mflannel/Desktop/Fdf1608/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/Fdf_Alina.dir/get_next_line.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fdf_Alina.dir/get_next_line.c.o   -c /Users/mflannel/Desktop/Fdf1608/get_next_line.c
+CMakeFiles/Fdf_Alina.dir/libft/get_next_line.c.o: CMakeFiles/Fdf_Alina.dir/flags.make
+CMakeFiles/Fdf_Alina.dir/libft/get_next_line.c.o: ../libft/get_next_line.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mflannel/Desktop/Fdf1608/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/Fdf_Alina.dir/libft/get_next_line.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fdf_Alina.dir/libft/get_next_line.c.o   -c /Users/mflannel/Desktop/Fdf1608/libft/get_next_line.c
 
-CMakeFiles/Fdf_Alina.dir/get_next_line.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Fdf_Alina.dir/get_next_line.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/mflannel/Desktop/Fdf1608/get_next_line.c > CMakeFiles/Fdf_Alina.dir/get_next_line.c.i
+CMakeFiles/Fdf_Alina.dir/libft/get_next_line.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Fdf_Alina.dir/libft/get_next_line.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/mflannel/Desktop/Fdf1608/libft/get_next_line.c > CMakeFiles/Fdf_Alina.dir/libft/get_next_line.c.i
 
-CMakeFiles/Fdf_Alina.dir/get_next_line.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Fdf_Alina.dir/get_next_line.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mflannel/Desktop/Fdf1608/get_next_line.c -o CMakeFiles/Fdf_Alina.dir/get_next_line.c.s
+CMakeFiles/Fdf_Alina.dir/libft/get_next_line.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Fdf_Alina.dir/libft/get_next_line.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mflannel/Desktop/Fdf1608/libft/get_next_line.c -o CMakeFiles/Fdf_Alina.dir/libft/get_next_line.c.s
 
 CMakeFiles/Fdf_Alina.dir/gradient.c.o: CMakeFiles/Fdf_Alina.dir/flags.make
 CMakeFiles/Fdf_Alina.dir/gradient.c.o: ../gradient.c
@@ -191,7 +191,7 @@ CMakeFiles/Fdf_Alina.dir/supporting_functions.c.s: cmake_force
 Fdf_Alina_OBJECTS = \
 "CMakeFiles/Fdf_Alina.dir/camera.c.o" \
 "CMakeFiles/Fdf_Alina.dir/draw.c.o" \
-"CMakeFiles/Fdf_Alina.dir/get_next_line.c.o" \
+"CMakeFiles/Fdf_Alina.dir/libft/get_next_line.c.o" \
 "CMakeFiles/Fdf_Alina.dir/gradient.c.o" \
 "CMakeFiles/Fdf_Alina.dir/keyboard_controls.c.o" \
 "CMakeFiles/Fdf_Alina.dir/line.c.o" \
@@ -205,7 +205,7 @@ Fdf_Alina_EXTERNAL_OBJECTS =
 
 Fdf_Alina: CMakeFiles/Fdf_Alina.dir/camera.c.o
 Fdf_Alina: CMakeFiles/Fdf_Alina.dir/draw.c.o
-Fdf_Alina: CMakeFiles/Fdf_Alina.dir/get_next_line.c.o
+Fdf_Alina: CMakeFiles/Fdf_Alina.dir/libft/get_next_line.c.o
 Fdf_Alina: CMakeFiles/Fdf_Alina.dir/gradient.c.o
 Fdf_Alina: CMakeFiles/Fdf_Alina.dir/keyboard_controls.c.o
 Fdf_Alina: CMakeFiles/Fdf_Alina.dir/line.c.o

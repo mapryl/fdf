@@ -3,6 +3,7 @@
 #include "rotate.h"
 #include "supporting_functions.h"
 #include "errors.h"
+#include "mlx.h"
 
 void draw_on_img(int argb, t_fdf *image, int x, int y)
 {
@@ -15,7 +16,6 @@ void draw_pixel(int steep, int x, int y,  t_fdf* fdf_image, t_color color)
     if (!steep)
     {
         int argb;
-
         color.a = (color.a - 1) * 255;
         argb = pack_argb(color);
         draw_on_img(argb, fdf_image, x, y);
@@ -25,6 +25,7 @@ void draw_pixel(int steep, int x, int y,  t_fdf* fdf_image, t_color color)
         int argb;
 
         color.a = (color.a - 1) * 255;
+
         argb = pack_argb(color);
 	    draw_on_img(argb, fdf_image, y, x);
     }

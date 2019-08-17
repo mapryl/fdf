@@ -6,7 +6,11 @@
 #    By: mapryl <mapryl@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/04/30 13:24:44 by mapryl            #+#    #+#              #
-#    Updated: 2019/08/16 16:58:19 by mflannel         ###   ########.fr        #
+#    Updated: 2019/08/17 17:12:49 by mflannel         ###   ########.fr        #
+.fr        #
+=======
+#    Updated: 2019/08/16 19:01:24 by mapryl           ###   ########.fr        #
+>>>>>>> 559169e2ae323bc5d4383056f00d52d64eec7b50
 #                                                                              #
 # **************************************************************************** #
 
@@ -29,13 +33,13 @@ SRC_FILES = ft_atoi.c ft_bzero.c ft_isalnum.c ft_isalpha.c ft_isascii.c \
 	 ft_strlcat.c ft_strlen.c ft_strmap.c ft_strmapi.c ft_strncat.c \
 	 ft_strncmp.c ft_strncpy.c ft_strnequ.c ft_strnew.c ft_strnstr.c \
 	 ft_strrchr.c ft_strsplit.c ft_strstr.c \
-	 ft_strsub.c ft_strtrim.c ft_tolower.c ft_toupper.c
+	 ft_strsub.c ft_strtrim.c ft_tolower.c ft_toupper.c get_next_line.c
 
 SRCS = $(addprefix $(SRC_PATH), $(SRC_FILES))
 
 HEAD_PATH = ./includes/
 
-HEAD_FILES = libft.h
+HEAD_FILES = libft.h get_next_line.h
 
 HEADERS = $(addprefix $(HEAD_PATH), $(HEAD_FILES))
 

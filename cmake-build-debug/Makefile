@@ -177,33 +177,6 @@ draw.c.s:
 	$(MAKE) -f CMakeFiles/Fdf_Alina.dir/build.make CMakeFiles/Fdf_Alina.dir/draw.c.s
 .PHONY : draw.c.s
 
-get_next_line.o: get_next_line.c.o
-
-.PHONY : get_next_line.o
-
-# target to build an object file
-get_next_line.c.o:
-	$(MAKE) -f CMakeFiles/Fdf_Alina.dir/build.make CMakeFiles/Fdf_Alina.dir/get_next_line.c.o
-.PHONY : get_next_line.c.o
-
-get_next_line.i: get_next_line.c.i
-
-.PHONY : get_next_line.i
-
-# target to preprocess a source file
-get_next_line.c.i:
-	$(MAKE) -f CMakeFiles/Fdf_Alina.dir/build.make CMakeFiles/Fdf_Alina.dir/get_next_line.c.i
-.PHONY : get_next_line.c.i
-
-get_next_line.s: get_next_line.c.s
-
-.PHONY : get_next_line.s
-
-# target to generate assembly for a file
-get_next_line.c.s:
-	$(MAKE) -f CMakeFiles/Fdf_Alina.dir/build.make CMakeFiles/Fdf_Alina.dir/get_next_line.c.s
-.PHONY : get_next_line.c.s
-
 gradient.o: gradient.c.o
 
 .PHONY : gradient.o
@@ -257,6 +230,33 @@ keyboard_controls.s: keyboard_controls.c.s
 keyboard_controls.c.s:
 	$(MAKE) -f CMakeFiles/Fdf_Alina.dir/build.make CMakeFiles/Fdf_Alina.dir/keyboard_controls.c.s
 .PHONY : keyboard_controls.c.s
+
+libft/get_next_line.o: libft/get_next_line.c.o
+
+.PHONY : libft/get_next_line.o
+
+# target to build an object file
+libft/get_next_line.c.o:
+	$(MAKE) -f CMakeFiles/Fdf_Alina.dir/build.make CMakeFiles/Fdf_Alina.dir/libft/get_next_line.c.o
+.PHONY : libft/get_next_line.c.o
+
+libft/get_next_line.i: libft/get_next_line.c.i
+
+.PHONY : libft/get_next_line.i
+
+# target to preprocess a source file
+libft/get_next_line.c.i:
+	$(MAKE) -f CMakeFiles/Fdf_Alina.dir/build.make CMakeFiles/Fdf_Alina.dir/libft/get_next_line.c.i
+.PHONY : libft/get_next_line.c.i
+
+libft/get_next_line.s: libft/get_next_line.c.s
+
+.PHONY : libft/get_next_line.s
+
+# target to generate assembly for a file
+libft/get_next_line.c.s:
+	$(MAKE) -f CMakeFiles/Fdf_Alina.dir/build.make CMakeFiles/Fdf_Alina.dir/libft/get_next_line.c.s
+.PHONY : libft/get_next_line.c.s
 
 line.o: line.c.o
 
@@ -408,15 +408,15 @@ help:
 	@echo "... draw.o"
 	@echo "... draw.i"
 	@echo "... draw.s"
-	@echo "... get_next_line.o"
-	@echo "... get_next_line.i"
-	@echo "... get_next_line.s"
 	@echo "... gradient.o"
 	@echo "... gradient.i"
 	@echo "... gradient.s"
 	@echo "... keyboard_controls.o"
 	@echo "... keyboard_controls.i"
 	@echo "... keyboard_controls.s"
+	@echo "... libft/get_next_line.o"
+	@echo "... libft/get_next_line.i"
+	@echo "... libft/get_next_line.s"
 	@echo "... line.o"
 	@echo "... line.i"
 	@echo "... line.s"

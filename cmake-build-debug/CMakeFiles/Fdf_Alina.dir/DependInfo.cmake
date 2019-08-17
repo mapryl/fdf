@@ -6,9 +6,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_C
   "/Users/mflannel/Desktop/Fdf1608/camera.c" "/Users/mflannel/Desktop/Fdf1608/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/camera.c.o"
   "/Users/mflannel/Desktop/Fdf1608/draw.c" "/Users/mflannel/Desktop/Fdf1608/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/draw.c.o"
-  "/Users/mflannel/Desktop/Fdf1608/get_next_line.c" "/Users/mflannel/Desktop/Fdf1608/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/get_next_line.c.o"
   "/Users/mflannel/Desktop/Fdf1608/gradient.c" "/Users/mflannel/Desktop/Fdf1608/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/gradient.c.o"
   "/Users/mflannel/Desktop/Fdf1608/keyboard_controls.c" "/Users/mflannel/Desktop/Fdf1608/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/keyboard_controls.c.o"
+  "/Users/mflannel/Desktop/Fdf1608/libft/get_next_line.c" "/Users/mflannel/Desktop/Fdf1608/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/libft/get_next_line.c.o"
   "/Users/mflannel/Desktop/Fdf1608/line.c" "/Users/mflannel/Desktop/Fdf1608/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/line.c.o"
   "/Users/mflannel/Desktop/Fdf1608/main.c" "/Users/mflannel/Desktop/Fdf1608/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/main.c.o"
   "/Users/mflannel/Desktop/Fdf1608/map_create.c" "/Users/mflannel/Desktop/Fdf1608/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/map_create.c.o"

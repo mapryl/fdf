@@ -1,6 +1,6 @@
 #include "line.h"
 #include "map.h"
-#include "get_next_line.h"
+#include "/Users/mflannel/Desktop/Fdf1608/libft/includes/get_next_line.h"
 #include <limits.h>
 #include "supporting_functions.h"
 #include "errors.h"

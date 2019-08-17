@@ -92,12 +92,6 @@
 		<Unit filename="/Users/mflannel/Desktop/Fdf1608/fdf.h">
 			<Option target="Fdf_Alina"/>
 		</Unit>
-		<Unit filename="/Users/mflannel/Desktop/Fdf1608/get_next_line.c">
-			<Option target="Fdf_Alina"/>
-		</Unit>
-		<Unit filename="/Users/mflannel/Desktop/Fdf1608/get_next_line.h">
-			<Option target="Fdf_Alina"/>
-		</Unit>
 		<Unit filename="/Users/mflannel/Desktop/Fdf1608/gradient.c">
 			<Option target="Fdf_Alina"/>
 		</Unit>
@@ -111,6 +105,12 @@
 			<Option target="Fdf_Alina"/>
 		</Unit>
 		<Unit filename="/Users/mflannel/Desktop/Fdf1608/keys.h">
+			<Option target="Fdf_Alina"/>
+		</Unit>
+		<Unit filename="/Users/mflannel/Desktop/Fdf1608/libft/get_next_line.c">
+			<Option target="Fdf_Alina"/>
+		</Unit>
+		<Unit filename="/Users/mflannel/Desktop/Fdf1608/libft/includes/get_next_line.h">
 			<Option target="Fdf_Alina"/>
 		</Unit>
 		<Unit filename="/Users/mflannel/Desktop/Fdf1608/line.c">
