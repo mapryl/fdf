@@ -51,7 +51,10 @@ t_color	get_color(t_point current, t_point start, t_point end, t_point delta, in
     double	percentage;
 
     if (current.color.r == end.color.r && current.color.b == end.color.b && current.color.g == end.color.g)
-        return (current.color);
+    {
+	    current.color.a = alpha;
+	    return (current.color);
+    }
     if (delta.x > delta.y)
         percentage = percent(start.x, end.x, current.x);
     else

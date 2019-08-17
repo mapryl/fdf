@@ -1,4 +1,4 @@
-#include <wayland-egl.h>
+
 #include "line.h"
 #include "supporting_functions.h"
 #include "libft/includes/libft.h"

@@ -53,6 +53,12 @@ typedef struct fdf
     t_camera camera;
     void *mlx_ptr;
     void *mlx_win;
+
+	int  *pic;
+	int  *data_adress;
+	int  bpp;
+	int  line_size;
+	int  endian;
 } t_fdf;
 
 void Draw_Wu(t_point dot1, t_point dot2,  t_fdf* fdf);

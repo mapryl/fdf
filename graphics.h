@@ -1,8 +1,8 @@
 #ifndef GRAPHICS_H
 #define GRAPHICS_H
 
-#define WIN_WIDTH 1500
-#define WIN_HEIGHT 800
+#define WIN_WIDTH 1920
+#define WIN_HEIGHT 1080
 
 #define TEXT_COLOR 0xffffff
 
