@@ -1,6 +1,6 @@
 #include "line.h"
 #include "map.h"
-#include "/Users/mflannel/Desktop/Fdf1608/libft/includes/get_next_line.h"
+#include "libft/includes/get_next_line.h"
 #include <limits.h>
 #include "supporting_functions.h"
 #include "errors.h"
@@ -76,6 +76,19 @@ void map_center(t_map* map)
     }
 }
 
+void free_split(char** split)
+{
+    int i;
+
+    i = 0;
+    while(split[i])
+    {
+        free(split[i]);
+        i++;
+    }
+    free(split);
+}
+
 int read_map(const int fd, t_map *map)
 {
     char *line;
@@ -86,8 +99,11 @@ int read_map(const int fd, t_map *map)
         if (!(split_lines = ft_strsplit(line, ' ')))
             throw_error(INVALID_MAP);
         parse_line(split_lines, map);
+        free(line);
+        free_split(split_lines);
     }
-
+    if (map->width < 2 || map->height < 2)
+        throw_error(INVALID_MAP);
     map_center(map);
 
     return 0;

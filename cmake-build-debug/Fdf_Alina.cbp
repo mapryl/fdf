@@ -8,139 +8,134 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Users/mflannel/Desktop/Fdf1608/cmake-build-debug"/>
+				<Option working_dir="/home/alina/CLionProjects/Mflannel/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/mflannel/Desktop/Fdf1608/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/mflannel/Desktop/Fdf1608/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/mflannel/Desktop/Fdf1608/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/mflannel/Desktop/Fdf1608/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j3 -f &quot;/home/alina/CLionProjects/Mflannel/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j3 -f &quot;/home/alina/CLionProjects/Mflannel/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j3 -f &quot;/home/alina/CLionProjects/Mflannel/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j3 -f &quot;/home/alina/CLionProjects/Mflannel/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/Users/mflannel/Desktop/Fdf1608/cmake-build-debug"/>
+				<Option working_dir="/home/alina/CLionProjects/Mflannel/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/mflannel/Desktop/Fdf1608/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/mflannel/Desktop/Fdf1608/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/mflannel/Desktop/Fdf1608/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/mflannel/Desktop/Fdf1608/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="edit_cache">
-				<Option working_dir="/Users/mflannel/Desktop/Fdf1608/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/mflannel/Desktop/Fdf1608/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/mflannel/Desktop/Fdf1608/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/mflannel/Desktop/Fdf1608/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/mflannel/Desktop/Fdf1608/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j3 -f &quot;/home/alina/CLionProjects/Mflannel/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j3 -f &quot;/home/alina/CLionProjects/Mflannel/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j3 -f &quot;/home/alina/CLionProjects/Mflannel/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j3 -f &quot;/home/alina/CLionProjects/Mflannel/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Fdf_Alina">
-				<Option output="/Users/mflannel/Desktop/Fdf1608/cmake-build-debug/Fdf_Alina" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/mflannel/Desktop/Fdf1608/cmake-build-debug"/>
+				<Option output="/home/alina/CLionProjects/Mflannel/cmake-build-debug/Fdf_Alina" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/alina/CLionProjects/Mflannel/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/mflannel/Desktop/Fdf1608/cmake-build-debug/Makefile&quot;  VERBOSE=1 Fdf_Alina"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/mflannel/Desktop/Fdf1608/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/mflannel/Desktop/Fdf1608/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/mflannel/Desktop/Fdf1608/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j3 -f &quot;/home/alina/CLionProjects/Mflannel/cmake-build-debug/Makefile&quot;  VERBOSE=1 Fdf_Alina"/>
+					<CompileFile command="/usr/bin/make -j3 -f &quot;/home/alina/CLionProjects/Mflannel/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j3 -f &quot;/home/alina/CLionProjects/Mflannel/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j3 -f &quot;/home/alina/CLionProjects/Mflannel/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Fdf_Alina/fast">
-				<Option output="/Users/mflannel/Desktop/Fdf1608/cmake-build-debug/Fdf_Alina" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/mflannel/Desktop/Fdf1608/cmake-build-debug"/>
+				<Option output="/home/alina/CLionProjects/Mflannel/cmake-build-debug/Fdf_Alina" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/alina/CLionProjects/Mflannel/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/mflannel/Desktop/Fdf1608/cmake-build-debug/Makefile&quot;  VERBOSE=1 Fdf_Alina/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/mflannel/Desktop/Fdf1608/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/mflannel/Desktop/Fdf1608/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/mflannel/Desktop/Fdf1608/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j3 -f &quot;/home/alina/CLionProjects/Mflannel/cmake-build-debug/Makefile&quot;  VERBOSE=1 Fdf_Alina/fast"/>
+					<CompileFile command="/usr/bin/make -j3 -f &quot;/home/alina/CLionProjects/Mflannel/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j3 -f &quot;/home/alina/CLionProjects/Mflannel/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j3 -f &quot;/home/alina/CLionProjects/Mflannel/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/alina/CLionProjects/Mflannel/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j3 -f &quot;/home/alina/CLionProjects/Mflannel/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j3 -f &quot;/home/alina/CLionProjects/Mflannel/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j3 -f &quot;/home/alina/CLionProjects/Mflannel/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j3 -f &quot;/home/alina/CLionProjects/Mflannel/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/mflannel/Desktop/Fdf1608/camera.c">
+		<Unit filename="/home/alina/CLionProjects/Mflannel/camera.c">
 			<Option target="Fdf_Alina"/>
 		</Unit>
-		<Unit filename="/Users/mflannel/Desktop/Fdf1608/camera.h">
+		<Unit filename="/home/alina/CLionProjects/Mflannel/camera.h">
 			<Option target="Fdf_Alina"/>
 		</Unit>
-		<Unit filename="/Users/mflannel/Desktop/Fdf1608/draw.c">
+		<Unit filename="/home/alina/CLionProjects/Mflannel/draw.c">
 			<Option target="Fdf_Alina"/>
 		</Unit>
-		<Unit filename="/Users/mflannel/Desktop/Fdf1608/fdf.h">
+		<Unit filename="/home/alina/CLionProjects/Mflannel/errors.h">
 			<Option target="Fdf_Alina"/>
 		</Unit>
-		<Unit filename="/Users/mflannel/Desktop/Fdf1608/gradient.c">
+		<Unit filename="/home/alina/CLionProjects/Mflannel/fdf.h">
 			<Option target="Fdf_Alina"/>
 		</Unit>
-		<Unit filename="/Users/mflannel/Desktop/Fdf1608/graphics.h">
+		<Unit filename="/home/alina/CLionProjects/Mflannel/gradient.c">
 			<Option target="Fdf_Alina"/>
 		</Unit>
-		<Unit filename="/Users/mflannel/Desktop/Fdf1608/keyboard_controls.c">
+		<Unit filename="/home/alina/CLionProjects/Mflannel/graphics.h">
 			<Option target="Fdf_Alina"/>
 		</Unit>
-		<Unit filename="/Users/mflannel/Desktop/Fdf1608/keyboard_controls.h">
+		<Unit filename="/home/alina/CLionProjects/Mflannel/keyboard_controls.c">
 			<Option target="Fdf_Alina"/>
 		</Unit>
-		<Unit filename="/Users/mflannel/Desktop/Fdf1608/keys.h">
+		<Unit filename="/home/alina/CLionProjects/Mflannel/keyboard_controls.h">
 			<Option target="Fdf_Alina"/>
 		</Unit>
-		<Unit filename="/Users/mflannel/Desktop/Fdf1608/libft/get_next_line.c">
+		<Unit filename="/home/alina/CLionProjects/Mflannel/keys.h">
 			<Option target="Fdf_Alina"/>
 		</Unit>
-		<Unit filename="/Users/mflannel/Desktop/Fdf1608/libft/includes/get_next_line.h">
+		<Unit filename="/home/alina/CLionProjects/Mflannel/line.c">
 			<Option target="Fdf_Alina"/>
 		</Unit>
-		<Unit filename="/Users/mflannel/Desktop/Fdf1608/line.c">
+		<Unit filename="/home/alina/CLionProjects/Mflannel/line.h">
 			<Option target="Fdf_Alina"/>
 		</Unit>
-		<Unit filename="/Users/mflannel/Desktop/Fdf1608/line.h">
+		<Unit filename="/home/alina/CLionProjects/Mflannel/main.c">
 			<Option target="Fdf_Alina"/>
 		</Unit>
-		<Unit filename="/Users/mflannel/Desktop/Fdf1608/main.c">
+		<Unit filename="/home/alina/CLionProjects/Mflannel/map.h">
 			<Option target="Fdf_Alina"/>
 		</Unit>
-		<Unit filename="/Users/mflannel/Desktop/Fdf1608/map.h">
+		<Unit filename="/home/alina/CLionProjects/Mflannel/map_create.c">
 			<Option target="Fdf_Alina"/>
 		</Unit>
-		<Unit filename="/Users/mflannel/Desktop/Fdf1608/map_create.c">
+		<Unit filename="/home/alina/CLionProjects/Mflannel/rotate.c">
 			<Option target="Fdf_Alina"/>
 		</Unit>
-		<Unit filename="/Users/mflannel/Desktop/Fdf1608/rotate.c">
+		<Unit filename="/home/alina/CLionProjects/Mflannel/rotate.h">
 			<Option target="Fdf_Alina"/>
 		</Unit>
-		<Unit filename="/Users/mflannel/Desktop/Fdf1608/rotate.h">
+		<Unit filename="/home/alina/CLionProjects/Mflannel/supporting_functions.c">
 			<Option target="Fdf_Alina"/>
 		</Unit>
-		<Unit filename="/Users/mflannel/Desktop/Fdf1608/supporting_functions.c">
+		<Unit filename="/home/alina/CLionProjects/Mflannel/supporting_functions.h">
 			<Option target="Fdf_Alina"/>
 		</Unit>
-		<Unit filename="/Users/mflannel/Desktop/Fdf1608/supporting_functions.h">
-			<Option target="Fdf_Alina"/>
-		</Unit>
-		<Unit filename="/Users/mflannel/Desktop/Fdf1608/CMakeLists.txt">
+		<Unit filename="/home/alina/CLionProjects/Mflannel/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

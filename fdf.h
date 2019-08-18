@@ -10,42 +10,15 @@
 #include "camera.h"
 #include "graphics.h"
 
-typedef struct t_pos
+typedef struct picture
 {
-    struct t_pos *pos;
-
-    int pos_x;
-    int pos_y;
-} s_pos;
-
-typedef struct t_ptr
-{
-    struct t_pointers *pointers_ptr;
-
-    void *mlx_ptr;
-    void *mlx_win;
-} s_ptr;
-
-typedef struct t_box
-{
-    struct t_box *box_ptr;
-
-    s_ptr *pointers;
-    s_pos *position;
-    char *action_name;
-    int button_pressed;
-} s_box;
-
-typedef struct t_line
-{
-    struct t_line *line;
-
-    s_pos *pos_0;
-    s_pos *pos_1;
-    s_ptr *pointers;
-    int color;
-    int already_pressed;
-} s_line;
+    int  *pic;
+    int  *data_address;
+    int  bpp;
+    int  line_size;
+    int  endian;
+    size_t pic_size;
+} t_picture;
 
 typedef struct fdf
 {
@@ -53,12 +26,9 @@ typedef struct fdf
     t_camera camera;
     void *mlx_ptr;
     void *mlx_win;
-
-	int  *pic;
-	int  *data_adress;
-	int  bpp;
-	int  line_size;
-	int  endian;
+    void *pepe_ptr;
+    void *menu_ptr;
+    t_picture picture;
 } t_fdf;
 
 void Draw_Wu(t_point dot1, t_point dot2,  t_fdf* fdf);

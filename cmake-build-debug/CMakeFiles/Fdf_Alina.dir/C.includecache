@@ -6,21 +6,21 @@
 
 #IncludeRegexTransform: 
 
-/Users/mflannel/Desktop/Fdf1608/errors.h
+/home/alina/CLionProjects/Mflannel/errors.h
 
-/Users/mflannel/Desktop/Fdf1608/graphics.h
+/home/alina/CLionProjects/Mflannel/graphics.h
 
-/Users/mflannel/Desktop/Fdf1608/libft/includes/get_next_line.h
+/home/alina/CLionProjects/Mflannel/libft/includes/get_next_line.h
 unistd.h
 -
 libft.h
-/Users/mflannel/Desktop/Fdf1608/libft/includes/libft.h
+/home/alina/CLionProjects/Mflannel/libft/includes/libft.h
 fcntl.h
 -
 stdlib.h
 -
 
-/Users/mflannel/Desktop/Fdf1608/libft/includes/libft.h
+/home/alina/CLionProjects/Mflannel/libft/includes/libft.h
 string.h
 -
 stdlib.h
@@ -28,31 +28,31 @@ stdlib.h
 unistd.h
 -
 
-/Users/mflannel/Desktop/Fdf1608/line.h
+/home/alina/CLionProjects/Mflannel/line.h
 map.h
-/Users/mflannel/Desktop/Fdf1608/map.h
+/home/alina/CLionProjects/Mflannel/map.h
 
-/Users/mflannel/Desktop/Fdf1608/map.h
+/home/alina/CLionProjects/Mflannel/map.h
 stdlib.h
 -
 graphics.h
-/Users/mflannel/Desktop/Fdf1608/graphics.h
+/home/alina/CLionProjects/Mflannel/graphics.h
 
-/Users/mflannel/Desktop/Fdf1608/map_create.c
+/home/alina/CLionProjects/Mflannel/map_create.c
 line.h
-/Users/mflannel/Desktop/Fdf1608/line.h
+/home/alina/CLionProjects/Mflannel/line.h
 map.h
-/Users/mflannel/Desktop/Fdf1608/map.h
-/Users/mflannel/Desktop/Fdf1608/libft/includes/get_next_line.h
--
+/home/alina/CLionProjects/Mflannel/map.h
+libft/includes/get_next_line.h
+/home/alina/CLionProjects/Mflannel/libft/includes/get_next_line.h
 limits.h
 -
 supporting_functions.h
-/Users/mflannel/Desktop/Fdf1608/supporting_functions.h
+/home/alina/CLionProjects/Mflannel/supporting_functions.h
 errors.h
-/Users/mflannel/Desktop/Fdf1608/errors.h
+/home/alina/CLionProjects/Mflannel/errors.h
 
-/Users/mflannel/Desktop/Fdf1608/supporting_functions.h
+/home/alina/CLionProjects/Mflannel/supporting_functions.h
 graphics.h
-/Users/mflannel/Desktop/Fdf1608/graphics.h
+/home/alina/CLionProjects/Mflannel/graphics.h
 

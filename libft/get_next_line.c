@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "/Users/mflannel/Desktop/Fdf1608/libft/includes/get_next_line.h"
+#include "./includes/get_next_line.h"
 
 static char	**add_file(char **stack)
 {

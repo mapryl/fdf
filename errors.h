@@ -5,4 +5,5 @@
 # define FILE_ERROR "file name is invalid"
 # define INVALID_MAP "this map is invalid"
 # define INVALID_SYMB_IN_MAP "map contains characters other than numbers"
+# define USAGE "usage: fdf <map file name, motherfucker>"
 #endif
