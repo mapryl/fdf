@@ -40,7 +40,6 @@ void init_image(t_fdf *fdf)
 
 int		close_red_X(void)
 {
-    //(void)param;
     exit(0);
 }
 
@@ -56,8 +55,8 @@ void init_window(t_map *map)
     camera_create(&fdf.camera);
     fdf.mlx_ptr = mlx_init();
     fdf.mlx_win = mlx_new_window(fdf.mlx_ptr, WIN_WIDTH, WIN_HEIGHT, "3DViewer 99/100");
-    fdf.menu_ptr = mlx_xpm_file_to_image(fdf.mlx_ptr, "../xpm_menu", &menu_width, &menu_height);
-    fdf.pepe_ptr = mlx_xpm_file_to_image(fdf.mlx_ptr, "../pepe.xpm", &pepe_width, &pepe_height);
+    fdf.menu_ptr = mlx_xpm_file_to_image(fdf.mlx_ptr, "../menu/menu_backgr.xpm", &menu_width, &menu_height);
+    fdf.pepe_ptr = mlx_xpm_file_to_image(fdf.mlx_ptr, "../menu/pepe.xpm", &pepe_width, &pepe_height);
     init_image(&fdf);
     print_map(map, &fdf);
 

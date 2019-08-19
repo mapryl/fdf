@@ -4,15 +4,15 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/Users/mapryl/Desktop/last_fdf/camera.c" "/Users/mapryl/Desktop/last_fdf/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/camera.c.o"
-  "/Users/mapryl/Desktop/last_fdf/draw.c" "/Users/mapryl/Desktop/last_fdf/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/draw.c.o"
-  "/Users/mapryl/Desktop/last_fdf/gradient.c" "/Users/mapryl/Desktop/last_fdf/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/gradient.c.o"
-  "/Users/mapryl/Desktop/last_fdf/keyboard_controls.c" "/Users/mapryl/Desktop/last_fdf/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/keyboard_controls.c.o"
-  "/Users/mapryl/Desktop/last_fdf/line.c" "/Users/mapryl/Desktop/last_fdf/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/line.c.o"
-  "/Users/mapryl/Desktop/last_fdf/main.c" "/Users/mapryl/Desktop/last_fdf/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/main.c.o"
-  "/Users/mapryl/Desktop/last_fdf/map_create.c" "/Users/mapryl/Desktop/last_fdf/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/map_create.c.o"
-  "/Users/mapryl/Desktop/last_fdf/rotate.c" "/Users/mapryl/Desktop/last_fdf/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/rotate.c.o"
-  "/Users/mapryl/Desktop/last_fdf/supporting_functions.c" "/Users/mapryl/Desktop/last_fdf/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/supporting_functions.c.o"
+  "/Users/mflannel/Desktop/grafics_part1/camera.c" "/Users/mflannel/Desktop/grafics_part1/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/camera.c.o"
+  "/Users/mflannel/Desktop/grafics_part1/draw.c" "/Users/mflannel/Desktop/grafics_part1/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/draw.c.o"
+  "/Users/mflannel/Desktop/grafics_part1/gradient.c" "/Users/mflannel/Desktop/grafics_part1/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/gradient.c.o"
+  "/Users/mflannel/Desktop/grafics_part1/keyboard_controls.c" "/Users/mflannel/Desktop/grafics_part1/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/keyboard_controls.c.o"
+  "/Users/mflannel/Desktop/grafics_part1/line.c" "/Users/mflannel/Desktop/grafics_part1/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/line.c.o"
+  "/Users/mflannel/Desktop/grafics_part1/main.c" "/Users/mflannel/Desktop/grafics_part1/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/main.c.o"
+  "/Users/mflannel/Desktop/grafics_part1/map_create.c" "/Users/mflannel/Desktop/grafics_part1/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/map_create.c.o"
+  "/Users/mflannel/Desktop/grafics_part1/rotate.c" "/Users/mflannel/Desktop/grafics_part1/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/rotate.c.o"
+  "/Users/mflannel/Desktop/grafics_part1/supporting_functions.c" "/Users/mflannel/Desktop/grafics_part1/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/supporting_functions.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 

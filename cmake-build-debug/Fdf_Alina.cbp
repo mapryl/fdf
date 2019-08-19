@@ -8,38 +8,38 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Users/mapryl/Desktop/last_fdf/cmake-build-debug"/>
+				<Option working_dir="/Users/mflannel/Desktop/grafics_part1/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/mapryl/Desktop/last_fdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/mapryl/Desktop/last_fdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/mapryl/Desktop/last_fdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/mapryl/Desktop/last_fdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/mflannel/Desktop/grafics_part1/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/mflannel/Desktop/grafics_part1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/mflannel/Desktop/grafics_part1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/mflannel/Desktop/grafics_part1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/Users/mapryl/Desktop/last_fdf/cmake-build-debug"/>
+				<Option working_dir="/Users/mflannel/Desktop/grafics_part1/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/mapryl/Desktop/last_fdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/mapryl/Desktop/last_fdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/mapryl/Desktop/last_fdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/mapryl/Desktop/last_fdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/mflannel/Desktop/grafics_part1/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/mflannel/Desktop/grafics_part1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/mflannel/Desktop/grafics_part1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/mflannel/Desktop/grafics_part1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/Users/mapryl/Desktop/last_fdf/cmake-build-debug"/>
+				<Option working_dir="/Users/mflannel/Desktop/grafics_part1/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/mapryl/Desktop/last_fdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/mapryl/Desktop/last_fdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/mapryl/Desktop/last_fdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/mapryl/Desktop/last_fdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/mflannel/Desktop/grafics_part1/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/mflannel/Desktop/grafics_part1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/mflannel/Desktop/grafics_part1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/mflannel/Desktop/grafics_part1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Fdf_Alina">
-				<Option output="/Users/mapryl/Desktop/last_fdf/cmake-build-debug/Fdf_Alina" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/mapryl/Desktop/last_fdf/cmake-build-debug"/>
+				<Option output="/Users/mflannel/Desktop/grafics_part1/cmake-build-debug/Fdf_Alina" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/mflannel/Desktop/grafics_part1/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -52,15 +52,15 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/mapryl/Desktop/last_fdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 Fdf_Alina"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/mapryl/Desktop/last_fdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/mapryl/Desktop/last_fdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/mapryl/Desktop/last_fdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/mflannel/Desktop/grafics_part1/cmake-build-debug/Makefile&quot;  VERBOSE=1 Fdf_Alina"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/mflannel/Desktop/grafics_part1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/mflannel/Desktop/grafics_part1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/mflannel/Desktop/grafics_part1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Fdf_Alina/fast">
-				<Option output="/Users/mapryl/Desktop/last_fdf/cmake-build-debug/Fdf_Alina" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/mapryl/Desktop/last_fdf/cmake-build-debug"/>
+				<Option output="/Users/mflannel/Desktop/grafics_part1/cmake-build-debug/Fdf_Alina" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/mflannel/Desktop/grafics_part1/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -73,71 +73,71 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/mapryl/Desktop/last_fdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 Fdf_Alina/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/mapryl/Desktop/last_fdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/mapryl/Desktop/last_fdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/mapryl/Desktop/last_fdf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/mflannel/Desktop/grafics_part1/cmake-build-debug/Makefile&quot;  VERBOSE=1 Fdf_Alina/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/mflannel/Desktop/grafics_part1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/mflannel/Desktop/grafics_part1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/mflannel/Desktop/grafics_part1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/mapryl/Desktop/last_fdf/camera.c">
+		<Unit filename="/Users/mflannel/Desktop/grafics_part1/camera.c">
 			<Option target="Fdf_Alina"/>
 		</Unit>
-		<Unit filename="/Users/mapryl/Desktop/last_fdf/camera.h">
+		<Unit filename="/Users/mflannel/Desktop/grafics_part1/camera.h">
 			<Option target="Fdf_Alina"/>
 		</Unit>
-		<Unit filename="/Users/mapryl/Desktop/last_fdf/draw.c">
+		<Unit filename="/Users/mflannel/Desktop/grafics_part1/draw.c">
 			<Option target="Fdf_Alina"/>
 		</Unit>
-		<Unit filename="/Users/mapryl/Desktop/last_fdf/errors.h">
+		<Unit filename="/Users/mflannel/Desktop/grafics_part1/errors.h">
 			<Option target="Fdf_Alina"/>
 		</Unit>
-		<Unit filename="/Users/mapryl/Desktop/last_fdf/fdf.h">
+		<Unit filename="/Users/mflannel/Desktop/grafics_part1/fdf.h">
 			<Option target="Fdf_Alina"/>
 		</Unit>
-		<Unit filename="/Users/mapryl/Desktop/last_fdf/gradient.c">
+		<Unit filename="/Users/mflannel/Desktop/grafics_part1/gradient.c">
 			<Option target="Fdf_Alina"/>
 		</Unit>
-		<Unit filename="/Users/mapryl/Desktop/last_fdf/graphics.h">
+		<Unit filename="/Users/mflannel/Desktop/grafics_part1/graphics.h">
 			<Option target="Fdf_Alina"/>
 		</Unit>
-		<Unit filename="/Users/mapryl/Desktop/last_fdf/keyboard_controls.c">
+		<Unit filename="/Users/mflannel/Desktop/grafics_part1/keyboard_controls.c">
 			<Option target="Fdf_Alina"/>
 		</Unit>
-		<Unit filename="/Users/mapryl/Desktop/last_fdf/keyboard_controls.h">
+		<Unit filename="/Users/mflannel/Desktop/grafics_part1/keyboard_controls.h">
 			<Option target="Fdf_Alina"/>
 		</Unit>
-		<Unit filename="/Users/mapryl/Desktop/last_fdf/keys.h">
+		<Unit filename="/Users/mflannel/Desktop/grafics_part1/keys.h">
 			<Option target="Fdf_Alina"/>
 		</Unit>
-		<Unit filename="/Users/mapryl/Desktop/last_fdf/line.c">
+		<Unit filename="/Users/mflannel/Desktop/grafics_part1/line.c">
 			<Option target="Fdf_Alina"/>
 		</Unit>
-		<Unit filename="/Users/mapryl/Desktop/last_fdf/line.h">
+		<Unit filename="/Users/mflannel/Desktop/grafics_part1/line.h">
 			<Option target="Fdf_Alina"/>
 		</Unit>
-		<Unit filename="/Users/mapryl/Desktop/last_fdf/main.c">
+		<Unit filename="/Users/mflannel/Desktop/grafics_part1/main.c">
 			<Option target="Fdf_Alina"/>
 		</Unit>
-		<Unit filename="/Users/mapryl/Desktop/last_fdf/map.h">
+		<Unit filename="/Users/mflannel/Desktop/grafics_part1/map.h">
 			<Option target="Fdf_Alina"/>
 		</Unit>
-		<Unit filename="/Users/mapryl/Desktop/last_fdf/map_create.c">
+		<Unit filename="/Users/mflannel/Desktop/grafics_part1/map_create.c">
 			<Option target="Fdf_Alina"/>
 		</Unit>
-		<Unit filename="/Users/mapryl/Desktop/last_fdf/rotate.c">
+		<Unit filename="/Users/mflannel/Desktop/grafics_part1/rotate.c">
 			<Option target="Fdf_Alina"/>
 		</Unit>
-		<Unit filename="/Users/mapryl/Desktop/last_fdf/rotate.h">
+		<Unit filename="/Users/mflannel/Desktop/grafics_part1/rotate.h">
 			<Option target="Fdf_Alina"/>
 		</Unit>
-		<Unit filename="/Users/mapryl/Desktop/last_fdf/supporting_functions.c">
+		<Unit filename="/Users/mflannel/Desktop/grafics_part1/supporting_functions.c">
 			<Option target="Fdf_Alina"/>
 		</Unit>
-		<Unit filename="/Users/mapryl/Desktop/last_fdf/supporting_functions.h">
+		<Unit filename="/Users/mflannel/Desktop/grafics_part1/supporting_functions.h">
 			<Option target="Fdf_Alina"/>
 		</Unit>
-		<Unit filename="/Users/mapryl/Desktop/last_fdf/CMakeLists.txt">
+		<Unit filename="/Users/mflannel/Desktop/grafics_part1/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

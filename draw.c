@@ -89,12 +89,11 @@ void draw_thing(int i, int j, t_fdf* fdf_image)
 
 void print_menu(t_fdf *fdf_image)
 {
-	mlx_string_put(fdf_image->mlx_ptr, fdf_image->mlx_win, 23, 25, TEXT_COLOR, "CLOSE   : ESC");
-	mlx_string_put(fdf_image->mlx_ptr, fdf_image->mlx_win, 23, 75, TEXT_COLOR, "ZOOM [+]: NUM +");
-	mlx_string_put(fdf_image->mlx_ptr, fdf_image->mlx_win, 23, 100, TEXT_COLOR, "ZOOM [-]: NUM -");
-	mlx_string_put(fdf_image->mlx_ptr, fdf_image->mlx_win, 23, 150, TEXT_COLOR, "ISOM    : NUM 1");
-	mlx_string_put(fdf_image->mlx_ptr, fdf_image->mlx_win, 23, 175, TEXT_COLOR, "NORM    : NUM 2");
-	mlx_string_put(fdf_image->mlx_ptr, fdf_image->mlx_win, 23, 225, TEXT_COLOR, "MOVEMENT: MOUSE");
+	mlx_string_put(fdf_image->mlx_ptr, fdf_image->mlx_win, 73, 25, TEXT_COLOR, "PRESS ESC TO STOP PROGRAM");
+	mlx_string_put(fdf_image->mlx_ptr, fdf_image->mlx_win, 73, 75, TEXT_COLOR, "ZOOM IN:                +");
+	mlx_string_put(fdf_image->mlx_ptr, fdf_image->mlx_win, 73, 100, TEXT_COLOR, "ZOOM OUT:               -");
+	mlx_string_put(fdf_image->mlx_ptr, fdf_image->mlx_win, 73, 150, TEXT_COLOR, "ISOMETRIC/NORMAL:       I");
+
 }
 
 void print_map(t_map *map, t_fdf *fdf)
@@ -125,7 +124,7 @@ void print_map(t_map *map, t_fdf *fdf)
             }
         i++;
     }
-    mlx_put_image_to_window(fdf->mlx_ptr, fdf->mlx_win, fdf->picture.pic, 0, 0);
+    mlx_put_image_to_window(fdf->mlx_ptr, fdf->mlx_win, fdf->picture.pic, 250, 0);
 	mlx_put_image_to_window(fdf->mlx_ptr, fdf->mlx_win, fdf->menu_ptr, 0, 0);
 	mlx_put_image_to_window(fdf->mlx_ptr, fdf->mlx_win, fdf->pepe_ptr, 0, 580);
 	print_menu(fdf);
