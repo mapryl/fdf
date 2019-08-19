@@ -15,7 +15,6 @@ CMakeFiles/Fdf_Alina.dir/draw.c.o: ../libft/includes/libft.h
 CMakeFiles/Fdf_Alina.dir/draw.c.o: ../map.h
 CMakeFiles/Fdf_Alina.dir/draw.c.o: ../rotate.h
 CMakeFiles/Fdf_Alina.dir/draw.c.o: ../supporting_functions.h
-CMakeFiles/Fdf_Alina.dir/draw.c.o: /home/alina/CLionProjects/minilibx/mlx.h
 
 CMakeFiles/Fdf_Alina.dir/gradient.c.o: ../gradient.c
 CMakeFiles/Fdf_Alina.dir/gradient.c.o: ../graphics.h
@@ -29,7 +28,6 @@ CMakeFiles/Fdf_Alina.dir/keyboard_controls.c.o: ../keys.h
 CMakeFiles/Fdf_Alina.dir/keyboard_controls.c.o: ../libft/includes/get_next_line.h
 CMakeFiles/Fdf_Alina.dir/keyboard_controls.c.o: ../libft/includes/libft.h
 CMakeFiles/Fdf_Alina.dir/keyboard_controls.c.o: ../map.h
-CMakeFiles/Fdf_Alina.dir/keyboard_controls.c.o: /home/alina/CLionProjects/minilibx/mlx.h
 
 CMakeFiles/Fdf_Alina.dir/line.c.o: ../errors.h
 CMakeFiles/Fdf_Alina.dir/line.c.o: ../graphics.h
@@ -50,7 +48,6 @@ CMakeFiles/Fdf_Alina.dir/main.c.o: ../libft/includes/libft.h
 CMakeFiles/Fdf_Alina.dir/main.c.o: ../main.c
 CMakeFiles/Fdf_Alina.dir/main.c.o: ../map.h
 CMakeFiles/Fdf_Alina.dir/main.c.o: ../supporting_functions.h
-CMakeFiles/Fdf_Alina.dir/main.c.o: /home/alina/CLionProjects/minilibx/mlx.h
 
 CMakeFiles/Fdf_Alina.dir/map_create.c.o: ../errors.h
 CMakeFiles/Fdf_Alina.dir/map_create.c.o: ../graphics.h
@@ -69,7 +66,6 @@ CMakeFiles/Fdf_Alina.dir/rotate.c.o: ../libft/includes/libft.h
 CMakeFiles/Fdf_Alina.dir/rotate.c.o: ../map.h
 CMakeFiles/Fdf_Alina.dir/rotate.c.o: ../rotate.c
 CMakeFiles/Fdf_Alina.dir/rotate.c.o: ../rotate.h
-CMakeFiles/Fdf_Alina.dir/rotate.c.o: /home/alina/CLionProjects/minilibx/mlx.h
 
 CMakeFiles/Fdf_Alina.dir/supporting_functions.c.o: ../graphics.h
 CMakeFiles/Fdf_Alina.dir/supporting_functions.c.o: ../libft/includes/libft.h

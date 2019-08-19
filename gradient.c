@@ -45,22 +45,19 @@ short	get_light(int start, int end, double percentage)
     return ((short)((1 - percentage) * start + percentage * end));
 }
 
-t_color	get_color(t_point current, t_point start, t_point end, t_point delta, float alpha)
+t_color	get_color(t_point current, t_point start, t_point end, float alpha)
 {
     t_color new_color;
     double	percentage;
+    new_color.a = 0;
 
     if (current.color.r == end.color.r && current.color.b == end.color.b && current.color.g == end.color.g)
     {
 	    new_color = current.color;
-        //color.a = (1.0 - color.a) * 255;
 	    new_color.a = (short)((1.0 - alpha) * 255);
 	    return (new_color);
     }
-    if (delta.x > delta.y)
-        percentage = percent(start.x, end.x, current.x);
-    else
-        percentage = percent(start.y, end.y, current.y);
+    percentage = percent(start.x, end.x, current.x);
     new_color.r = get_light(start.color.r, end.color.r, percentage);
     new_color.g = get_light(start.color.g, end.color.g, percentage);
     new_color.b = get_light(start.color.b, end.color.b, percentage);

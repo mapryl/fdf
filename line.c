@@ -48,7 +48,7 @@ void parse_line(char **split_line, t_map *map)
             map->max_z = map_num;
         if (map_num < map->min_z)
             map->min_z = map_num;
-        *split_line++;
+        split_line++;
         i++;
     }
     map_add(map, line.data, line.width);

@@ -16,10 +16,10 @@ int pack_argb(const t_color col)
 {
     int argb = 0;
 
-    argb |= ((col.a & 0xFF) << 24);
-    argb |= ((col.r & 0xFF) << 16);
-    argb |= ((col.g & 0xFF) << 8);
-    argb |= ((col.b & 0xFF));
+    argb |= (col.a << 24);
+    argb |= (col.r << 16);
+    argb |= (col.g << 8);
+    argb |= (col.b);
 
     return argb;
 }

@@ -3,7 +3,7 @@
 #include "rotate.h"
 #include "supporting_functions.h"
 #include "errors.h"
-#include "../minilibx/mlx.h"
+#include "mlx.h"
 
 void clear_picture(t_fdf *fdf)
 {
@@ -12,7 +12,7 @@ void clear_picture(t_fdf *fdf)
 
 void draw_on_img(int argb, t_fdf *fdf, int x, int y)
 {
-    if( y < 0 || y >= WIN_HEIGHT  || x < 0 || x > WIN_WIDTH)
+    if (y < 0 || y >= WIN_HEIGHT  || x < 0 || x > WIN_WIDTH)
         return;
 	fdf->picture.data_address[(y * WIN_WIDTH + x)] = argb;
 }
@@ -29,7 +29,7 @@ void draw_pixel(int steep, int x, int y,  t_fdf* fdf_image, t_color color)
 	    draw_on_img(argb, fdf_image, y, x);
 }
 
-void draw_between(int steep, const t_point* p1, const t_point* p2, const t_point* delta, t_fdf* fdf_image)
+void draw_between(int steep, const t_point* p1, const t_point* p2, t_fdf* fdf_image)
 {
     float gradient;
     float y;
@@ -42,8 +42,8 @@ void draw_between(int steep, const t_point* p1, const t_point* p2, const t_point
     curr.x++;
     while (curr.x <= p2->x - 1)
     {
-        draw_pixel(steep, curr.x, (int)y, fdf_image,  get_color(curr, *p1, *p2, *delta, 1 - (y - (int)y)));
-        draw_pixel(steep, curr.x, (int)y + 1, fdf_image,  get_color(curr, *p1, *p2, *delta, y - (int)y));
+        draw_pixel(steep, curr.x, (int)y, fdf_image,  get_color(curr, *p1, *p2, 1 - (y - (int)y)));
+        draw_pixel(steep, curr.x, (int)y + 1, fdf_image,  get_color(curr, *p1, *p2, y - (int)y));
         y += gradient;
         curr.x++;
     }
@@ -71,9 +71,9 @@ void Draw_Wu(t_point dot1, t_point dot2,  t_fdf* fdf_image)
         dot1 = dot2;
         dot2 = tmp;
     }
-    draw_pixel(steep, dot1.x, dot1.y, fdf_image, get_color(dot1, dot1, dot2, delta, 0));
-    draw_pixel(steep, dot2.x, dot2.y, fdf_image, get_color(dot2, dot1, dot2, delta, 0));
-    draw_between(steep, &dot1, &dot2, &delta, fdf_image);
+    draw_pixel(steep, dot1.x, dot1.y, fdf_image, get_color(dot1, dot1, dot2, 1));
+    draw_pixel(steep, dot2.x, dot2.y, fdf_image, get_color(dot2, dot1, dot2, 1));
+    draw_between(steep, &dot1, &dot2, fdf_image);
 }
 
 void draw_thing(int i, int j, t_fdf* fdf_image)
@@ -102,6 +102,7 @@ void print_map(t_map *map, t_fdf *fdf)
     size_t i;
     size_t j;
 
+    mlx_clear_window(fdf->mlx_ptr, fdf->mlx_win);
     clear_picture(fdf);
     i = 0;
     while (i < map->height)

@@ -1,4 +1,4 @@
-"/home/alina/Рабочий стол/clion-2019.2/bin/cmake/linux/bin/cmake" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/alina/CLionProjects/Mflannel
+/Users/mapryl/Desktop/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/mapryl/Desktop/last_fdf
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/alina/CLionProjects/Mflannel/cmake-build-debug
+-- Build files have been written to: /Users/mapryl/Desktop/last_fdf/cmake-build-debug

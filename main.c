@@ -38,10 +38,14 @@ void init_image(t_fdf *fdf)
     fdf->picture.pic_size = WIN_WIDTH * WIN_HEIGHT * sizeof(int);
 }
 
+int		close_red_X(void)
+{
+    //(void)param;
+    exit(0);
+}
+
 void init_window(t_map *map)
 {
-    void *mlx_ptr = mlx_init();
-    void *mlx_win = mlx_new_window(mlx_ptr, WIN_WIDTH, WIN_HEIGHT, "3DViewer 99/100");
     int menu_width;
     int menu_height;
     int pepe_width;
@@ -50,14 +54,16 @@ void init_window(t_map *map)
     t_fdf fdf;
     fdf.map = map;
     camera_create(&fdf.camera);
-    fdf.mlx_ptr = mlx_ptr;
-    fdf.mlx_win = mlx_win;
+    fdf.mlx_ptr = mlx_init();
+    fdf.mlx_win = mlx_new_window(fdf.mlx_ptr, WIN_WIDTH, WIN_HEIGHT, "3DViewer 99/100");
     fdf.menu_ptr = mlx_xpm_file_to_image(fdf.mlx_ptr, "../xpm_menu", &menu_width, &menu_height);
-    fdf.pepe_ptr = mlx_xpm_file_to_image(fdf.mlx_ptr, "/home/alina/CLionProjects/Mflannel/pepe.xpm", &pepe_width, &pepe_height);
+    fdf.pepe_ptr = mlx_xpm_file_to_image(fdf.mlx_ptr, "../pepe.xpm", &pepe_width, &pepe_height);
     init_image(&fdf);
     print_map(map, &fdf);
-    mlx_key_hook(mlx_win, key_press, &fdf);
-    mlx_loop(mlx_ptr);
+
+    mlx_hook(fdf.mlx_win, 17, 0, close_red_X, &fdf);
+    mlx_key_hook(fdf.mlx_win, key_press, &fdf);
+    mlx_loop(fdf.mlx_ptr);
 }
 
 int main (int argc, const char* argv[])

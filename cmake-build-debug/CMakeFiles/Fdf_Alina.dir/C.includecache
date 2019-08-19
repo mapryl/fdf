@@ -6,21 +6,55 @@
 
 #IncludeRegexTransform: 
 
-/home/alina/CLionProjects/Mflannel/errors.h
+/Users/mapryl/Desktop/last_fdf/camera.h
 
-/home/alina/CLionProjects/Mflannel/graphics.h
+/Users/mapryl/Desktop/last_fdf/draw.c
+fdf.h
+/Users/mapryl/Desktop/last_fdf/fdf.h
+map.h
+/Users/mapryl/Desktop/last_fdf/map.h
+rotate.h
+/Users/mapryl/Desktop/last_fdf/rotate.h
+supporting_functions.h
+/Users/mapryl/Desktop/last_fdf/supporting_functions.h
+errors.h
+/Users/mapryl/Desktop/last_fdf/errors.h
+mlx.h
+/Users/mapryl/Desktop/last_fdf/mlx.h
 
-/home/alina/CLionProjects/Mflannel/libft/includes/get_next_line.h
+/Users/mapryl/Desktop/last_fdf/errors.h
+
+/Users/mapryl/Desktop/last_fdf/fdf.h
+mlx.h
+/Users/mapryl/Desktop/last_fdf/mlx.h
+unistd.h
+-
+stdlib.h
+-
+libft/includes/get_next_line.h
+/Users/mapryl/Desktop/last_fdf/libft/includes/get_next_line.h
+libft/includes/libft.h
+/Users/mapryl/Desktop/last_fdf/libft/includes/libft.h
+map.h
+/Users/mapryl/Desktop/last_fdf/map.h
+camera.h
+/Users/mapryl/Desktop/last_fdf/camera.h
+graphics.h
+/Users/mapryl/Desktop/last_fdf/graphics.h
+
+/Users/mapryl/Desktop/last_fdf/graphics.h
+
+/Users/mapryl/Desktop/last_fdf/libft/includes/get_next_line.h
 unistd.h
 -
 libft.h
-/home/alina/CLionProjects/Mflannel/libft/includes/libft.h
+/Users/mapryl/Desktop/last_fdf/libft/includes/libft.h
 fcntl.h
 -
 stdlib.h
 -
 
-/home/alina/CLionProjects/Mflannel/libft/includes/libft.h
+/Users/mapryl/Desktop/last_fdf/libft/includes/libft.h
 string.h
 -
 stdlib.h
@@ -28,31 +62,19 @@ stdlib.h
 unistd.h
 -
 
-/home/alina/CLionProjects/Mflannel/line.h
-map.h
-/home/alina/CLionProjects/Mflannel/map.h
-
-/home/alina/CLionProjects/Mflannel/map.h
+/Users/mapryl/Desktop/last_fdf/map.h
 stdlib.h
 -
 graphics.h
-/home/alina/CLionProjects/Mflannel/graphics.h
+/Users/mapryl/Desktop/last_fdf/graphics.h
 
-/home/alina/CLionProjects/Mflannel/map_create.c
-line.h
-/home/alina/CLionProjects/Mflannel/line.h
-map.h
-/home/alina/CLionProjects/Mflannel/map.h
-libft/includes/get_next_line.h
-/home/alina/CLionProjects/Mflannel/libft/includes/get_next_line.h
-limits.h
--
-supporting_functions.h
-/home/alina/CLionProjects/Mflannel/supporting_functions.h
-errors.h
-/home/alina/CLionProjects/Mflannel/errors.h
-
-/home/alina/CLionProjects/Mflannel/supporting_functions.h
+/Users/mapryl/Desktop/last_fdf/rotate.h
+fdf.h
+/Users/mapryl/Desktop/last_fdf/fdf.h
 graphics.h
-/home/alina/CLionProjects/Mflannel/graphics.h
+/Users/mapryl/Desktop/last_fdf/graphics.h
+
+/Users/mapryl/Desktop/last_fdf/supporting_functions.h
+graphics.h
+/Users/mapryl/Desktop/last_fdf/graphics.h
 

@@ -4,17 +4,17 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/alina/CLionProjects/Mflannel/camera.c" "/home/alina/CLionProjects/Mflannel/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/camera.c.o"
-  "/home/alina/CLionProjects/Mflannel/draw.c" "/home/alina/CLionProjects/Mflannel/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/draw.c.o"
-  "/home/alina/CLionProjects/Mflannel/gradient.c" "/home/alina/CLionProjects/Mflannel/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/gradient.c.o"
-  "/home/alina/CLionProjects/Mflannel/keyboard_controls.c" "/home/alina/CLionProjects/Mflannel/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/keyboard_controls.c.o"
-  "/home/alina/CLionProjects/Mflannel/line.c" "/home/alina/CLionProjects/Mflannel/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/line.c.o"
-  "/home/alina/CLionProjects/Mflannel/main.c" "/home/alina/CLionProjects/Mflannel/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/main.c.o"
-  "/home/alina/CLionProjects/Mflannel/map_create.c" "/home/alina/CLionProjects/Mflannel/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/map_create.c.o"
-  "/home/alina/CLionProjects/Mflannel/rotate.c" "/home/alina/CLionProjects/Mflannel/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/rotate.c.o"
-  "/home/alina/CLionProjects/Mflannel/supporting_functions.c" "/home/alina/CLionProjects/Mflannel/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/supporting_functions.c.o"
+  "/Users/mapryl/Desktop/last_fdf/camera.c" "/Users/mapryl/Desktop/last_fdf/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/camera.c.o"
+  "/Users/mapryl/Desktop/last_fdf/draw.c" "/Users/mapryl/Desktop/last_fdf/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/draw.c.o"
+  "/Users/mapryl/Desktop/last_fdf/gradient.c" "/Users/mapryl/Desktop/last_fdf/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/gradient.c.o"
+  "/Users/mapryl/Desktop/last_fdf/keyboard_controls.c" "/Users/mapryl/Desktop/last_fdf/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/keyboard_controls.c.o"
+  "/Users/mapryl/Desktop/last_fdf/line.c" "/Users/mapryl/Desktop/last_fdf/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/line.c.o"
+  "/Users/mapryl/Desktop/last_fdf/main.c" "/Users/mapryl/Desktop/last_fdf/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/main.c.o"
+  "/Users/mapryl/Desktop/last_fdf/map_create.c" "/Users/mapryl/Desktop/last_fdf/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/map_create.c.o"
+  "/Users/mapryl/Desktop/last_fdf/rotate.c" "/Users/mapryl/Desktop/last_fdf/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/rotate.c.o"
+  "/Users/mapryl/Desktop/last_fdf/supporting_functions.c" "/Users/mapryl/Desktop/last_fdf/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/supporting_functions.c.o"
   )
-set(CMAKE_C_COMPILER_ID "GNU")
+set(CMAKE_C_COMPILER_ID "AppleClang")
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
