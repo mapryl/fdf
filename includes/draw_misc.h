@@ -24,5 +24,6 @@
 void	clear_picture(t_fdf *fdf);
 void	draw_on_img(int argb, t_fdf *fdf, int x, int y);
 void	draw_pixel(int steep, t_point curr, t_fdf *fdf_image, t_color color);
-
+void	draw_between(int steep, const t_point *p1, const t_point *p2,
+                     t_fdf *fdf_image);
 #endif

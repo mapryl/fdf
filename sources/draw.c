@@ -6,7 +6,7 @@
 /*   By: mflannel <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/20 12:18:39 by mflannel          #+#    #+#             */
-/*   Updated: 2019/08/20 15:01:48 by mapryl           ###   ########.fr       */
+/*   Updated: 2019/08/20 15:03:16 by mflannel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,30 +17,6 @@
 #include "errors.h"
 #include "../minilibx_macos/mlx.h"
 #include "draw_misc.h"
-
-void	draw_between(int steep, const t_point *p1, const t_point *p2,
-		t_fdf *fdf_image)
-{
-	float	gradient;
-	float	y;
-	t_point	curr;
-
-	curr = *p1;
-	gradient = (float)(p2->y - p1->y) / (float)(p2->x - p1->x);
-	y = (float)p1->y + gradient;
-	curr.x++;
-	while (curr.x <= p2->x - 1)
-	{
-		curr.y = (int)y;
-		draw_pixel(steep, curr, fdf_image, get_color(curr, *p1,
-					*p2, 1 - (y - (int)y)));
-		curr.y += 1;
-		draw_pixel(steep, curr, fdf_image, get_color(curr, *p1,
-					*p2, y - (int)y));
-		y += gradient;
-		curr.x++;
-	}
-}
 
 void	draw_wu(t_point dot1, t_point dot2, t_fdf *fdf_image)
 {

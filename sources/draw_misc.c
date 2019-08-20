@@ -40,3 +40,27 @@ void	draw_pixel(int steep, t_point curr, t_fdf *fdf_image, t_color color)
 	else
 		draw_on_img(argb, fdf_image, curr.y, curr.x);
 }
+
+void	draw_between(int steep, const t_point *p1, const t_point *p2,
+                     t_fdf *fdf_image)
+{
+	float	gradient;
+	float	y;
+	t_point	curr;
+
+	curr = *p1;
+	gradient = (float)(p2->y - p1->y) / (float)(p2->x - p1->x);
+	y = (float)p1->y + gradient;
+	curr.x++;
+	while (curr.x <= p2->x - 1)
+	{
+		curr.y = (int)y;
+		draw_pixel(steep, curr, fdf_image, get_color(curr, *p1,
+		                                             *p2, 1 - (y - (int)y)));
+		curr.y += 1;
+		draw_pixel(steep, curr, fdf_image, get_color(curr, *p1,
+		                                             *p2, y - (int)y));
+		y += gradient;
+		curr.x++;
+	}
+}
