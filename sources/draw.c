@@ -6,7 +6,7 @@
 /*   By: mflannel <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/20 12:18:39 by mflannel          #+#    #+#             */
-/*   Updated: 2019/08/20 15:03:16 by mflannel         ###   ########.fr       */
+/*   Updated: 2019/08/20 15:10:22 by mapryl           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,7 +72,7 @@ void	print_menu(t_fdf *fdf_image)
 			TEXT_COLOR, "ROTATE:           NUM 0-9");
 }
 
-void print_map(t_map *map, t_fdf *fdf)
+void	print_map(t_map *map, t_fdf *fdf)
 {
 	size_t i;
 	size_t j;
@@ -89,26 +89,28 @@ void print_map(t_map *map, t_fdf *fdf)
 				j++;
 			}
 			draw_wu(transform(&map->data[i][map->width - 1], fdf),
-					transform(&map->data[i+1][map->width - 1], fdf), fdf);
+					transform(&map->data[i + 1][map->width - 1], fdf), fdf);
 		}
 		else
 			while (j < map->width - 1)
 			{
 				draw_wu(transform(&map->data[i][j], fdf),
-						transform(&map->data[i][j+1], fdf), fdf);
+						transform(&map->data[i][j + 1], fdf), fdf);
 				j++;
 			}
 		i++;
 	}
 }
 
-void print_window(t_map *map, t_fdf *fdf)
+void	print_window(t_map *map, t_fdf *fdf)
 {
 	mlx_clear_window(fdf->mlx_ptr, fdf->mlx_win);
 	clear_picture(fdf);
 	print_map(map, fdf);
-	mlx_put_image_to_window(fdf->mlx_ptr, fdf->mlx_win, fdf->picture.pic, 250, 0);
+	mlx_put_image_to_window(fdf->mlx_ptr, fdf->mlx_win,
+			fdf->picture.pic, 250, 0);
 	mlx_put_image_to_window(fdf->mlx_ptr, fdf->mlx_win, fdf->menu_ptr, 0, 0);
-	mlx_put_image_to_window(fdf->mlx_ptr, fdf->mlx_win, fdf->pepe_ptr, 109, WIN_HEIGHT - 109);
+	mlx_put_image_to_window(fdf->mlx_ptr, fdf->mlx_win,
+			fdf->pepe_ptr, 109, WIN_HEIGHT - 109);
 	print_menu(fdf);
 }
