@@ -93,6 +93,7 @@ void print_menu(t_fdf *fdf_image)
 	mlx_string_put(fdf_image->mlx_ptr, fdf_image->mlx_win, 73, 100, TEXT_COLOR, "ZOOM IN:                +");
 	mlx_string_put(fdf_image->mlx_ptr, fdf_image->mlx_win, 73, 120, TEXT_COLOR, "ZOOM OUT:               -");
 	mlx_string_put(fdf_image->mlx_ptr, fdf_image->mlx_win, 73, 175, TEXT_COLOR, "ISOMETRIC/NORMAL:       I");
+	mlx_string_put(fdf_image->mlx_ptr, fdf_image->mlx_win, 73, 175, TEXT_COLOR, "ISOMETRIC/NORMAL:       I");
 
 }
 
