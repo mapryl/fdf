@@ -3,13 +3,18 @@
 #include "rotate.h"
 #include "supporting_functions.h"
 #include "errors.h"
-#include "mlx.h"
+#include "../minilibx/mlx.h"
 
 void clear_picture(t_fdf *fdf)
 {
     ft_memset(fdf->picture.data_address, 0, fdf->picture.pic_size);
+    int a = 0;
+    for (size_t i = 0; i < fdf->picture.pic_size/sizeof(int); i++) {
+        if (fdf->picture.data_address[i] != 0)
+            a++;
+    }
+    a = a;
 }
-
 void draw_on_img(int argb, t_fdf *fdf, int x, int y)
 {
     if (y < 0 || y >= WIN_HEIGHT  || x < 0 || x > WIN_WIDTH)
@@ -79,12 +84,13 @@ void Draw_Wu(t_point dot1, t_point dot2,  t_fdf* fdf_image)
 void draw_thing(int i, int j, t_fdf* fdf_image)
 {
     t_map *map;
+    t_point p;
 
     map = fdf_image->map;
-
-    Draw_Wu(transform(&map->data[i][j], fdf_image), transform(&map->data[i][j+1], fdf_image), fdf_image);
-    Draw_Wu(transform(&map->data[i][j], fdf_image), transform(&map->data[i+1][j+1], fdf_image), fdf_image);
-    Draw_Wu(transform(&map->data[i][j], fdf_image), transform(&map->data[i+1][j], fdf_image), fdf_image);
+    p = transform(&map->data[i][j], fdf_image);
+    Draw_Wu(p, transform(&map->data[i][j+1], fdf_image), fdf_image);
+    Draw_Wu(p, transform(&map->data[i+1][j+1], fdf_image), fdf_image);
+    Draw_Wu(p, transform(&map->data[i+1][j], fdf_image), fdf_image);
 }
 
 void print_menu(t_fdf *fdf_image)
@@ -101,7 +107,7 @@ void print_map(t_map *map, t_fdf *fdf)
     size_t i;
     size_t j;
 
-    mlx_clear_window(fdf->mlx_ptr, fdf->mlx_win);
+    //mlx_clear_window(fdf->mlx_ptr, fdf->mlx_win);
     clear_picture(fdf);
     i = 0;
     while (i < map->height)
@@ -126,6 +132,6 @@ void print_map(t_map *map, t_fdf *fdf)
     }
     mlx_put_image_to_window(fdf->mlx_ptr, fdf->mlx_win, fdf->picture.pic, 250, 0);
 	mlx_put_image_to_window(fdf->mlx_ptr, fdf->mlx_win, fdf->menu_ptr, 0, 0);
-	//mlx_put_image_to_window(fdf->mlx_ptr, fdf->mlx_win, fdf->pepe_ptr, 0, 580);
+	mlx_put_image_to_window(fdf->mlx_ptr, fdf->mlx_win, fdf->pepe_ptr, 0, 580);
 	print_menu(fdf);
 }

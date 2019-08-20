@@ -6,55 +6,55 @@
 
 #IncludeRegexTransform: 
 
-/Users/mflannel/Desktop/grafics_part1/camera.h
+/home/alina/CLionProjects/fdf_last/camera.h
 
-/Users/mflannel/Desktop/grafics_part1/draw.c
+/home/alina/CLionProjects/fdf_last/draw.c
 fdf.h
-/Users/mflannel/Desktop/grafics_part1/fdf.h
+/home/alina/CLionProjects/fdf_last/fdf.h
 map.h
-/Users/mflannel/Desktop/grafics_part1/map.h
+/home/alina/CLionProjects/fdf_last/map.h
 rotate.h
-/Users/mflannel/Desktop/grafics_part1/rotate.h
+/home/alina/CLionProjects/fdf_last/rotate.h
 supporting_functions.h
-/Users/mflannel/Desktop/grafics_part1/supporting_functions.h
+/home/alina/CLionProjects/fdf_last/supporting_functions.h
 errors.h
-/Users/mflannel/Desktop/grafics_part1/errors.h
-mlx.h
-/Users/mflannel/Desktop/grafics_part1/mlx.h
+/home/alina/CLionProjects/fdf_last/errors.h
+../minilibx/mlx.h
+/home/alina/CLionProjects/minilibx/mlx.h
 
-/Users/mflannel/Desktop/grafics_part1/errors.h
+/home/alina/CLionProjects/fdf_last/errors.h
 
-/Users/mflannel/Desktop/grafics_part1/fdf.h
-mlx.h
-/Users/mflannel/Desktop/grafics_part1/mlx.h
+/home/alina/CLionProjects/fdf_last/fdf.h
+../minilibx/mlx.h
+/home/alina/CLionProjects/minilibx/mlx.h
 unistd.h
 -
 stdlib.h
 -
 libft/includes/get_next_line.h
-/Users/mflannel/Desktop/grafics_part1/libft/includes/get_next_line.h
+/home/alina/CLionProjects/fdf_last/libft/includes/get_next_line.h
 libft/includes/libft.h
-/Users/mflannel/Desktop/grafics_part1/libft/includes/libft.h
+/home/alina/CLionProjects/fdf_last/libft/includes/libft.h
 map.h
-/Users/mflannel/Desktop/grafics_part1/map.h
+/home/alina/CLionProjects/fdf_last/map.h
 camera.h
-/Users/mflannel/Desktop/grafics_part1/camera.h
+/home/alina/CLionProjects/fdf_last/camera.h
 graphics.h
-/Users/mflannel/Desktop/grafics_part1/graphics.h
+/home/alina/CLionProjects/fdf_last/graphics.h
 
-/Users/mflannel/Desktop/grafics_part1/graphics.h
+/home/alina/CLionProjects/fdf_last/graphics.h
 
-/Users/mflannel/Desktop/grafics_part1/libft/includes/get_next_line.h
+/home/alina/CLionProjects/fdf_last/libft/includes/get_next_line.h
 unistd.h
 -
 libft.h
-/Users/mflannel/Desktop/grafics_part1/libft/includes/libft.h
+/home/alina/CLionProjects/fdf_last/libft/includes/libft.h
 fcntl.h
 -
 stdlib.h
 -
 
-/Users/mflannel/Desktop/grafics_part1/libft/includes/libft.h
+/home/alina/CLionProjects/fdf_last/libft/includes/libft.h
 string.h
 -
 stdlib.h
@@ -62,19 +62,21 @@ stdlib.h
 unistd.h
 -
 
-/Users/mflannel/Desktop/grafics_part1/map.h
+/home/alina/CLionProjects/fdf_last/map.h
 stdlib.h
 -
 graphics.h
-/Users/mflannel/Desktop/grafics_part1/graphics.h
+/home/alina/CLionProjects/fdf_last/graphics.h
 
-/Users/mflannel/Desktop/grafics_part1/rotate.h
+/home/alina/CLionProjects/fdf_last/rotate.h
 fdf.h
-/Users/mflannel/Desktop/grafics_part1/fdf.h
+/home/alina/CLionProjects/fdf_last/fdf.h
 graphics.h
-/Users/mflannel/Desktop/grafics_part1/graphics.h
+/home/alina/CLionProjects/fdf_last/graphics.h
 
-/Users/mflannel/Desktop/grafics_part1/supporting_functions.h
+/home/alina/CLionProjects/fdf_last/supporting_functions.h
 graphics.h
-/Users/mflannel/Desktop/grafics_part1/graphics.h
+/home/alina/CLionProjects/fdf_last/graphics.h
+
+/home/alina/CLionProjects/minilibx/mlx.h
 
