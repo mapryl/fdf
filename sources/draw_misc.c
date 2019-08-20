@@ -6,7 +6,7 @@
 /*   By: mflannel <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/20 12:18:39 by mflannel          #+#    #+#             */
-/*   Updated: 2019/08/20 14:58:46 by mapryl           ###   ########.fr       */
+/*   Updated: 2019/08/20 15:11:06 by mapryl           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ void	draw_pixel(int steep, t_point curr, t_fdf *fdf_image, t_color color)
 }
 
 void	draw_between(int steep, const t_point *p1, const t_point *p2,
-                     t_fdf *fdf_image)
+		t_fdf *fdf_image)
 {
 	float	gradient;
 	float	y;
@@ -56,10 +56,10 @@ void	draw_between(int steep, const t_point *p1, const t_point *p2,
 	{
 		curr.y = (int)y;
 		draw_pixel(steep, curr, fdf_image, get_color(curr, *p1,
-		                                             *p2, 1 - (y - (int)y)));
+					*p2, 1 - (y - (int)y)));
 		curr.y += 1;
 		draw_pixel(steep, curr, fdf_image, get_color(curr, *p1,
-		                                             *p2, y - (int)y));
+					*p2, y - (int)y));
 		y += gradient;
 		curr.x++;
 	}
