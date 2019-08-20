@@ -6,7 +6,7 @@
 /*   By: mflannel <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/20 12:18:39 by mflannel          #+#    #+#             */
-/*   Updated: 2019/08/20 15:10:22 by mapryl           ###   ########.fr       */
+/*   Updated: 2019/08/20 15:24:34 by mflannel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -107,10 +107,11 @@ void	print_window(t_map *map, t_fdf *fdf)
 	mlx_clear_window(fdf->mlx_ptr, fdf->mlx_win);
 	clear_picture(fdf);
 	print_map(map, fdf);
-	mlx_put_image_to_window(fdf->mlx_ptr, fdf->mlx_win,
-			fdf->picture.pic, 250, 0);
-	mlx_put_image_to_window(fdf->mlx_ptr, fdf->mlx_win, fdf->menu_ptr, 0, 0);
-	mlx_put_image_to_window(fdf->mlx_ptr, fdf->mlx_win,
-			fdf->pepe_ptr, 109, WIN_HEIGHT - 109);
+	mlx_put_image_to_window(fdf->mlx_ptr, fdf->mlx_win, fdf->picture.pic,
+			250, 0);
+	mlx_put_image_to_window(fdf->mlx_ptr, fdf->mlx_win, fdf->menu_ptr,
+			0, 0);
+	mlx_put_image_to_window(fdf->mlx_ptr, fdf->mlx_win, fdf->pepe_ptr,
+			109, WIN_HEIGHT - 109);
 	print_menu(fdf);
 }
