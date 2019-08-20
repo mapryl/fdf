@@ -16,7 +16,7 @@ int key_press(int key, void* param)
     fdf = (t_fdf*)param;
     if (key == MAIN_PAD_ESC)
         exit(0);
-    if (key == NUM_PAD_1 || key == NUM_PAD_2 || key == NUM_PAD_3 || key == NUM_PAD_4 || key == NUM_PAD_5 || key == NUM_PAD_6 || key == NUM_PAD_7 || key == NUM_PAD_8 || key == NUM_PAD_9)
+    if (key == NUM_PAD_1 || key == NUM_PAD_2 || key == NUM_PAD_3 || key == NUM_PAD_4 || key == NUM_PAD_6 || key == NUM_PAD_7 || key == NUM_PAD_8 || key == NUM_PAD_9)
         rotate(key, fdf);
     else if (key == ARROW_LEFT || key == ARROW_RIGHT || key == ARROW_DOWN || key == ARROW_UP)
         move(key, fdf);
