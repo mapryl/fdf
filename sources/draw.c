@@ -6,7 +6,7 @@
 /*   By: mflannel <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/20 12:18:39 by mflannel          #+#    #+#             */
-/*   Updated: 2019/08/20 15:25:35 by mflannel         ###   ########.fr       */
+/*   Updated: 2019/08/20 15:44:11 by mapryl           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,16 +46,19 @@ void	draw_wu(t_point dot1, t_point dot2, t_fdf *fdf_image)
 	draw_between(steep, &dot1, &dot2, fdf_image);
 }
 
-void	draw_thing(int i, int j, t_fdf *fdf_image)
+void	draw_thing(size_t i, size_t *k, t_fdf *fdf_image)
 {
 	t_map	*map;
 	t_point	p;
+	size_t	j;
 
+	j = *k;
 	map = fdf_image->map;
 	p = transform(&map->data[i][j], fdf_image);
 	draw_wu(p, transform(&map->data[i][j + 1], fdf_image), fdf_image);
 	draw_wu(p, transform(&map->data[i + 1][j + 1], fdf_image), fdf_image);
 	draw_wu(p, transform(&map->data[i + 1][j], fdf_image), fdf_image);
+	(*k)++;
 }
 
 void	print_menu(t_fdf *fdf_image)
@@ -84,10 +87,7 @@ void	print_map(t_map *map, t_fdf *fdf)
 		if (i < map->height - 1)
 		{
 			while (j < map->width - 1)
-			{
-				draw_thing(i, j, fdf);
-				j++;
-			}
+				draw_thing(i, &j, fdf);
 			draw_wu(transform(&map->data[i][map->width - 1], fdf),
 					transform(&map->data[i + 1][map->width - 1], fdf), fdf);
 		}
