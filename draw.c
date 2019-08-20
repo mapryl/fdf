@@ -6,7 +6,7 @@
 /*   By: mflannel <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/20 12:18:39 by mflannel          #+#    #+#             */
-/*   Updated: 2019/08/20 13:02:25 by mflannel         ###   ########.fr       */
+/*   Updated: 2019/08/20 14:20:41 by mflannel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -97,9 +97,9 @@ void	draw_thing(int i, int j, t_fdf *fdf_image)
 
 	map = fdf_image->map;
 	p = transform(&map->data[i][j], fdf_image);
-	Draw_Wu(p, transform(&map->data[i][j + 1], fdf_image), fdf_image);
-	Draw_Wu(p, transform(&map->data[i + 1][j + 1], fdf_image), fdf_image);
-	Draw_Wu(p, transform(&map->data[i + 1][j], fdf_image), fdf_image);
+	draw_wu(p, transform(&map->data[i][j + 1], fdf_image), fdf_image);
+	draw_wu(p, transform(&map->data[i + 1][j + 1], fdf_image), fdf_image);
+	draw_wu(p, transform(&map->data[i + 1][j], fdf_image), fdf_image);
 }
 
 void	print_menu(t_fdf *fdf_image)
@@ -134,13 +134,13 @@ void	print_map(t_map *map, t_fdf *fdf)
 				draw_thing(i, j, fdf);
 				j++;
 			}
-			draw_du(transform(&map->data[i][map->width - 1], fdf),
+			draw_wu(transform(&map->data[i][map->width - 1], fdf),
 					transform(&map->data[i + 1][map->width - 1], fdf), fdf);
 		}
 		else
 			while (j < map->width - 1)
 			{
-				draw_du(transform(&map->data[i][j], fdf),
+				draw_wu(transform(&map->data[i][j], fdf),
 						transform(&map->data[i][j + 1], fdf), fdf);
 				j++;
 			}

@@ -6,7 +6,7 @@
 /*   By: mflannel <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/20 13:48:20 by mflannel          #+#    #+#             */
-/*   Updated: 2019/08/20 13:56:54 by mflannel         ###   ########.fr       */
+/*   Updated: 2019/08/20 14:20:41 by mflannel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ void	*reallocate(void *data, size_t *capacity, size_t elem_size)
 	void	*new_data;
 	size_t	old_mem_size;
 
-	new_capacity = *cpacity;
+	new_capacity = *capacity;
 	new_capacity += (new_capacity + 2) / 2;
 	new_data = malloc(new_capacity * elem_size);
 	if (!new_data)

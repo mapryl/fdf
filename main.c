@@ -6,7 +6,7 @@
 /*   By: mflannel <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/20 13:37:49 by mflannel          #+#    #+#             */
-/*   Updated: 2019/08/20 13:45:03 by mflannel         ###   ########.fr       */
+/*   Updated: 2019/08/20 14:20:41 by mflannel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,7 +78,7 @@ void	init_window(t_map *map)
 	"../menu/glitched.xpm", &pepe_width, &pepe_height);
 	init_image(&fdf);
 	print_map(map, &fdf);
-	mlx_hook(fdf.mlx_win, 17, 0, close_red_X, &fdf);
+	mlx_hook(fdf.mlx_win, 17, 0, close_red_x, &fdf);
 	mlx_key_hook(fdf.mlx_win, key_press, &fdf);
 	mlx_loop(fdf.mlx_ptr);
 }
