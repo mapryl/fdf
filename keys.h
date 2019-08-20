@@ -9,25 +9,25 @@
 # define MOUSE_SCROLL_LEFT	6
 # define MOUSE_SCROLL_RIGHT	7
 
-# define ARROW_UP			65362
-# define ARROW_DOWN			65364
-# define ARROW_LEFT			65361
-# define ARROW_RIGHT		65363
+# define ARROW_UP			126
+# define ARROW_DOWN			125
+# define ARROW_LEFT			123
+# define ARROW_RIGHT		124
 
 # define NUM_PAD_0			82
-# define NUM_PAD_1			65436
-# define NUM_PAD_2			65433
-# define NUM_PAD_3			65435
-# define NUM_PAD_4			65430
-# define NUM_PAD_5			65437
-# define NUM_PAD_6			65432
-# define NUM_PAD_7			65429
-# define NUM_PAD_8			65431
-# define NUM_PAD_9			65434
+# define NUM_PAD_1			83
+# define NUM_PAD_2			84
+# define NUM_PAD_3			85
+# define NUM_PAD_4			86
+# define NUM_PAD_5			87
+# define NUM_PAD_6			88
+# define NUM_PAD_7			89
+# define NUM_PAD_8			91
+# define NUM_PAD_9			92
 # define NUM_PAD_PLUS		69
 # define NUM_PAD_MINUS		78
 
-# define MAIN_PAD_ESC		65307
+# define MAIN_PAD_ESC		53
 # define MAIN_PAD_I			34
 # define MAIN_PAD_P			35
 # define MAIN_PAD_0			29
@@ -40,16 +40,16 @@
 # define MAIN_PAD_7			26
 # define MAIN_PAD_8			28
 # define MAIN_PAD_9			25
-# define MAIN_PAD_PLUS		61
-# define MAIN_PAD_MINUS		45
+# define MAIN_PAD_PLUS		24
+# define MAIN_PAD_MINUS		27
 # define MAIN_PAD_LESS		43
 # define MAIN_PAD_MORE		47
 
-# define KEYBOARD_W         119
-# define KEYBOARD_A         97
-# define KEYBOARD_S         115
-# define KEYBOARD_D         100
+# define KEYBOARD_W         13
+# define KEYBOARD_A         0
+# define KEYBOARD_S         1
+# define KEYBOARD_D         2
 
-# define KEYBOARD_I         105
+# define KEYBOARD_I         34
 
 #endif
