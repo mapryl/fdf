@@ -57,9 +57,22 @@ include CMakeFiles/Fdf_Alina.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Fdf_Alina.dir/flags.make
 
+CMakeFiles/Fdf_Alina.dir/draw_misc.c.o: CMakeFiles/Fdf_Alina.dir/flags.make
+CMakeFiles/Fdf_Alina.dir/draw_misc.c.o: ../draw_misc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mflannel/Desktop/grafics_part1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Fdf_Alina.dir/draw_misc.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fdf_Alina.dir/draw_misc.c.o   -c /Users/mflannel/Desktop/grafics_part1/draw_misc.c
+
+CMakeFiles/Fdf_Alina.dir/draw_misc.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Fdf_Alina.dir/draw_misc.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/mflannel/Desktop/grafics_part1/draw_misc.c > CMakeFiles/Fdf_Alina.dir/draw_misc.c.i
+
+CMakeFiles/Fdf_Alina.dir/draw_misc.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Fdf_Alina.dir/draw_misc.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mflannel/Desktop/grafics_part1/draw_misc.c -o CMakeFiles/Fdf_Alina.dir/draw_misc.c.s
+
 CMakeFiles/Fdf_Alina.dir/camera.c.o: CMakeFiles/Fdf_Alina.dir/flags.make
 CMakeFiles/Fdf_Alina.dir/camera.c.o: ../camera.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mflannel/Desktop/grafics_part1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Fdf_Alina.dir/camera.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mflannel/Desktop/grafics_part1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Fdf_Alina.dir/camera.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fdf_Alina.dir/camera.c.o   -c /Users/mflannel/Desktop/grafics_part1/camera.c
 
 CMakeFiles/Fdf_Alina.dir/camera.c.i: cmake_force
@@ -72,7 +85,7 @@ CMakeFiles/Fdf_Alina.dir/camera.c.s: cmake_force
 
 CMakeFiles/Fdf_Alina.dir/draw.c.o: CMakeFiles/Fdf_Alina.dir/flags.make
 CMakeFiles/Fdf_Alina.dir/draw.c.o: ../draw.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mflannel/Desktop/grafics_part1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Fdf_Alina.dir/draw.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mflannel/Desktop/grafics_part1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/Fdf_Alina.dir/draw.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fdf_Alina.dir/draw.c.o   -c /Users/mflannel/Desktop/grafics_part1/draw.c
 
 CMakeFiles/Fdf_Alina.dir/draw.c.i: cmake_force
@@ -85,7 +98,7 @@ CMakeFiles/Fdf_Alina.dir/draw.c.s: cmake_force
 
 CMakeFiles/Fdf_Alina.dir/gradient.c.o: CMakeFiles/Fdf_Alina.dir/flags.make
 CMakeFiles/Fdf_Alina.dir/gradient.c.o: ../gradient.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mflannel/Desktop/grafics_part1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/Fdf_Alina.dir/gradient.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mflannel/Desktop/grafics_part1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/Fdf_Alina.dir/gradient.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fdf_Alina.dir/gradient.c.o   -c /Users/mflannel/Desktop/grafics_part1/gradient.c
 
 CMakeFiles/Fdf_Alina.dir/gradient.c.i: cmake_force
@@ -98,7 +111,7 @@ CMakeFiles/Fdf_Alina.dir/gradient.c.s: cmake_force
 
 CMakeFiles/Fdf_Alina.dir/keyboard_controls.c.o: CMakeFiles/Fdf_Alina.dir/flags.make
 CMakeFiles/Fdf_Alina.dir/keyboard_controls.c.o: ../keyboard_controls.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mflannel/Desktop/grafics_part1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/Fdf_Alina.dir/keyboard_controls.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mflannel/Desktop/grafics_part1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/Fdf_Alina.dir/keyboard_controls.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fdf_Alina.dir/keyboard_controls.c.o   -c /Users/mflannel/Desktop/grafics_part1/keyboard_controls.c
 
 CMakeFiles/Fdf_Alina.dir/keyboard_controls.c.i: cmake_force
@@ -111,7 +124,7 @@ CMakeFiles/Fdf_Alina.dir/keyboard_controls.c.s: cmake_force
 
 CMakeFiles/Fdf_Alina.dir/line.c.o: CMakeFiles/Fdf_Alina.dir/flags.make
 CMakeFiles/Fdf_Alina.dir/line.c.o: ../line.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mflannel/Desktop/grafics_part1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/Fdf_Alina.dir/line.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mflannel/Desktop/grafics_part1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/Fdf_Alina.dir/line.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fdf_Alina.dir/line.c.o   -c /Users/mflannel/Desktop/grafics_part1/line.c
 
 CMakeFiles/Fdf_Alina.dir/line.c.i: cmake_force
@@ -124,7 +137,7 @@ CMakeFiles/Fdf_Alina.dir/line.c.s: cmake_force
 
 CMakeFiles/Fdf_Alina.dir/main.c.o: CMakeFiles/Fdf_Alina.dir/flags.make
 CMakeFiles/Fdf_Alina.dir/main.c.o: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mflannel/Desktop/grafics_part1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/Fdf_Alina.dir/main.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mflannel/Desktop/grafics_part1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/Fdf_Alina.dir/main.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fdf_Alina.dir/main.c.o   -c /Users/mflannel/Desktop/grafics_part1/main.c
 
 CMakeFiles/Fdf_Alina.dir/main.c.i: cmake_force
@@ -137,7 +150,7 @@ CMakeFiles/Fdf_Alina.dir/main.c.s: cmake_force
 
 CMakeFiles/Fdf_Alina.dir/map_create.c.o: CMakeFiles/Fdf_Alina.dir/flags.make
 CMakeFiles/Fdf_Alina.dir/map_create.c.o: ../map_create.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mflannel/Desktop/grafics_part1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/Fdf_Alina.dir/map_create.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mflannel/Desktop/grafics_part1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/Fdf_Alina.dir/map_create.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fdf_Alina.dir/map_create.c.o   -c /Users/mflannel/Desktop/grafics_part1/map_create.c
 
 CMakeFiles/Fdf_Alina.dir/map_create.c.i: cmake_force
@@ -150,7 +163,7 @@ CMakeFiles/Fdf_Alina.dir/map_create.c.s: cmake_force
 
 CMakeFiles/Fdf_Alina.dir/rotate.c.o: CMakeFiles/Fdf_Alina.dir/flags.make
 CMakeFiles/Fdf_Alina.dir/rotate.c.o: ../rotate.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mflannel/Desktop/grafics_part1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/Fdf_Alina.dir/rotate.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mflannel/Desktop/grafics_part1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/Fdf_Alina.dir/rotate.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fdf_Alina.dir/rotate.c.o   -c /Users/mflannel/Desktop/grafics_part1/rotate.c
 
 CMakeFiles/Fdf_Alina.dir/rotate.c.i: cmake_force
@@ -163,7 +176,7 @@ CMakeFiles/Fdf_Alina.dir/rotate.c.s: cmake_force
 
 CMakeFiles/Fdf_Alina.dir/supporting_functions.c.o: CMakeFiles/Fdf_Alina.dir/flags.make
 CMakeFiles/Fdf_Alina.dir/supporting_functions.c.o: ../supporting_functions.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mflannel/Desktop/grafics_part1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/Fdf_Alina.dir/supporting_functions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mflannel/Desktop/grafics_part1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/Fdf_Alina.dir/supporting_functions.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Fdf_Alina.dir/supporting_functions.c.o   -c /Users/mflannel/Desktop/grafics_part1/supporting_functions.c
 
 CMakeFiles/Fdf_Alina.dir/supporting_functions.c.i: cmake_force
@@ -176,6 +189,7 @@ CMakeFiles/Fdf_Alina.dir/supporting_functions.c.s: cmake_force
 
 # Object files for target Fdf_Alina
 Fdf_Alina_OBJECTS = \
+"CMakeFiles/Fdf_Alina.dir/draw_misc.c.o" \
 "CMakeFiles/Fdf_Alina.dir/camera.c.o" \
 "CMakeFiles/Fdf_Alina.dir/draw.c.o" \
 "CMakeFiles/Fdf_Alina.dir/gradient.c.o" \
@@ -189,6 +203,7 @@ Fdf_Alina_OBJECTS = \
 # External object files for target Fdf_Alina
 Fdf_Alina_EXTERNAL_OBJECTS =
 
+Fdf_Alina: CMakeFiles/Fdf_Alina.dir/draw_misc.c.o
 Fdf_Alina: CMakeFiles/Fdf_Alina.dir/camera.c.o
 Fdf_Alina: CMakeFiles/Fdf_Alina.dir/draw.c.o
 Fdf_Alina: CMakeFiles/Fdf_Alina.dir/gradient.c.o
@@ -201,7 +216,7 @@ Fdf_Alina: CMakeFiles/Fdf_Alina.dir/supporting_functions.c.o
 Fdf_Alina: CMakeFiles/Fdf_Alina.dir/build.make
 Fdf_Alina: ../libft/libft.a
 Fdf_Alina: CMakeFiles/Fdf_Alina.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/mflannel/Desktop/grafics_part1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking C executable Fdf_Alina"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/mflannel/Desktop/grafics_part1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking C executable Fdf_Alina"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Fdf_Alina.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -8,6 +8,20 @@ CMakeFiles/Fdf_Alina.dir/camera.c.o
 CMakeFiles/Fdf_Alina.dir/draw.c.o
  /Users/mflannel/Desktop/grafics_part1/camera.h
  /Users/mflannel/Desktop/grafics_part1/draw.c
+ /Users/mflannel/Desktop/grafics_part1/draw_misc.h
+ /Users/mflannel/Desktop/grafics_part1/errors.h
+ /Users/mflannel/Desktop/grafics_part1/fdf.h
+ /Users/mflannel/Desktop/grafics_part1/graphics.h
+ /Users/mflannel/Desktop/grafics_part1/libft/includes/get_next_line.h
+ /Users/mflannel/Desktop/grafics_part1/libft/includes/libft.h
+ /Users/mflannel/Desktop/grafics_part1/map.h
+ /Users/mflannel/Desktop/grafics_part1/rotate.h
+ /Users/mflannel/Desktop/grafics_part1/supporting_functions.h
+ /Users/mflannel/Desktop/minilibx/mlx.h
+CMakeFiles/Fdf_Alina.dir/draw_misc.c.o
+ /Users/mflannel/Desktop/grafics_part1/camera.h
+ /Users/mflannel/Desktop/grafics_part1/draw_misc.c
+ /Users/mflannel/Desktop/grafics_part1/draw_misc.h
  /Users/mflannel/Desktop/grafics_part1/errors.h
  /Users/mflannel/Desktop/grafics_part1/fdf.h
  /Users/mflannel/Desktop/grafics_part1/graphics.h

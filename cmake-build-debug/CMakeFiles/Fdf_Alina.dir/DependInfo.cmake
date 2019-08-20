@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_C
   "/Users/mflannel/Desktop/grafics_part1/camera.c" "/Users/mflannel/Desktop/grafics_part1/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/camera.c.o"
   "/Users/mflannel/Desktop/grafics_part1/draw.c" "/Users/mflannel/Desktop/grafics_part1/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/draw.c.o"
+  "/Users/mflannel/Desktop/grafics_part1/draw_misc.c" "/Users/mflannel/Desktop/grafics_part1/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/draw_misc.c.o"
   "/Users/mflannel/Desktop/grafics_part1/gradient.c" "/Users/mflannel/Desktop/grafics_part1/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/gradient.c.o"
   "/Users/mflannel/Desktop/grafics_part1/keyboard_controls.c" "/Users/mflannel/Desktop/grafics_part1/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/keyboard_controls.c.o"
   "/Users/mflannel/Desktop/grafics_part1/line.c" "/Users/mflannel/Desktop/grafics_part1/cmake-build-debug/CMakeFiles/Fdf_Alina.dir/line.c.o"

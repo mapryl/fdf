@@ -177,6 +177,33 @@ draw.c.s:
 	$(MAKE) -f CMakeFiles/Fdf_Alina.dir/build.make CMakeFiles/Fdf_Alina.dir/draw.c.s
 .PHONY : draw.c.s
 
+draw_misc.o: draw_misc.c.o
+
+.PHONY : draw_misc.o
+
+# target to build an object file
+draw_misc.c.o:
+	$(MAKE) -f CMakeFiles/Fdf_Alina.dir/build.make CMakeFiles/Fdf_Alina.dir/draw_misc.c.o
+.PHONY : draw_misc.c.o
+
+draw_misc.i: draw_misc.c.i
+
+.PHONY : draw_misc.i
+
+# target to preprocess a source file
+draw_misc.c.i:
+	$(MAKE) -f CMakeFiles/Fdf_Alina.dir/build.make CMakeFiles/Fdf_Alina.dir/draw_misc.c.i
+.PHONY : draw_misc.c.i
+
+draw_misc.s: draw_misc.c.s
+
+.PHONY : draw_misc.s
+
+# target to generate assembly for a file
+draw_misc.c.s:
+	$(MAKE) -f CMakeFiles/Fdf_Alina.dir/build.make CMakeFiles/Fdf_Alina.dir/draw_misc.c.s
+.PHONY : draw_misc.c.s
+
 gradient.o: gradient.c.o
 
 .PHONY : gradient.o
@@ -381,6 +408,9 @@ help:
 	@echo "... draw.o"
 	@echo "... draw.i"
 	@echo "... draw.s"
+	@echo "... draw_misc.o"
+	@echo "... draw_misc.i"
+	@echo "... draw_misc.s"
 	@echo "... gradient.o"
 	@echo "... gradient.i"
 	@echo "... gradient.s"

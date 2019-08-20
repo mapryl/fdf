@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/Fdf_Alina.dir/draw_misc.c.o"
   "CMakeFiles/Fdf_Alina.dir/camera.c.o"
   "CMakeFiles/Fdf_Alina.dir/draw.c.o"
   "CMakeFiles/Fdf_Alina.dir/gradient.c.o"

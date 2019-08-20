@@ -89,6 +89,12 @@
 		<Unit filename="/Users/mflannel/Desktop/grafics_part1/draw.c">
 			<Option target="Fdf_Alina"/>
 		</Unit>
+		<Unit filename="/Users/mflannel/Desktop/grafics_part1/draw_misc.c">
+			<Option target="Fdf_Alina"/>
+		</Unit>
+		<Unit filename="/Users/mflannel/Desktop/grafics_part1/draw_misc.h">
+			<Option target="Fdf_Alina"/>
+		</Unit>
 		<Unit filename="/Users/mflannel/Desktop/grafics_part1/errors.h">
 			<Option target="Fdf_Alina"/>
 		</Unit>

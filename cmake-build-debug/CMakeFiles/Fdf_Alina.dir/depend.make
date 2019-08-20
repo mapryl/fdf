@@ -7,6 +7,7 @@ CMakeFiles/Fdf_Alina.dir/camera.c.o: ../graphics.h
 
 CMakeFiles/Fdf_Alina.dir/draw.c.o: ../camera.h
 CMakeFiles/Fdf_Alina.dir/draw.c.o: ../draw.c
+CMakeFiles/Fdf_Alina.dir/draw.c.o: ../draw_misc.h
 CMakeFiles/Fdf_Alina.dir/draw.c.o: ../errors.h
 CMakeFiles/Fdf_Alina.dir/draw.c.o: ../fdf.h
 CMakeFiles/Fdf_Alina.dir/draw.c.o: ../graphics.h
@@ -16,6 +17,19 @@ CMakeFiles/Fdf_Alina.dir/draw.c.o: ../map.h
 CMakeFiles/Fdf_Alina.dir/draw.c.o: ../rotate.h
 CMakeFiles/Fdf_Alina.dir/draw.c.o: ../supporting_functions.h
 CMakeFiles/Fdf_Alina.dir/draw.c.o: /Users/mflannel/Desktop/minilibx/mlx.h
+
+CMakeFiles/Fdf_Alina.dir/draw_misc.c.o: ../camera.h
+CMakeFiles/Fdf_Alina.dir/draw_misc.c.o: ../draw_misc.c
+CMakeFiles/Fdf_Alina.dir/draw_misc.c.o: ../draw_misc.h
+CMakeFiles/Fdf_Alina.dir/draw_misc.c.o: ../errors.h
+CMakeFiles/Fdf_Alina.dir/draw_misc.c.o: ../fdf.h
+CMakeFiles/Fdf_Alina.dir/draw_misc.c.o: ../graphics.h
+CMakeFiles/Fdf_Alina.dir/draw_misc.c.o: ../libft/includes/get_next_line.h
+CMakeFiles/Fdf_Alina.dir/draw_misc.c.o: ../libft/includes/libft.h
+CMakeFiles/Fdf_Alina.dir/draw_misc.c.o: ../map.h
+CMakeFiles/Fdf_Alina.dir/draw_misc.c.o: ../rotate.h
+CMakeFiles/Fdf_Alina.dir/draw_misc.c.o: ../supporting_functions.h
+CMakeFiles/Fdf_Alina.dir/draw_misc.c.o: /Users/mflannel/Desktop/minilibx/mlx.h
 
 CMakeFiles/Fdf_Alina.dir/gradient.c.o: ../gradient.c
 CMakeFiles/Fdf_Alina.dir/gradient.c.o: ../graphics.h
