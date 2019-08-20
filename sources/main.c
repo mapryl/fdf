@@ -6,7 +6,7 @@
 /*   By: mflannel <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/20 13:37:49 by mflannel          #+#    #+#             */
-/*   Updated: 2019/08/20 14:49:02 by mapryl           ###   ########.fr       */
+/*   Updated: 2019/08/20 15:12:10 by mflannel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,7 @@
 #include "keyboard_controls.h"
 #include "errors.h"
 #include "supporting_functions.h"
+#include "../includes/map_create_misc.h"
 
 int		key_press(int key, void *param)
 {

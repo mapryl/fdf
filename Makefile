@@ -1,6 +1,6 @@
 NAME	= fdf
 
-SRC		= camera.c draw.c gradient.c keyboard_controls.c line.c main.c map_create.c rotate.c supporting_functions.c draw_misc.c
+SRC		= camera.c draw.c gradient.c keyboard_controls.c line.c main.c map_create.c rotate.c supporting_functions.c draw_misc.c map_create_misc.c
 
 OBJ		= $(addprefix $(OBJDIR),$(SRC:.c=.o))
 
